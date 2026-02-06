@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, FormEvent, ChangeEvent } from 'react';
 
 export default function ContactForm() {
     const [formData, setFormData] = useState({
@@ -16,7 +16,18 @@ export default function ContactForm() {
         consent: false
     });
 
-    const [errors, setErrors] = useState({});
+    interface FormErrors {
+        firstName?: string;
+        lastName?: string;
+        email?: string;
+        country?: string;
+        inquiryType?: string;
+        message?: string;
+        consent?: string;
+        [key: string]: string | undefined;
+    }
+
+    const [errors, setErrors] = useState<FormErrors>({});
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [submitted, setSubmitted] = useState(false);
 
@@ -55,7 +66,7 @@ export default function ContactForm() {
     ];
 
     const validateForm = () => {
-        const newErrors = {};
+        const newErrors: FormErrors = {};
 
         if (!formData.firstName.trim()) newErrors.firstName = 'First name is required';
         if (!formData.lastName.trim()) newErrors.lastName = 'Last name is required';
@@ -73,7 +84,7 @@ export default function ContactForm() {
         return Object.keys(newErrors).length === 0;
     };
 
-    const handleSubmit = async (e) => {
+    const handleSubmit = async (e: FormEvent) => {
         e.preventDefault();
 
         if (validateForm()) {
@@ -106,8 +117,9 @@ export default function ContactForm() {
         }
     };
 
-    const handleInputChange = (e) => {
-        const { name, value, type, checked } = e.target;
+    const handleInputChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+        const target = e.target as HTMLInputElement;
+        const { name, value, type, checked } = target;
         setFormData(prev => ({
             ...prev,
             [name]: type === 'checkbox' ? checked : value

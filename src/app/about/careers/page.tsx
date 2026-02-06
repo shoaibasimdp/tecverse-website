@@ -279,7 +279,7 @@ export default function CareersPage() {
 
 
 
-            <OpenPositions />
+            <OpenPositions jobListings={jobListings} />
 
 
 
