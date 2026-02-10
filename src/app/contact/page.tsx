@@ -30,7 +30,7 @@ export default function ContactPage() {
                 {/* Left Content */}
                 <div className="flex items-center bg-[#f7f7f7] dark:from-slate-900 dark:via-slate-900 dark:to-red-950 px-6 py-24">
                     <div className="max-w-xl mx-auto">
-                        <h1 className="text-4xl sm:text-5xl font-thin-100 text-slate-900 dark:text-white mb-6">
+                        <h1 className="text-4xl sm:text-7xl font-thin-100 text-slate-900 dark:text-white mb-6">
                             Contact Us
                         </h1>
                         <p className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
@@ -60,7 +60,7 @@ export default function ContactPage() {
                         {/* Contact Information */}
                         <div className="space-y-10">
                             <div>
-                                <h2 className="text-3xl font-thin-100 text-slate-900 dark:text-white mb-6">
+                                <h2 className="text-7xl font-thin-100 text-slate-900 dark:text-white mb-6">
                                     Get in touch
                                 </h2>
                                 <p className="text-slate-600 dark:text-slate-300 leading-relaxed max-w-md">

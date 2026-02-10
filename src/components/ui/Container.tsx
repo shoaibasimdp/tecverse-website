@@ -3,7 +3,7 @@ import React from 'react';
 interface ContainerProps {
     children: React.ReactNode;
     className?: string;
-    maxWidth?: 'sm' | 'md' | 'lg' | 'xl' | '2xl' | 'full';
+    maxWidth?: 'sm' | 'md' | 'lg' | 'xl' | '3xl' | 'full';
 }
 
 export const Container: React.FC<ContainerProps> = ({
@@ -16,7 +16,7 @@ export const Container: React.FC<ContainerProps> = ({
         md: 'max-w-screen-md',
         lg: 'max-w-screen-lg',
         xl: 'max-w-screen-xl',
-        '2xl': 'max-w-screen-2xl',
+        '3xl': 'max-w-screen-3xl',
         full: 'max-w-full',
     };
 

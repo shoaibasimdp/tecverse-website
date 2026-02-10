@@ -4,7 +4,7 @@ import type { ApiHealthResponse } from '@/types';
 export async function GET() {
     const response: ApiHealthResponse = {
         status: 'ok',
-        company: 'TecVerse',
+        company: 'tecverse',
         focus: 'AI Solutions',
     };
 

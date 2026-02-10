@@ -115,7 +115,7 @@
 //                 {/* Header */}
 //                 <div className="p-4 border-b border-slate-200 flex justify-between gap-4">
 //                     <div>
-//                         <h3 className="font-bold text-slate-900">
+//                         <h3 className="font-light text-slate-900">
 //                             We value your privacy
 //                         </h3>
 //                         <p className="mt-1 text-sm text-slate-600">
@@ -141,7 +141,7 @@
 //                 {/* Details */}
 //                 {showDetails && (
 //                     <div className="p-4 bg-[#f7f7f7] border-b border-slate-200">
-//                         <h4 className="text-sm font-semibold text-slate-900 mb-3 flex items-center gap-2">
+//                         <h4 className="text-sm font-light text-slate-900 mb-3 flex items-center gap-2">
 //                             <Settings className="w-4 h-4" />
 //                             Cookie Preferences
 //                         </h4>
@@ -229,7 +229,7 @@
 //                     <Button
 //                         variant="ghost"
 //                         onClick={() => setShowDetails(!showDetails)}
-//                         className="text-blue-600 hover:bg-slate-100 text-sm"
+//                         className="text-red-600 hover:bg-slate-100 text-sm"
 //                     >
 //                         <ChevronDown className="w-4 h-4 mr-1" />
 //                         {showDetails ? 'Hide Settings' : 'Customize Cookies'}
@@ -508,7 +508,7 @@ export function CookieConsent() {
                 {/* Header */}
                 <div className="p-4 border-b border-slate-200 flex justify-between gap-4">
                     <div>
-                        <h3 className="font-bold text-slate-900">
+                        <h3 className="font-light text-slate-900">
                             We value your privacy
                         </h3>
                         <p className="mt-1 text-sm text-slate-600">
@@ -534,7 +534,7 @@ export function CookieConsent() {
                 {/* Details */}
                 {showDetails && (
                     <div className="p-4 bg-[#f7f7f7] border-b border-slate-200">
-                        <h4 className="text-sm font-semibold text-slate-900 mb-3 flex items-center gap-2">
+                        <h4 className="text-sm font-light text-slate-900 mb-3 flex items-center gap-2">
                             <Settings className="w-4 h-4" />
                             Cookie Preferences
                         </h4>
@@ -600,7 +600,7 @@ export function CookieConsent() {
                         {showDetails && (
                             <Button
                                 onClick={handleSavePreferences}
-                                className="bg-blue-600 hover:bg-blue-700 text-white"
+                                className="bg-red-600 hover:bg-red-700 text-white"
                             >
                                 {isSaving ? 'Saving…' : 'Save Preferences'}
                             </Button>
@@ -631,7 +631,7 @@ export function CookieConsent() {
                     <Button
                         variant="ghost"
                         onClick={() => setShowDetails(!showDetails)}
-                        className="text-blue-600 hover:bg-slate-100 text-sm"
+                        className="text-red-600 hover:bg-slate-100 text-sm"
                     >
                         <ChevronDown className={`w-4 h-4 mr-1 transition-transform ${showDetails ? 'rotate-180' : ''}`} />
                         {showDetails ? 'Hide Settings' : 'Customize Cookies'}

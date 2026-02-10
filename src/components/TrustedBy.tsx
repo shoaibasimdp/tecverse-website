@@ -19,8 +19,8 @@ const brands: Brand[] = [
 const BrandMarqueeRTL = () => {
     return (
         <section className="bg-white py-16 overflow-hidden">
-            <div className="max-w-7xl mx-auto px-4">
-                <h2 className="text-center text-black text-7xl font-semibold mb-12">
+            <div className=" mx-auto px-4">
+                <h2 className="text-center text-black text-7xl font-light mb-12">
                     Trusted by Industry Leaders
                 </h2>
 

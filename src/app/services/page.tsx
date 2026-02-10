@@ -10,7 +10,7 @@ import { Container } from '@/components/ui/Container';
 export const metadata: Metadata = {
     title: 'Services',
     description:
-        'Comprehensive technology services from Tecverse including development, offshoring, staffing, AI solutions, and managed IT services.',
+        'Comprehensive technology services from tecverse including development, offshoring, staffing, AI solutions, and managed IT services.',
 };
 
 export default function ServicesPage() {
@@ -75,8 +75,8 @@ export default function ServicesPage() {
                 </div>
 
                 <Container className="relative z-10">
-                    <div className="max-w-3xl">
-                        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6">
+                    <div className="max-w-5xl">
+                        <h1 className="text-4xl sm:text-7xl md:text-6xl font-light text-white mb-6">
                             Our Services
                         </h1>
                         <p className="text-lg sm:text-xl text-slate-200 leading-relaxed">
@@ -88,7 +88,7 @@ export default function ServicesPage() {
             </section>
 
             {/* Services Section */}
-            <section className="py-24">
+            <section className="py-20 lg:py-32">
                 <Container>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                         {services.map((service) => (
@@ -110,7 +110,7 @@ export default function ServicesPage() {
 
                                     {/* Content */}
                                     <div className="p-8">
-                                        <h3 className="text-2xl font-semibold text-slate-900 dark:text-white mb-4">
+                                        <h3 className="text-3xl font-light text-slate-900 dark:text-white mb-4">
                                             {service.title}
                                         </h3>
 
@@ -118,7 +118,7 @@ export default function ServicesPage() {
                                             {service.description}
                                         </p>
 
-                                        <span className="inline-flex items-center text-blue-600 dark:text-blue-400 font-medium">
+                                        <span className="inline-flex items-center text-red-600 dark:text-red-400 font-medium">
                                             Learn more
                                             <svg
                                                 className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1"

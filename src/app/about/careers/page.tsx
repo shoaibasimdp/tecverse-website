@@ -7,8 +7,8 @@ import Image from "next/image";
 import OpenPositions from '@/components/openpositions';
 
 export const metadata: Metadata = {
-    title: 'Careers at TecVerse',
-    description: 'Join TecVerse and build the future of technology. Explore career opportunities in AI, software development, and more.',
+    title: 'Careers at tecverse',
+    description: 'Join tecverse and build the future of technology. Explore career opportunities in AI, software development, and more.',
 };
 
 interface JobListing {
@@ -117,26 +117,26 @@ export default function CareersPage() {
                 <div className="absolute inset-0 bg-black/40"></div>
 
                 <div className="absolute inset-0 opacity-10">
-                    <div className="absolute top-20 left-20 w-72 h-72 bg-purple-500 rounded-full filter blur-3xl animate-pulse"></div>
-                    <div className="absolute bottom-20 right-20 w-96 h-96 bg-blue-500 rounded-full filter blur-3xl animate-pulse" style={{ animationDelay: '2s' }}></div>
+                    <div className="absolute top-20 left-20 w-72 h-72 bg-red-500 rounded-full filter blur-5xl animate-pulse"></div>
+                    <div className="absolute bottom-20 right-20 w-96 h-96 bg-red-500 rounded-full filter blur-5xl animate-pulse" style={{ animationDelay: '2s' }}></div>
                 </div>
 
                 <Container className="relative z-10 h-full flex items-center">
                     <div className="max-w-4xl">
-                        <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+                        <h1 className="text-7xl md:text-6xl lg:text-7xl font-light text-white mb-6 leading-tight">
                             Build the Future
-                            <span className="block bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-400">
+                            <span className="block bg-clip-text text-transparent bg-gradient-to-r from-red-400 to-red-400">
                                 With Us
                             </span>
                         </h1>
-                        <p className="text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl">
+                        <p className="text-xl md:text-3xl text-gray-200 mb-8 max-w-5xl">
                             Join a team of innovators, creators, and problem-solvers transforming industries through cutting-edge technology.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4">
                             <Link href="#open-positions">
                                 <Button
                                     size="lg"
-                                    className="bg-red-500 hover:from-blue-700 hover:to-purple-700 text-white border-0 px-8 py-3 text-lg shadow-lg transform transition-all duration-300 hover:scale-105"
+                                    className="bg-red-500 hover:from-red-700 hover:to-red-700 text-white border-0 px-8 py-3 text-lg shadow-lg transform transition-all duration-300 hover:scale-105"
                                 >
                                     View Open Positions
                                 </Button>
@@ -165,19 +165,19 @@ export default function CareersPage() {
                 <Container>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
                         <div>
-                            <div className="text-4xl font-bold text-white mb-2">200+</div>
+                            <div className="text-4xl font-light text-white mb-2">200+</div>
                             <div className="text-gray-300">Team Members</div>
                         </div>
                         <div>
-                            <div className="text-4xl font-bold text-white mb-2">15+</div>
+                            <div className="text-4xl font-light text-white mb-2">15+</div>
                             <div className="text-gray-300">Countries</div>
                         </div>
                         <div>
-                            <div className="text-4xl font-bold text-white mb-2">4.8★</div>
+                            <div className="text-4xl font-light text-white mb-2">4.8★</div>
                             <div className="text-gray-300">Employee Rating</div>
                         </div>
                         <div>
-                            <div className="text-4xl font-bold text-white mb-2">90%</div>
+                            <div className="text-4xl font-light text-white mb-2">90%</div>
                             <div className="text-gray-300">Retention Rate</div>
                         </div>
                     </div>
@@ -187,10 +187,10 @@ export default function CareersPage() {
             <section id="culture" className="py-20 bg-white dark:bg-slate-900">
                 <Container>
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-4">
+                        <h2 className="text-4xl md:text-7xl font-light text-slate-900 dark:text-white mb-4">
                             Our Culture & Values
                         </h2>
-                        <p className="text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto">
+                        <p className="text-xl text-slate-600 dark:text-slate-300 max-w-5xl mx-auto">
                             We're building a workplace where everyone can do their best work and grow together
                         </p>
                     </div>
@@ -207,11 +207,11 @@ export default function CareersPage() {
                                     className="transition-transform duration-300 group-hover:scale-110"
                                 />
                             </div>
-                            <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-3">
+                            <h3 className="text-xl font-light text-slate-900 dark:text-white mb-3">
                                 Innovation First
                             </h3>
                             <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
-                                We encourage creative thinking and bold ideas that push boundaries
+                                We encourage creative thinking and light ideas that push boundaries
                             </p>
                         </div>
 
@@ -226,7 +226,7 @@ export default function CareersPage() {
                                     className="transition-transform duration-300 group-hover:scale-110"
                                 />
                             </div>
-                            <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-3">
+                            <h3 className="text-xl font-light text-slate-900 dark:text-white mb-3">
                                 Collaboration
                             </h3>
                             <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
@@ -245,7 +245,7 @@ export default function CareersPage() {
                                     className="transition-transform duration-300 group-hover:scale-110"
                                 />
                             </div>
-                            <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-3">
+                            <h3 className="text-xl font-light text-slate-900 dark:text-white mb-3">
                                 Growth Mindset
                             </h3>
                             <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
@@ -264,7 +264,7 @@ export default function CareersPage() {
                                     className="transition-transform duration-300 group-hover:scale-110"
                                 />
                             </div>
-                            <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-3">
+                            <h3 className="text-xl font-light text-slate-900 dark:text-white mb-3">
                                 Work-Life Balance
                             </h3>
                             <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
@@ -288,10 +288,10 @@ export default function CareersPage() {
                 <Container>
                     {/* Header */}
                     <div className="text-center mb-20">
-                        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                        <h2 className="text-4xl md:text-7xl font-light text-gray-900 mb-4">
                             Our Application Process
                         </h2>
-                        <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+                        <p className="text-lg md:text-xl text-gray-600 max-w-5xl mx-auto">
                             We’ve designed a transparent and efficient process to find the best talent
                         </p>
                     </div>
@@ -302,11 +302,11 @@ export default function CareersPage() {
                         <div className="hidden md:block absolute top-14 left-0 right-0 h-1 bg-green-500 rounded-full"></div>
 
                         {/* Step 1 */}
-                        <div className="relative bg-white rounded-2xl p-8 text-center shadow-lg hover:shadow-xl transition">
+                        <div className="relative bg-white rounded-3xl p-8 text-center shadow-lg hover:shadow-xl transition">
                             <div className="w-16 h-16 bg-red-500 rounded-full flex items-center justify-center mx-auto mb-6 relative z-10">
-                                <span className="text-xl font-bold text-white">1</span>
+                                <span className="text-xl font-light text-white">1</span>
                             </div>
-                            <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                            <h3 className="text-xl font-sans text-gray-900 mb-3">
                                 Application
                             </h3>
                             <p className="text-gray-600 text-sm leading-relaxed">
@@ -315,11 +315,11 @@ export default function CareersPage() {
                         </div>
 
                         {/* Step 2 */}
-                        <div className="relative bg-white rounded-2xl p-8 text-center shadow-lg hover:shadow-xl transition">
+                        <div className="relative bg-white rounded-3xl p-8 text-center shadow-lg hover:shadow-xl transition">
                             <div className="w-16 h-16 bg-red-500 rounded-full flex items-center justify-center mx-auto mb-6 relative z-10">
-                                <span className="text-xl font-bold text-white">2</span>
+                                <span className="text-xl font-light text-white">2</span>
                             </div>
-                            <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                            <h3 className="text-xl font-sans text-gray-900 mb-3">
                                 Review
                             </h3>
                             <p className="text-gray-600 text-sm leading-relaxed">
@@ -328,11 +328,11 @@ export default function CareersPage() {
                         </div>
 
                         {/* Step 3 */}
-                        <div className="relative bg-white rounded-2xl p-8 text-center shadow-lg hover:shadow-xl transition">
+                        <div className="relative bg-white rounded-3xl p-8 text-center shadow-lg hover:shadow-xl transition">
                             <div className="w-16 h-16 bg-red-500 rounded-full flex items-center justify-center mx-auto mb-6 relative z-10">
-                                <span className="text-xl font-bold text-white">3</span>
+                                <span className="text-xl font-light text-white">3</span>
                             </div>
-                            <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                            <h3 className="text-xl font-sans text-gray-900 mb-3">
                                 Interviews
                             </h3>
                             <p className="text-gray-600 text-sm leading-relaxed">
@@ -341,11 +341,11 @@ export default function CareersPage() {
                         </div>
 
                         {/* Step 4 */}
-                        <div className="relative bg-white rounded-2xl p-8 text-center shadow-lg hover:shadow-xl transition">
+                        <div className="relative bg-white rounded-3xl p-8 text-center shadow-lg hover:shadow-xl transition">
                             <div className="w-16 h-16 bg-red-500 rounded-full flex items-center justify-center mx-auto mb-6 relative z-10">
-                                <span className="text-xl font-bold text-white">4</span>
+                                <span className="text-xl font-light text-white">4</span>
                             </div>
-                            <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                            <h3 className="text-xl font-sans text-gray-900 mb-3">
                                 Decision
                             </h3>
                             <p className="text-gray-600 text-sm leading-relaxed">
@@ -366,7 +366,7 @@ export default function CareersPage() {
                     <Container className="relative z-10">
                         {/* LEFT aligned content */}
                         <div className="max-w-xl">
-                            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+                            <h2 className="text-4xl md:text-7xl font-light text-white mb-6">
                                 Ready to Join Our Team?
                             </h2>
 
@@ -378,7 +378,7 @@ export default function CareersPage() {
                                 <Link href="#open-positions">
                                     <Button
                                         size="lg"
-                                        className="bg-red-500 text-purple-700 hover:bg-gray-100 border-0 px-8 py-4 text-lg font-semibold shadow-xl transition-transform duration-300 hover:scale-105"
+                                        className="bg-red-500 text-red-700 hover:bg-gray-100 border-0 px-8 py-4 text-lg font-light shadow-xl transition-transform duration-300 hover:scale-105"
                                     >
                                         Browse All Positions
                                     </Button>
@@ -388,7 +388,7 @@ export default function CareersPage() {
                                     <Button
                                         variant="outline"
                                         size="lg"
-                                        className="bg-transparent text-white border-white hover:bg-white/10 px-8 py-4 text-lg font-semibold shadow-xl transition-transform duration-300 hover:scale-105"
+                                        className="bg-transparent text-white border-white hover:bg-white/10 px-8 py-4 text-lg font-light shadow-xl transition-transform duration-300 hover:scale-105"
                                     >
                                         Contact Recruiting
                                     </Button>

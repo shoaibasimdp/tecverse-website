@@ -9,7 +9,7 @@ const announcements = [
     'AI-powered solutions tailored for your business',
     'Global delivery across USA, India, Australia & Middle East',
     'Hire top tech talent with our Staffing Solutions',
-    'Transform your ideas with TecVerse Innovation',
+    'Transform your ideas with tecverse Innovation',
 ];
 
 const navLinks = [
@@ -74,59 +74,44 @@ export const Navbar: React.FC = () => {
         <>
 
             <div className="w-full bg-red-500 text-white text-sm shadow-lg border-b border-green-500/20">
-                <div className="max-w-screen-xl mx-auto h-10 flex items-center justify-center overflow-hidden px-4 relative">
+                <div className="max-w-screen-xl mx-auto h-8 flex items-center justify-center px-4">
 
+                    <div className="flex items-center gap-6">
 
-                    <span
-                        key={announcementIndex}
-                        className="animate-fade-slide font-medium text-center px-8 transition-all duration-500"
-                    >
-                        {announcements[announcementIndex]}
-                    </span>
-
-                    {/* <div className="absolute right-4 flex gap-2">
-                        <button
-                            onClick={() => setAnnouncementIndex((prev) => (prev - 1 + announcements.length) % announcements.length)}
-                            className="w-6 h-6 rounded-full bg-white-500/20 hover:bg-red-500/30 border border-red-500/40 transition-all hover:scale-105 flex items-center justify-center text-red-400"
-                            aria-label="Previous announcement"
+                        {/* Announcement Text */}
+                        <span
+                            key={announcementIndex}
+                            className="animate-fade-slide font-medium text-center transition-all duration-500"
                         >
-                            <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-                            </svg>
-                        </button>
-                        <button
-                            onClick={() => setAnnouncementIndex((prev) => (prev + 1) % announcements.length)}
-                            className="w-6 h-6 rounded-full bg-w-500/20 hover:bg-green-500/30 border border-green-500/40 transition-all hover:scale-105 flex items-center justify-center text-green-400"
-                            aria-label="Next announcement"
-                        >
-                            <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                            </svg>
-                        </button>
-                    </div> */}
+                            {announcements[announcementIndex]}
+                        </span>
 
-                    <div className="absolute bottom-1 left-1/2 -translate-x-1/2 flex gap-1.5">
-                        {announcements.map((_, idx) => (
-                            <button
-                                key={idx}
-                                onClick={() => setAnnouncementIndex(idx)}
-                                className={`h-1.5 rounded-full transition-all duration-300 ${idx === announcementIndex
-                                    ? 'bg-green-400 w-4'
-                                    : 'bg-[#222831] hover:bg-red-400/60 w-1.5'
-                                    }`}
-                                aria-label={`Go to announcement ${idx + 1}`}
-                            />
-                        ))}
+                        {/* Indicators */}
+                        <div className="flex items-center gap-1.5">
+                            {announcements.map((_, idx) => (
+                                <button
+                                    key={idx}
+                                    onClick={() => setAnnouncementIndex(idx)}
+                                    className={`h-1.5 rounded-full transition-all duration-300 ${idx === announcementIndex
+                                        ? 'bg-green-400 w-4'
+                                        : 'bg-[#222831] hover:bg-red-500/60 w-1.5'
+                                        }`}
+                                    aria-label={`Go to announcement ${idx + 1}`}
+                                />
+                            ))}
+                        </div>
+
                     </div>
                 </div>
             </div>
 
-            <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-lg border-b border-slate-200">
+
+            <nav className="sticky top-0 z-50 bg-white">
                 <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex items-center justify-between h-16">
 
                         <Link href="/" className="flex items-center">
-                            <img src="/tecverse.png" alt="TecVerse" className="w-32 h-auto" />
+                            <img src="/tv.png" alt="tecverse" className="w-32 h-auto" />
                         </Link>
 
 
@@ -145,28 +130,47 @@ export const Navbar: React.FC = () => {
                                     }}
                                 >
                                     {link.hasDropdown ? (
-                                        <span className="px-4 py-2 rounded-lg text-sm font-medium flex items-center cursor-pointer text-slate-900 hover:text-red-600">
+                                        <span className="group relative px-4 py-2 text-sm font-medium flex items-center cursor-pointer text-slate-900 hover:text-red-600 transition-colors">
                                             {link.label}
-                                            <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+
+                                            {/* underline */}
+                                            <span className="pointer-events-none absolute left-0 -bottom-1 h-[2px] w-full origin-left scale-x-0 bg-red-600 transition-transform duration-300 group-hover:scale-x-100" />
+
+                                            <svg
+                                                className="ml-1 w-4 h-4"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                viewBox="0 0 24 24"
+                                            >
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                                             </svg>
                                         </span>
+
                                     ) : (
                                         <Link
                                             href={link.href}
-                                            className={`px-4 py-2 rounded-lg text-sm font-medium ${pathname === link.href
+                                            className={`group relative px-4 py-2 text-sm font-medium transition-colors ${pathname === link.href
                                                 ? 'text-red-600'
                                                 : 'text-slate-900 hover:text-red-600'
                                                 }`}
                                         >
                                             {link.label}
+
+                                            {/* underline */}
+                                            <span
+                                                className={`pointer-events-none absolute left-0 -bottom-1 h-[2px] w-full origin-left bg-red-600 transition-transform duration-300 ${pathname === link.href
+                                                    ? 'scale-x-100'
+                                                    : 'scale-x-0 group-hover:scale-x-100'
+                                                    }`}
+                                            />
                                         </Link>
+
                                     )}
 
 
                                     {link.label === 'About' && aboutOpen && (
-                                        <div className="absolute left-0 top-full w-full bg-white shadow-2xl border-t border-slate-200">
-                                            <div className="max-w-7xl mx-auto px-6 py-10">
+                                        <div className="absolute left-0 top-full w-full bg-white shadow-3xl border-t border-slate-200">
+                                            <div className=" mx-auto px-6 py-10">
                                                 <div className="grid grid-cols-12 gap-8">
                                                     <div className="col-span-3">
                                                         <div className="flex items-center gap-2 mb-6">
@@ -174,26 +178,26 @@ export const Navbar: React.FC = () => {
                                                         </div>
 
                                                         <div className="space-y-3">
-                                                            <Link href="/about" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-blue-50 transition-all">
+                                                            <Link href="/about" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-red-50 transition-all">
 
                                                                 <div className="flex-1">
-                                                                    <div className="font-thin-100 text-slate-900 group-hover:text-blue-600 transition-colors">About TecVerse</div>
+                                                                    <div className="font-thin-100 text-slate-900 group-hover:text-red-600 transition-colors">About tecverse</div>
                                                                     <div className="text-xs text-slate-500">Our story</div>
                                                                 </div>
                                                             </Link>
 
-                                                            <Link href="/about/vision" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-blue-50 transition-all">
+                                                            <Link href="/about/vision" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-red-50 transition-all">
 
                                                                 <div className="flex-1">
-                                                                    <div className="font-thin-100 text-slate-900 group-hover:text-blue-600 transition-colors">Vision Statement</div>
+                                                                    <div className="font-thin-100 text-slate-900 group-hover:text-red-600 transition-colors">Vision Statement</div>
                                                                     <div className="text-xs text-slate-500">Where we're headed</div>
                                                                 </div>
                                                             </Link>
 
-                                                            <Link href="/about/mission" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-blue-50 transition-all">
+                                                            <Link href="/about/mission" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-red-50 transition-all">
 
                                                                 <div className="flex-1">
-                                                                    <div className="font-thin-100 text-slate-900 group-hover:text-blue-600 transition-colors">Mission Statement</div>
+                                                                    <div className="font-thin-100 text-slate-900 group-hover:text-red-600 transition-colors">Mission Statement</div>
                                                                     <div className="text-xs text-slate-500">Our purpose</div>
                                                                 </div>
                                                             </Link>
@@ -207,46 +211,71 @@ export const Navbar: React.FC = () => {
                                                         </div>
 
                                                         <div className="space-y-3">
-                                                            <Link href="/about/leadership" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-blue-50 transition-all">
+                                                            <Link href="/about/leadership" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-red-50 transition-all">
 
                                                                 <div className="flex-1">
-                                                                    <div className="font-thin-100 text-slate-900 group-hover:text-blue-600 transition-colors">Leadership Team</div>
+                                                                    <div className="font-thin-100 text-slate-900 group-hover:text-red-600 transition-colors">Leadership Team</div>
                                                                     <div className="text-xs text-slate-500">Meet our leaders</div>
                                                                 </div>
                                                             </Link>
 
-                                                            <Link href="/about/careers" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-blue-50 transition-all">
+                                                            <Link href="/about/careers" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-red-50 transition-all">
 
                                                                 <div className="flex-1">
-                                                                    <div className="font-thin-100 text-slate-900 group-hover:text-blue-600 transition-colors">Careers</div>
+                                                                    <div className="font-thin-100 text-slate-900 group-hover:text-red-600 transition-colors">Careers</div>
                                                                     <div className="text-xs text-slate-500">Join our team</div>
                                                                 </div>
                                                             </Link>
                                                         </div>
                                                     </div>
 
-                                                    {/* Who We Are - Feature Card */}
-                                                    <div className="col-span-6">
-                                                        <div className="bg-[#222831] rounded-2xl p-8 h-full text-white relative overflow-hidden">
-                                                            <div className="absolute top-0 right-0 w-64 h-64 bg-white opacity-5 rounded-full -mr-32 -mt-32"></div>
-                                                            <div className="absolute bottom-0 left-0 w-48 h-48 bg-white opacity-5 rounded-full -ml-24 -mb-24"></div>
 
-                                                            <div className="relative z-10">
-                                                                <div className="inline-flex items-center gap-2 bg-white/20 rounded-full px-4 py-2 mb-4">
-                                                                    <span className="text-sm font-thin-100">Who We Are</span>
+                                                    <div className="col-span-6">
+                                                        <div className="relative h-full overflow-hidden">
+
+                                                            {/* Background Image */}
+                                                            <img
+                                                                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1600&q=80"
+                                                                alt="Global technology team"
+                                                                className="absolute inset-0 w-full h-full object-cover"
+                                                            />
+
+                                                            {/* Dark Overlay */}
+                                                            <div className="absolute inset-0 bg-[#222831]/85" />
+
+                                                            {/* Content */}
+                                                            <div className="relative z-10 p-10 text-white h-full flex flex-col justify-between">
+
+                                                                <div>
+                                                                    <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur rounded-full px-4 py-2 mb-6">
+                                                                        <span className="text-sm font-light tracking-wide">
+                                                                            Who We Are
+                                                                        </span>
+                                                                    </div>
+
+                                                                    <h3 className="text-3xl md:text-4xl font-light mb-4">
+                                                                        Global Technology Partner
+                                                                    </h3>
+
+                                                                    <p className="text-white/80 leading-relaxed max-w-lg">
+                                                                        tecverse is a global technology partner helping enterprises scale with
+                                                                        innovation, AI, and engineering excellence.
+                                                                    </p>
                                                                 </div>
 
-                                                                <h3 className="text-2xl font-thin-100 mb-4">Global Technology Partner</h3>
-                                                                <p className="text-blue-100 leading-relaxed mb-6">
-                                                                    TecVerse is a global technology partner helping enterprises scale with innovation, AI, and engineering excellence.
-                                                                </p>
+                                                                <div className="mt-8">
+                                                                    <Link
+                                                                        href="/about"
+                                                                        className="inline-flex items-center gap-2 bg-white text-gray-900 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition-all"
+                                                                    >
+                                                                        Learn More
+                                                                    </Link>
+                                                                </div>
 
-                                                                <Link href="/about" className="inline-flex items-center gap-2 bg-white text-blue-600 px-6 py-3 rounded-lg font-thin-100 hover:bg-blue-50 transition-all group">
-                                                                    Learn More
-                                                                </Link>
                                                             </div>
                                                         </div>
                                                     </div>
+
                                                 </div>
                                             </div>
                                         </div>
@@ -254,8 +283,8 @@ export const Navbar: React.FC = () => {
 
                                     {/* SERVICES – ENTERPRISE MEGA MENU */}
                                     {link.label === 'Services' && servicesOpen && (
-                                        <div className="absolute left-0 top-full w-full bg-white shadow-2xl border-t border-slate-200">
-                                            <div className="max-w-7xl mx-auto px-6 py-10">
+                                        <div className="absolute left-0 top-full w-full bg-white shadow-3xl border-t border-slate-200">
+                                            <div className=" mx-auto px-6 py-10">
                                                 <div className="grid grid-cols-12 gap-8">
                                                     {/* Development Section */}
                                                     <div className="col-span-3">
@@ -264,18 +293,18 @@ export const Navbar: React.FC = () => {
                                                         </div>
 
                                                         <div className="space-y-3">
-                                                            <Link href="/services/development" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-blue-50 transition-all">
+                                                            <Link href="/services/development" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-red-50 transition-all">
 
                                                                 <div className="flex-1">
-                                                                    <div className="font-thin-100 text-slate-900 group-hover:text-blue-600 transition-colors">Web & App Development</div>
+                                                                    <div className="font-thin-100 text-slate-900 group-hover:text-red-600 transition-colors">Web & App Development</div>
                                                                     <div className="text-xs text-slate-500">Build digital products</div>
                                                                 </div>
                                                             </Link>
 
-                                                            <Link href="/services/managed-it" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-blue-50 transition-all">
+                                                            <Link href="/services/managed-it" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-red-50 transition-all">
 
                                                                 <div className="flex-1">
-                                                                    <div className="font-thin-100 text-slate-900 group-hover:text-blue-600 transition-colors">Managed IT Services</div>
+                                                                    <div className="font-thin-100 text-slate-900 group-hover:text-red-600 transition-colors">Managed IT Services</div>
                                                                     <div className="text-xs text-slate-500">24/7 support</div>
                                                                 </div>
                                                             </Link>
@@ -289,18 +318,18 @@ export const Navbar: React.FC = () => {
                                                         </div>
 
                                                         <div className="space-y-3">
-                                                            <Link href="/services/offshoring" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-blue-50 transition-all">
+                                                            <Link href="/services/offshoring" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-red-50 transition-all">
 
                                                                 <div className="flex-1">
-                                                                    <div className="font-thin-100 text-slate-900 group-hover:text-blue-600 transition-colors">Offshoring Solutions</div>
+                                                                    <div className="font-thin-100 text-slate-900 group-hover:text-red-600 transition-colors">Offshoring Solutions</div>
                                                                     <div className="text-xs text-slate-500">Global talent</div>
                                                                 </div>
                                                             </Link>
 
-                                                            <Link href="/services/staffing" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-blue-50 transition-all">
+                                                            <Link href="/services/staffing" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-red-50 transition-all">
 
                                                                 <div className="flex-1">
-                                                                    <div className="font-thin-100 text-slate-900 group-hover:text-blue-600 transition-colors">Staffing Solutions</div>
+                                                                    <div className="font-thin-100 text-slate-900 group-hover:text-red-600 transition-colors">Staffing Solutions</div>
                                                                     <div className="text-xs text-slate-500">Scale your team</div>
                                                                 </div>
                                                             </Link>
@@ -314,42 +343,62 @@ export const Navbar: React.FC = () => {
                                                         </div>
 
                                                         <div className="space-y-3">
-                                                            <Link href="/ai-solutions" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-blue-50 transition-all">
+                                                            <Link href="/ai-solutions" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-red-50 transition-all">
 
                                                                 <div className="flex-1">
-                                                                    <div className="font-thin-100 text-slate-900 group-hover:text-blue-600 transition-colors">AI Solutions</div>
+                                                                    <div className="font-thin-100 text-slate-900 group-hover:text-red-600 transition-colors">AI Solutions</div>
                                                                     <div className="text-xs text-slate-500">Intelligent systems</div>
                                                                 </div>
                                                             </Link>
 
-                                                            <Link href="/development-services" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-blue-50 transition-all">
+                                                            <Link href="/development-services" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-red-50 transition-all">
 
                                                                 <div className="flex-1">
-                                                                    <div className="font-thin-100 text-slate-900 group-hover:text-blue-600 transition-colors">Cloud & DevOps</div>
+                                                                    <div className="font-thin-100 text-slate-900 group-hover:text-red-600 transition-colors">Cloud & DevOps</div>
                                                                     <div className="text-xs text-slate-500">Infrastructure</div>
                                                                 </div>
                                                             </Link>
                                                         </div>
                                                     </div>
 
-                                                    {/* Why TecVerse - Feature Card */}
+                                                    {/* Why tecverse - Feature Card */}
                                                     <div className="col-span-3">
-                                                        <div className="bg-[#222831] rounded-xs p-6 h-full text-white relative overflow-hidden">
-                                                            <div className="absolute top-0 right-0 w-32 h-32 bg-blue-500 opacity-10 rounded-full -mr-16 -mt-16"></div>
+                                                        <div className="relative h-full overflow-hidden">
 
-                                                            <div className="relative z-10">
+                                                            {/* Background Image */}
+                                                            <img
+                                                                src="https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=1200&q=80"
+                                                                alt="Enterprise digital services"
+                                                                className="absolute inset-0 w-full h-full object-cover"
+                                                            />
 
-                                                                <h3 className="text-lg font-thin-100 mb-3">Why TecVerse?</h3>
-                                                                <p className="text-slate-300 text-sm leading-relaxed mb-4">
-                                                                    End-to-end digital services designed for enterprise-scale growth and transformation.
-                                                                </p>
+                                                            {/* Overlay */}
+                                                            <div className="absolute inset-0 bg-[#222831]/80" />
 
-                                                                <Link href="/services" className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 font-thin-100 text-sm group">
+                                                            {/* Content */}
+                                                            <div className="relative z-10 p-6 text-white h-full flex flex-col justify-between">
+
+                                                                <div>
+                                                                    <h3 className="text-lg font-light mb-3">
+                                                                        Why tecverse?
+                                                                    </h3>
+
+                                                                    <p className="text-white/75 text-sm leading-relaxed mb-5">
+                                                                        End-to-end digital services designed for enterprise-scale growth and transformation.
+                                                                    </p>
+                                                                </div>
+
+                                                                <Link
+                                                                    href="/services"
+                                                                    className="inline-flex items-center gap-2 text-red-400 hover:text-red-300 font-medium text-sm transition-colors"
+                                                                >
                                                                     Discover More
                                                                 </Link>
+
                                                             </div>
                                                         </div>
                                                     </div>
+
                                                 </div>
                                             </div>
                                         </div>

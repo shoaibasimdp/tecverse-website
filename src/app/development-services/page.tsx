@@ -60,20 +60,20 @@ const techBrandColors: Record<string, string> = {
     apacheairflow: 'text-sky-500',
     dbt: 'text-orange-500',
     snowflake: 'text-sky-400',
-    googlebigquery: 'text-blue-500',
+    googlebigquery: 'text-red-500',
 
-    python: 'text-blue-500',
+    python: 'text-red-500',
     django: 'text-green-700',
     nodedotjs: 'text-green-600',
     go: 'text-cyan-500',
     spring: 'text-green-500',
 
-    postgresql: 'text-blue-700',
+    postgresql: 'text-red-700',
     mongodb: 'text-green-600',
 
     react: 'text-cyan-400',
     nextdotjs: 'text-black dark:text-white',
-    typescript: 'text-blue-600',
+    typescript: 'text-red-600',
     tailwindcss: 'text-sky-400',
     vuedotjs: 'text-green-500',
     reactnative: 'text-cyan-400',
@@ -308,11 +308,11 @@ export default function DevelopmentServicesPage() {
 
                 <Container>
                     <div className="max-w-4xl mx-auto text-center space-y-12">
-                        <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-slate-900 dark:text-white">
+                        <h1 className="text-7xl md:text-6xl lg:text-7xl font-light tracking-tight text-slate-900 dark:text-white">
                             Development Services
                         </h1>
 
-                        <p className="text-xl md:text-2xl text-gray-700 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
+                        <p className="text-xl md:text-3xl text-gray-700 dark:text-gray-300 max-w-5xl mx-auto leading-relaxed">
                             Transform your business with intelligent systems that learn,
                             adapt, and scale. From enterprise software to cutting-edge AI
                             solutions.
@@ -341,19 +341,19 @@ export default function DevelopmentServicesPage() {
                 <Container>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
                         <div className="text-center">
-                            <div className="text-4xl md:text-5xl font-bold text-black dark:text-blue-400 mb-2">500+</div>
+                            <div className="text-4xl md:text-7xl font-light text-black dark:text-red-400 mb-2">500+</div>
                             <div className="text-sm text-gray-600 dark:text-gray-400">Projects Delivered</div>
                         </div>
                         <div className="text-center">
-                            <div className="text-4xl md:text-5xl font-bold text-black dark:text-blue-400 mb-2">98%</div>
+                            <div className="text-4xl md:text-7xl font-light text-black dark:text-red-400 mb-2">98%</div>
                             <div className="text-sm text-gray-600 dark:text-gray-400">Client Satisfaction</div>
                         </div>
                         <div className="text-center">
-                            <div className="text-4xl md:text-5xl font-bold text-black dark:text-blue-400 mb-2">15+</div>
+                            <div className="text-4xl md:text-7xl font-light text-black dark:text-red-400 mb-2">15+</div>
                             <div className="text-sm text-gray-600 dark:text-gray-400">Years Experience</div>
                         </div>
                         <div className="text-center">
-                            <div className="text-4xl md:text-5xl font-bold text-black dark:text-blue-400 mb-2">24/7</div>
+                            <div className="text-4xl md:text-7xl font-light text-black dark:text-red-400 mb-2">24/7</div>
                             <div className="text-sm text-gray-600 dark:text-gray-400">Support Available</div>
                         </div>
                     </div>
@@ -363,8 +363,8 @@ export default function DevelopmentServicesPage() {
             {/* AI Solutions - Detailed */}
             <section id="ai-solutions" className="relative py-28 px-6 bg-white">
                 <Container>
-                    <div className="max-w-3xl mb-20">
-                        <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#1B3139]">
+                    <div className="max-w-5xl mb-20">
+                        <h2 className="text-4xl md:text-7xl font-light mb-6 text-[#1B3139]">
                             AI Solutions
                         </h2>
                         <p className="text-xl text-gray-600 leading-relaxed">
@@ -397,7 +397,7 @@ export default function DevelopmentServicesPage() {
                                 {/* Content */}
                                 <div className="space-y-8">
                                     <div className="space-y-4">
-                                        <h3 className="text-3xl font-bold text-[#1B3139]">
+                                        <h3 className="text-7xl font-light text-[#1B3139]">
                                             {solution.title}
                                         </h3>
                                         <p className="text-lg text-gray-600 leading-relaxed">
@@ -406,7 +406,7 @@ export default function DevelopmentServicesPage() {
                                     </div>
 
                                     <div>
-                                        <div className="text-sm font-semibold text-gray-900 mb-4 uppercase tracking-wide">
+                                        <div className="text-sm font-light text-gray-900 mb-4 uppercase tracking-wide">
                                             Key Capabilities
                                         </div>
                                         <div className="grid grid-cols-2 gap-4">
@@ -416,7 +416,7 @@ export default function DevelopmentServicesPage() {
                                                     className="flex items-start gap-3 text-gray-600"
                                                 >
                                                     <svg
-                                                        className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5"
+                                                        className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5"
                                                         fill="none"
                                                         viewBox="0 0 24 24"
                                                         stroke="currentColor"
@@ -442,8 +442,8 @@ export default function DevelopmentServicesPage() {
             {/* Data Solutions - Detailed */}
             <section className="relative py-28 px-6 bg-white">
                 <Container>
-                    <div className="max-w-3xl mb-20">
-                        <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#1B3139]">
+                    <div className="max-w-5xl mb-20">
+                        <h2 className="text-4xl md:text-7xl font-light mb-6 text-[#1B3139]">
                             Data Solutions
                         </h2>
                         <p className="text-xl text-gray-600 leading-relaxed">
@@ -474,7 +474,7 @@ export default function DevelopmentServicesPage() {
                                     </div>
 
                                     <div className="space-y-4">
-                                        <h3 className="text-3xl font-bold text-[#1B3139]">
+                                        <h3 className="text-7xl font-light text-[#1B3139]">
                                             {solution.title}
                                         </h3>
                                         <p className="text-lg text-gray-600 leading-relaxed">
@@ -483,7 +483,7 @@ export default function DevelopmentServicesPage() {
                                     </div>
 
                                     <div>
-                                        <div className="text-sm font-semibold text-gray-900 mb-4 uppercase tracking-wide">
+                                        <div className="text-sm font-light text-gray-900 mb-4 uppercase tracking-wide">
                                             Core Features
                                         </div>
                                         <div className="grid grid-cols-2 gap-4">
@@ -493,7 +493,7 @@ export default function DevelopmentServicesPage() {
                                                     className="flex items-start gap-3 text-gray-600"
                                                 >
                                                     <svg
-                                                        className="w-5 h-5 text-purple-600 flex-shrink-0 mt-0.5"
+                                                        className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5"
                                                         fill="none"
                                                         viewBox="0 0 24 24"
                                                         stroke="currentColor"
@@ -531,8 +531,8 @@ export default function DevelopmentServicesPage() {
             {/* Custom Software Solutions */}
             <section className="relative py-24 px-6 bg-white">
                 <Container>
-                    <div className="max-w-3xl mb-16">
-                        <h2 className="text-4xl md:text-5xl font-bold mb-6">Custom Software Development</h2>
+                    <div className="max-w-5xl mb-16">
+                        <h2 className="text-4xl md:text-7xl font-light mb-6">Custom Software Development</h2>
                         <p className="text-xl text-gray-600 dark:text-gray-400 leading-relaxed">
                             Every business is unique. We build tailored software solutions that fit your specific workflows, integrate seamlessly with your existing systems, and scale as your organization grows.
                         </p>
@@ -560,8 +560,8 @@ export default function DevelopmentServicesPage() {
 
 
                     <div className="mt-16 p-8 bg-red-50">
-                        <div className="max-w-3xl">
-                            <h3 className="text-2xl font-bold mb-4">Enterprise-Grade Quality</h3>
+                        <div className="max-w-5xl">
+                            <h3 className="text-3xl font-light mb-4">Enterprise-Grade Quality</h3>
                             <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-6">
                                 Our custom software development follows industry best practices including microservices architecture, API-first design, comprehensive testing, security audits, and full documentation. We deliver production-ready code that your team can maintain and extend.
                             </p>
@@ -590,8 +590,8 @@ export default function DevelopmentServicesPage() {
             {/* Industries We Serve */}
             <section className="relative py-24 px-6 bg-white dark:bg-gray-900/50">
                 <Container>
-                    <div className="max-w-3xl mx-auto text-center mb-16">
-                        <h2 className="text-4xl md:text-5xl font-bold mb-6">Industries We Serve</h2>
+                    <div className="max-w-5xl mx-auto text-center mb-16">
+                        <h2 className="text-4xl md:text-7xl font-light mb-6">Industries We Serve</h2>
                         <p className="text-xl text-gray-600 dark:text-gray-400">
                             Deep expertise across multiple sectors, with solutions tailored to industry-specific challenges and compliance requirements.
                         </p>
@@ -605,9 +605,9 @@ export default function DevelopmentServicesPage() {
                             >
                                 <div className="p-6 space-y-3">
                                     <div className="flex items-center justify-between">
-                                        <h3 className="text-xl text-white font-bold">{industry.name}</h3>
+                                        <h3 className="text-xl text-white font-light">{industry.name}</h3>
                                         <svg
-                                            className="w-5 h-5 text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors"
+                                            className="w-5 h-5 text-gray-400 group-hover:text-red-600 dark:group-hover:text-red-400 transition-colors"
                                             fill="none"
                                             viewBox="0 0 24 24"
                                             stroke="currentColor"
@@ -639,8 +639,8 @@ export default function DevelopmentServicesPage() {
 
             <section className="relative py-24 px-6 bg-white">
                 <Container>
-                    <div className="max-w-3xl mx-auto text-center mb-16">
-                        <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                    <div className="max-w-5xl mx-auto text-center mb-16">
+                        <h2 className="text-4xl md:text-7xl font-light mb-6">
                             Technology Stack
                         </h2>
                         <p className="text-xl text-gray-600 dark:text-gray-400">
@@ -652,7 +652,7 @@ export default function DevelopmentServicesPage() {
                     <div className="grid md:grid-cols-4 gap-8">
                         {/* AI & ML */}
                         <div>
-                            <h3 className="font-bold text-lg mb-4">AI & ML</h3>
+                            <h3 className="font-light text-lg mb-4">AI & ML</h3>
                             <ul className="space-y-3 text-sm text-gray-600 dark:text-gray-400">
                                 <Tech icon={SiTensorflow} label="TensorFlow" name="tensorflow" />
                                 <Tech icon={SiPytorch} label="PyTorch" name="pytorch" />
@@ -666,7 +666,7 @@ export default function DevelopmentServicesPage() {
 
                         {/* Data Engineering */}
                         <div>
-                            <h3 className="font-bold text-lg mb-4">Data Engineering</h3>
+                            <h3 className="font-light text-lg mb-4">Data Engineering</h3>
                             <ul className="space-y-3 text-sm text-gray-600 dark:text-gray-400">
                                 <Tech icon={SiApachespark} label="Apache Spark" name="apachespark" />
                                 <Tech icon={SiApachekafka} label="Apache Kafka" name="apachekafka" />
@@ -680,7 +680,7 @@ export default function DevelopmentServicesPage() {
 
                         {/* Backend */}
                         <div>
-                            <h3 className="font-bold text-lg mb-4">Backend</h3>
+                            <h3 className="font-light text-lg mb-4">Backend</h3>
                             <ul className="space-y-3 text-sm text-gray-600 dark:text-gray-400">
                                 <Tech icon={SiPython} label="Python" name="python" />
                                 <Tech icon={SiDjango} label="Django" name="django" />
@@ -695,7 +695,7 @@ export default function DevelopmentServicesPage() {
 
                         {/* Frontend */}
                         <div>
-                            <h3 className="font-bold text-lg mb-4">Frontend</h3>
+                            <h3 className="font-light text-lg mb-4">Frontend</h3>
                             <ul className="space-y-3 text-sm text-gray-600 dark:text-gray-400">
                                 <Tech icon={SiReact} label="React" name="react" />
                                 <Tech icon={SiNextdotjs} label="Next.js" name="nextdotjs" />
@@ -719,7 +719,7 @@ export default function DevelopmentServicesPage() {
 
                             {/* Content */}
                             <div>
-                                <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                                <h2 className="text-7xl md:text-4xl font-light mb-6">
                                     Application Migration Services
                                 </h2>
 
@@ -730,7 +730,7 @@ export default function DevelopmentServicesPage() {
                                     scalable microservices.
                                 </p>
 
-                                <h3 className="text-2xl font-bold mb-6">
+                                <h3 className="text-3xl font-light mb-6">
                                     Migration Expertise
                                 </h3>
 
@@ -738,21 +738,21 @@ export default function DevelopmentServicesPage() {
                                     {/* Left column */}
                                     <div className="space-y-4">
                                         <div className="flex items-center space-x-3">
-                                            <svg className="w-5 h-5 text-blue-600 dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <svg className="w-5 h-5 text-red-600 dark:text-red-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                                             </svg>
                                             <span>On-premise to AWS / Azure / GCP</span>
                                         </div>
 
                                         <div className="flex items-center space-x-3">
-                                            <svg className="w-5 h-5 text-blue-600 dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <svg className="w-5 h-5 text-red-600 dark:text-red-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                                             </svg>
                                             <span>Legacy database migrations</span>
                                         </div>
 
                                         <div className="flex items-center space-x-3">
-                                            <svg className="w-5 h-5 text-blue-600 dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <svg className="w-5 h-5 text-red-600 dark:text-red-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                                             </svg>
                                             <span>Monolith to microservices</span>
@@ -762,21 +762,21 @@ export default function DevelopmentServicesPage() {
                                     {/* Right column */}
                                     <div className="space-y-4">
                                         <div className="flex items-center space-x-3">
-                                            <svg className="w-5 h-5 text-blue-600 dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <svg className="w-5 h-5 text-red-600 dark:text-red-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                                             </svg>
                                             <span>Platform modernization</span>
                                         </div>
 
                                         <div className="flex items-center space-x-3">
-                                            <svg className="w-5 h-5 text-blue-600 dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <svg className="w-5 h-5 text-red-600 dark:text-red-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                                             </svg>
                                             <span>Zero-downtime migrations</span>
                                         </div>
 
                                         <div className="flex items-center space-x-3">
-                                            <svg className="w-5 h-5 text-blue-600 dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <svg className="w-5 h-5 text-red-600 dark:text-red-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                                             </svg>
                                             <span>Data integrity assurance</span>
@@ -817,11 +817,11 @@ export default function DevelopmentServicesPage() {
 
                 <Container className="relative z-10">
                     <div className="max-w-4xl mx-auto text-center space-y-8">
-                        <h2 className="text-4xl md:text-5xl font-bold">
+                        <h2 className="text-4xl md:text-7xl font-light">
                             Ready to Transform Your Business with AI?
                         </h2>
 
-                        <p className="text-xl md:text-2xl text-blue-100 leading-relaxed">
+                        <p className="text-xl md:text-3xl text-red-100 leading-relaxed">
                             Let&apos;s discuss how our AI, data, and software solutions can drive
                             measurable results for your organization.
                         </p>
@@ -835,8 +835,8 @@ export default function DevelopmentServicesPage() {
               text-lg
               px-8
               bg-white
-              text-blue-600
-              hover:bg-blue-50
+              text-red-600
+              hover:bg-red-50
               border-white
             "
                                 >

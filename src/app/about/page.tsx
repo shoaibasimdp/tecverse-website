@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
     title: 'About Us',
-    description: 'Learn about Tecverse, our mission, vision, and leadership team dedicated to empowering businesses through innovative technology solutions.',
+    description: 'Learn about tecverse, our mission, vision, and leadership team dedicated to empowering businesses through innovative technology solutions.',
 };
 
 export default function AboutPage() {
@@ -26,11 +26,11 @@ export default function AboutPage() {
                 {/* Content */}
                 <Container className="relative z-10">
                     <div className="max-w-4xl mx-auto text-center px-4">
-                        <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold text-white mb-8 drop-shadow-xl">
-                            About Tecverse
+                        <h1 className="text-7xl sm:text-6xl md:text-7xl font-light text-white mb-8 drop-shadow-xl">
+                            About tecverse
                         </h1>
 
-                        <p className="text-xl sm:text-2xl text-white/90 leading-relaxed drop-shadow-lg">
+                        <p className="text-xl sm:text-3xl text-white/90 leading-relaxed drop-shadow-lg">
                             A dynamic and forward-thinking technology solutions company dedicated to
                             empowering businesses through innovation and excellence.
                         </p>
@@ -40,23 +40,23 @@ export default function AboutPage() {
 
 
 
-            <section className="relative py-24 bg-[#f7f7f7] dark:bg-slate-900 overflow-hidden">
+            <section className="relative py-20 lg:py-32 bg-[#f7f7f7] dark:bg-slate-900 overflow-hidden">
 
                 <Container className="relative z-10">
                     <div className="max-w-6xl mx-auto">
 
                         {/* Section Header */}
                         <div className="text-center mb-24">
-                            <h2 className="text-5xl md:text-6xl font-bold text-slate-900 dark:text-white mb-6">
+                            <h2 className="text-7xl md:text-6xl font-light text-slate-900 dark:text-white mb-6">
                                 Company Overview
                             </h2>
-                            <p className="max-w-3xl mx-auto text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
-                                Tecverse is a dynamic and forward-thinking technology solutions company dedicated to empowering businesses through innovation and excellence. Our relentless focus on delivering tailored solutions that address the unique needs of each client sets us apart in the competitive landscape of the IT industry. With a team of highly skilled professionals and a passion for problem-solving, Tecverse is committed to helping organizations harness the power of technology to achieve their goals and drive sustainable growth.
+                            <p className="max-w-5xl mx-auto text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
+                                tecverse is a dynamic and forward-thinking technology solutions company dedicated to empowering businesses through innovation and excellence. Our relentless focus on delivering tailored solutions that address the unique needs of each client sets us apart in the competitive landscape of the IT industry. With a team of highly skilled professionals and a passion for problem-solving, tecverse is committed to helping organizations harness the power of technology to achieve their goals and drive sustainable growth.
                             </p>
                         </div>
 
                         {/* Timeline Wrapper */}
-                        <div className="relative space-y-10">
+                        <div className="relative space-y-24">
 
                             {/* Vertical Center Line */}
                             <div className="absolute left-1/2 top-0 h-full w-0.5 bg-red-500 -translate-x-1/2"></div>
@@ -66,12 +66,12 @@ export default function AboutPage() {
 
                                 {/* Card - Left */}
                                 <div className="md:text-right">
-                                    <div className="inline-block bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-xl hover:-translate-y-1 transition-all">
-                                        <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2">
+                                    <div className="inline-block bg-white dark:bg-slate-800 rounded-3xl p-6 shadow-xl hover:-translate-y-1 transition-all">
+                                        <h3 className="text-3xl font-sans text-slate-900 dark:text-white mb-8">
                                             Safety
                                         </h3>
                                         <p className="text-slate-600 dark:text-slate-300">
-                                            Safety is foundational to everything we do. At Tecverse, we
+                                            Safety is foundational to everything we do. At tecverse, we
                                             implement robust security standards, protect sensitive data, and
                                             ensure operational resilience across all projects. Our proactive
                                             approach minimizes risk while enabling teams and clients to
@@ -113,13 +113,13 @@ export default function AboutPage() {
 
                                 {/* Card - Right */}
                                 <div>
-                                    <div className="inline-block bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-xl hover:-translate-y-1 transition-all">
-                                        <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2">
+                                    <div className="inline-block bg-white dark:bg-slate-800 rounded-3xl p-6 shadow-xl hover:-translate-y-1 transition-all">
+                                        <h3 className="text-3xl font-sans text-slate-900 dark:text-white mb-8">
                                             Communication
                                         </h3>
                                         <p className="text-slate-600 dark:text-slate-300">
                                             We believe clear communication drives successful outcomes.
-                                            Tecverse maintains open, transparent, and timely dialogue with
+                                            tecverse maintains open, transparent, and timely dialogue with
                                             clients and stakeholders, ensuring alignment at every stage of
                                             the journey — from strategy and development to deployment and
                                             ongoing support                                        </p>
@@ -132,8 +132,8 @@ export default function AboutPage() {
 
                                 {/* Card - Left */}
                                 <div className="md:text-right">
-                                    <div className="inline-block bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-xl hover:-translate-y-1 transition-all">
-                                        <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2">
+                                    <div className="inline-block bg-white dark:bg-slate-800 rounded-3xl p-6 shadow-xl hover:-translate-y-1 transition-all">
+                                        <h3 className="text-3xl font-sans text-slate-900 dark:text-white mb-8">
                                             Transparency
                                         </h3>
                                         <p className="text-slate-600 dark:text-slate-300">
@@ -178,12 +178,12 @@ export default function AboutPage() {
 
                                 {/* Card - Right */}
                                 <div>
-                                    <div className="inline-block bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-xl hover:-translate-y-1 transition-all">
-                                        <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2">
+                                    <div className="inline-block bg-white dark:bg-slate-800 rounded-3xl p-6 shadow-xl hover:-translate-y-1 transition-all">
+                                        <h3 className="text-3xl font-sans text-slate-900 dark:text-white mb-8">
                                             Accountability
                                         </h3>
                                         <p className="text-slate-600 dark:text-slate-300">
-                                            Accountability is at the heart of our culture. Tecverse takes
+                                            Accountability is at the heart of our culture. tecverse takes
                                             full ownership of commitments, timelines, and outcomes. We hold
                                             ourselves responsible for delivering measurable value while
                                             continuously improving through feedback and performance review.                                        </p>
@@ -198,17 +198,17 @@ export default function AboutPage() {
 
 
 
-            <section className="relative py-28 overflow-hidden bg-[#f7f6f4] dark:bg-slate-900">
+            <section className="relative py-20 lg:py-32 overflow-hidden bg-[#f7f6f4] dark:bg-slate-900">
                 <div className="absolute inset-0 bg-gradient-to-r from-[#f7f6f4] via-[#f7f6f4]/80 to-transparent dark:from-slate-900 dark:via-slate-900/80"></div>
 
                 <Container className="relative z-10">
                     <div className="max-w-5xl mx-auto">
-                        <h2 className="text-4xl sm:text-5xl font-semibold text-slate-900 dark:text-white mb-16 tracking-tight">
+                        <h2 className="text-4xl sm:text-7xl font-light text-slate-900 dark:text-white mb-16 tracking-tight">
                             Our Mission & Vision
                         </h2>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-                            <div className="bg-white/70 dark:bg-slate-800/70 backdrop-blur-xl rounded-3xl p-8 shadow-xl">
-                                <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-4">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
+                            <div className="bg-white/70 dark:bg-slate-800/70 backdrop-blur-xl rounded-5xl p-8 shadow-xl">
+                                <h3 className="text-xl font-sans text-slate-900 dark:text-white mb-4">
                                     Our Vision
                                 </h3>
                                 <p className="text-slate-700 dark:text-slate-300 leading-relaxed">
@@ -221,8 +221,8 @@ export default function AboutPage() {
                             </div>
 
                             {/* Mission */}
-                            <div className="bg-white/70 dark:bg-slate-800/70 backdrop-blur-xl rounded-3xl p-8 shadow-xl">
-                                <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-4">
+                            <div className="bg-white/70 dark:bg-slate-800/70 backdrop-blur-xl rounded-5xl p-8 shadow-xl">
+                                <h3 className="text-xl font-sans text-slate-900 dark:text-white mb-4">
                                     Our Mission
                                 </h3>
                                 <p className="text-slate-700 dark:text-slate-300 leading-relaxed">
@@ -240,13 +240,13 @@ export default function AboutPage() {
 
 
             {/* Leadership Team */}
-            <section className="relative py-28  overflow-hidden bg-[#f7f7f7]">
+            <section className="relative py-20 lg:py-32  overflow-hidden bg-[#f7f7f7]">
 
 
                 <Container className="relative z-10">
                     {/* Header */}
-                    <div className="max-w-3xl mx-auto text-center mb-20">
-                        <h2 className="text-4xl sm:text-5xl font-bold tracking-tight text-slate-900 dark:text-white mb-6">
+                    <div className="max-w-5xl mx-auto text-center mb-20">
+                        <h2 className="text-4xl sm:text-7xl font-light tracking-tight text-slate-900 dark:text-white mb-6">
                             Leadership Team
                         </h2>
                         <p className="text-lg text-slate-600 dark:text-slate-400">
@@ -255,19 +255,19 @@ export default function AboutPage() {
                     </div>
 
                     {/* Cards */}
-                    <div className="grid gap-10 md:grid-cols-2 max-w-6xl mx-auto">
+                    <div className="grid gap-16 md:grid-cols-2 max-w-6xl mx-auto">
 
                         {/* Nawaz */}
-                        <div className="group relative rounded-3xl bg-white dark:bg-slate-900 border border-slate-200/60 dark:border-slate-800 p-8 shadow-lg hover:shadow-2xl transition-all duration-300">
+                        <div className="group relative rounded-5xl bg-white dark:bg-slate-900 border border-slate-200/60 dark:border-slate-800 p-8 shadow-lg hover:shadow-3xl transition-all duration-300">
                             <div className="absolute inset-0  opacity-0 group-hover:opacity-100 transition-opacity" />
 
                             <div className="relative flex flex-col gap-6">
                                 <div className="flex items-center gap-5">
-                                    <div className="w-20 h-20 rounded-full bg-black flex items-center justify-center text-white text-2xl font-bold shadow-lg">
+                                    <div className="w-20 h-20 rounded-full bg-black flex items-center justify-center text-white text-3xl font-light shadow-lg">
                                         NS
                                     </div>
                                     <div>
-                                        <h3 className="text-2xl font-sans text-slate-900 dark:text-white">
+                                        <h3 className="text-3xl font-sans text-slate-900 dark:text-white">
                                             Nawaz S.
                                         </h3>
                                         <p className="text-red-600 font-medium">
@@ -277,13 +277,13 @@ export default function AboutPage() {
                                 </div>
 
                                 <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
-                                    A visionary entrepreneur driving Tecverse’s mission to deliver
+                                    A visionary entrepreneur driving tecverse’s mission to deliver
                                     technology-first talent solutions. With 10+ years of experience in
                                     recruitment and staffing, Nawaz bridges innovation with execution.
                                 </p>
 
                                 <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
-                                    His global outlook and hands-on leadership enable Tecverse to build
+                                    His global outlook and hands-on leadership enable tecverse to build
                                     long-term partnerships, transform ideas into scalable systems, and
                                     stay ahead in a fast-moving IT ecosystem.
                                 </p>
@@ -291,16 +291,16 @@ export default function AboutPage() {
                         </div>
 
                         {/* Ali */}
-                        <div className="group relative rounded-3xl bg-white dark:bg-slate-900 border border-slate-200/60 dark:border-slate-800 p-8 shadow-lg hover:shadow-2xl transition-all duration-300">
+                        <div className="group relative rounded-5xl bg-white dark:bg-slate-900 border border-slate-200/60 dark:border-slate-800 p-8 shadow-lg hover:shadow-3xl transition-all duration-300">
                             <div className="absolute inset-0  opacity-0 group-hover:opacity-100 transition-opacity" />
 
                             <div className="relative flex flex-col gap-6">
                                 <div className="flex items-center gap-5">
-                                    <div className="w-20 h-20 rounded-full bg-black flex items-center justify-center text-white text-2xl font-bold shadow-lg">
+                                    <div className="w-20 h-20 rounded-full bg-black flex items-center justify-center text-white text-3xl font-light shadow-lg">
                                         A
                                     </div>
                                     <div>
-                                        <h3 className="text-2xl font-sans text-slate-900 dark:text-white">
+                                        <h3 className="text-3xl font-sans text-slate-900 dark:text-white">
                                             Ali
                                         </h3>
                                         <p className="text-red-600 font-medium">
@@ -311,13 +311,13 @@ export default function AboutPage() {
 
                                 <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
                                     A seasoned operations leader with over a decade of experience in
-                                    talent management and IT operations. Ali ensures Tecverse runs with
+                                    talent management and IT operations. Ali ensures tecverse runs with
                                     precision, efficiency, and scale.
                                 </p>
 
                                 <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
                                     From building high-performance outsourcing teams to shaping inclusive
-                                    company culture, Ali’s leadership is the backbone of Tecverse’s
+                                    company culture, Ali’s leadership is the backbone of tecverse’s
                                     operational excellence.
                                 </p>
                             </div>
@@ -329,12 +329,12 @@ export default function AboutPage() {
 
 
 
-            <section className="py-24 bg-[#f7f7f7] dark:bg-slate-800">
+            <section className="py-20 lg:py-32 bg-[#f7f7f7] dark:bg-slate-800">
                 <Container>
                     {/* Header */}
-                    <div className="max-w-3xl mx-auto text-center mb-20">
-                        <h2 className="text-4xl sm:text-5xl font-bold text-black mb-6">
-                            Why Choose Tecverse?
+                    <div className="max-w-5xl mx-auto text-center mb-20">
+                        <h2 className="text-4xl sm:text-7xl font-light text-black mb-6">
+                            Why Choose tecverse?
                         </h2>
                         <p className="text-lg text-slate-800">
                             Trusted by businesses of all scales, from startups to enterprises
@@ -396,7 +396,7 @@ export default function AboutPage() {
                                 />
 
                                 {/* Text */}
-                                <h3 className="text-xl font-semibold text-black mb-3">
+                                <h3 className="text-xl font-sans text-black mb-3">
                                     {item.title}
                                 </h3>
                                 <p className="text-slate-800 leading-relaxed max-w-sm">
@@ -410,22 +410,22 @@ export default function AboutPage() {
 
 
             {/* CTA Section */}
-            <section className="relative py-20 bg-[url('/letsbuild.png')] bg-cover bg-center">
+            <section className="relative py-20 lg:py-32 bg-[url('/letsbuild.png')] bg-cover bg-center">
                 {/* Overlay */}
                 <div className="absolute inset-0 bg-black/60" />
 
                 <Container className="relative z-10">
-                    <div className="max-w-3xl mx-auto text-center">
-                        <h2 className="text-3xl text-left sm:text-4xl font-bold text-white mb-4">
+                    <div className="max-w-5xl mx-auto text-center">
+                        <h2 className="text-7xl text-left sm:text-4xl font-light text-white mb-4">
                             Let's Build Something Amazing Together
                         </h2>
-                        <p className="text-lg text-blue-100 mb-8">
-                            Ready to explore how Tecverse can transform your business? Get in touch with our team today.
+                        <p className="text-lg text-red-100 mb-8">
+                            Ready to explore how tecverse can transform your business? Get in touch with our team today.
                         </p>
                         <Link href="/contact">
                             <Button
                                 size="lg"
-                                className="bg-red-500 text-purple-700 hover:bg-gray-100 border-0 px-8 py-4 text-lg font-semibold shadow-xl transform transition-all duration-300 hover:scale-105"
+                                className="bg-red-500 text-red-700 hover:bg-gray-100 border-0 px-8 py-4 text-lg font-light shadow-xl transform transition-all duration-300 hover:scale-105"
                             >
                                 Contact Us
                             </Button>

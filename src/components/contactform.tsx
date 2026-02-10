@@ -139,7 +139,7 @@ export default function ContactForm() {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                     </svg>
                 </div>
-                <h3 className="text-2xl font-thin-100 text-slate-900 dark:text-white mb-3">Thank You!</h3>
+                <h3 className="text-3xl font-thin-100 text-slate-900 dark:text-white mb-3">Thank You!</h3>
                 <p className="text-slate-600 dark:text-slate-400 max-w-md mx-auto">
                     Your message has been successfully submitted. We'll get back to you within 24-48 hours.
                 </p>
@@ -151,7 +151,7 @@ export default function ContactForm() {
         <div className="bg-white dark:bg-slate-900 dark:border-slate-800">
             {/* Form Header */}
             <div className="border-b border-slate-200 dark:border-slate-800 px-8 py-6">
-                <h2 className="text-2xl font-thin-100 text-slate-900 dark:text-white">Contact Us</h2>
+                <h2 className="text-3xl font-thin-100 text-slate-900 dark:text-white">Contact Us</h2>
                 <p className="text-slate-600 dark:text-slate-400 mt-1">
                     Fill out the form below and our team will get back to you as soon as possible.
                 </p>
@@ -173,7 +173,7 @@ export default function ContactForm() {
                                 name="firstName"
                                 value={formData.firstName}
                                 onChange={handleInputChange}
-                                className={`w-full px-4 py-2.5 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors ${errors.firstName
+                                className={`w-full px-4 py-2.5 border rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 transition-colors ${errors.firstName
                                     ? 'border-red-500 dark:border-red-500'
                                     : 'border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-white'
                                     }`}
@@ -193,7 +193,7 @@ export default function ContactForm() {
                                 name="lastName"
                                 value={formData.lastName}
                                 onChange={handleInputChange}
-                                className={`w-full px-4 py-2.5 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors ${errors.lastName
+                                className={`w-full px-4 py-2.5 border rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 transition-colors ${errors.lastName
                                     ? 'border-red-500 dark:border-red-500'
                                     : 'border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-white'
                                     }`}
@@ -213,7 +213,7 @@ export default function ContactForm() {
                                 name="email"
                                 value={formData.email}
                                 onChange={handleInputChange}
-                                className={`w-full px-4 py-2.5 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors ${errors.email
+                                className={`w-full px-4 py-2.5 border rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 transition-colors ${errors.email
                                     ? 'border-red-500 dark:border-red-500'
                                     : 'border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-white'
                                     }`}
@@ -233,7 +233,7 @@ export default function ContactForm() {
                                 name="phone"
                                 value={formData.phone}
                                 onChange={handleInputChange}
-                                className="w-full px-4 py-2.5 border border-slate-300 dark:border-slate-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-white dark:bg-slate-800 text-slate-900 dark:text-white transition-colors"
+                                className="w-full px-4 py-2.5 border border-slate-300 dark:border-slate-700 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 bg-white dark:bg-slate-800 text-slate-900 dark:text-white transition-colors"
                                 placeholder="+1 (555) 123-4567"
                             />
                         </div>
@@ -255,7 +255,7 @@ export default function ContactForm() {
                                 name="company"
                                 value={formData.company}
                                 onChange={handleInputChange}
-                                className="w-full px-4 py-2.5 border border-slate-300 dark:border-slate-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-white dark:bg-slate-800 text-slate-900 dark:text-white transition-colors"
+                                className="w-full px-4 py-2.5 border border-slate-300 dark:border-slate-700 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 bg-white dark:bg-slate-800 text-slate-900 dark:text-white transition-colors"
                                 placeholder="Your company name"
                             />
                         </div>
@@ -269,7 +269,7 @@ export default function ContactForm() {
                                 name="jobTitle"
                                 value={formData.jobTitle}
                                 onChange={handleInputChange}
-                                className="w-full px-4 py-2.5 border border-slate-300 dark:border-slate-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-white dark:bg-slate-800 text-slate-900 dark:text-white transition-colors"
+                                className="w-full px-4 py-2.5 border border-slate-300 dark:border-slate-700 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 bg-white dark:bg-slate-800 text-slate-900 dark:text-white transition-colors"
                                 placeholder="Your job title"
                             />
                         </div>
@@ -282,7 +282,7 @@ export default function ContactForm() {
                                 name="country"
                                 value={formData.country}
                                 onChange={handleInputChange}
-                                className={`w-full px-4 py-2.5 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors ${errors.country
+                                className={`w-full px-4 py-2.5 border rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 transition-colors ${errors.country
                                     ? 'border-red-500 dark:border-red-500'
                                     : 'border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-white'
                                     }`}
@@ -307,7 +307,7 @@ export default function ContactForm() {
                                 name="state"
                                 value={formData.state}
                                 onChange={handleInputChange}
-                                className="w-full px-4 py-2.5 border border-slate-300 dark:border-slate-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-white dark:bg-slate-800 text-slate-900 dark:text-white transition-colors"
+                                className="w-full px-4 py-2.5 border border-slate-300 dark:border-slate-700 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 bg-white dark:bg-slate-800 text-slate-900 dark:text-white transition-colors"
                                 placeholder="State or province"
                             />
                         </div>
@@ -328,7 +328,7 @@ export default function ContactForm() {
                                 name="inquiryType"
                                 value={formData.inquiryType}
                                 onChange={handleInputChange}
-                                className={`w-full px-4 py-2.5 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors ${errors.inquiryType
+                                className={`w-full px-4 py-2.5 border rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 transition-colors ${errors.inquiryType
                                     ? 'border-red-500 dark:border-red-500'
                                     : 'border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-white'
                                     }`}
@@ -352,7 +352,7 @@ export default function ContactForm() {
                                 name="productInterest"
                                 value={formData.productInterest}
                                 onChange={handleInputChange}
-                                className="w-full px-4 py-2.5 border border-slate-300 dark:border-slate-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-white dark:bg-slate-800 text-slate-900 dark:text-white transition-colors"
+                                className="w-full px-4 py-2.5 border border-slate-300 dark:border-slate-700 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 bg-white dark:bg-slate-800 text-slate-900 dark:text-white transition-colors"
                             >
                                 {products.map(product => (
                                     <option key={product.value} value={product.value}>
@@ -371,7 +371,7 @@ export default function ContactForm() {
                                 rows={5}
                                 value={formData.message}
                                 onChange={handleInputChange}
-                                className={`w-full px-4 py-2.5 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors resize-none ${errors.message
+                                className={`w-full px-4 py-2.5 border rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 transition-colors resize-none ${errors.message
                                     ? 'border-red-500 dark:border-red-500'
                                     : 'border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-white'
                                     }`}
@@ -392,10 +392,10 @@ export default function ContactForm() {
                             name="consent"
                             checked={formData.consent}
                             onChange={handleInputChange}
-                            className="mt-0.5 w-4 h-4 text-blue-600 border-slate-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-slate-800 focus:ring-2 dark:bg-slate-700 dark:border-slate-600"
+                            className="mt-0.5 w-4 h-4 text-red-600 border-slate-300 rounded focus:ring-red-500 dark:focus:ring-red-600 dark:ring-offset-slate-800 focus:ring-2 dark:bg-slate-700 dark:border-slate-600"
                         />
                         <span className="ml-3 text-sm text-slate-600 dark:text-slate-400">
-                            I agree to the <a href="#" className="text-blue-600 dark:text-blue-400 hover:underline">Terms of Service</a> and <a href="#" className="text-blue-600 dark:text-blue-400 hover:underline">Privacy Policy</a>. I understand that my information will be used in accordance with these policies. <span className="text-red-500">*</span>
+                            I agree to the <a href="#" className="text-red-600 dark:text-red-400 hover:underline">Terms of Service</a> and <a href="#" className="text-red-600 dark:text-red-400 hover:underline">Privacy Policy</a>. I understand that my information will be used in accordance with these policies. <span className="text-red-500">*</span>
                         </span>
                     </label>
                     {errors.consent && (
@@ -410,7 +410,7 @@ export default function ContactForm() {
                         disabled={isSubmitting}
                         className={`px-8 py-3 rounded-lg font-medium transition-all duration-200 ${isSubmitting
                             ? 'bg-slate-300 text-slate-500 cursor-not-allowed'
-                            : 'bg-slate-700 text-white hover:bg-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2'
+                            : 'bg-slate-700 text-white hover:bg-slate-500 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2'
                             }`}
                     >
                         {isSubmitting ? (

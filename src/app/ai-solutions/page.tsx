@@ -9,7 +9,7 @@ import Image from 'next/image'
 
 export const metadata: Metadata = {
     title: 'AI Solutions',
-    description: 'Explore TecVerse AI solutions including AI automation, machine learning models, predictive analytics, intelligent dashboards, and AI SaaS platforms.',
+    description: 'Explore tecverse AI solutions including AI automation, machine learning models, predictive analytics, intelligent dashboards, and AI SaaS platforms.',
 };
 export const solutions = [
     {
@@ -162,16 +162,16 @@ export default function AISolutionsPage() {
                 </video>
 
                 {/* Animated Gradient Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 z-10"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-red-900/80 z-10"></div>
 
                 {/* Hero Content */}
                 <div className="relative z-20 text-center px-6 max-w-5xl mx-auto">
-                    <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+                    <h1 className="text-7xl md:text-6xl lg:text-7xl font-light text-white mb-6 leading-tight">
                         <span className="bg-clip-text text-white">
                             AI Solutions
                         </span>
                     </h1>
-                    <p className="text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto">
+                    <p className="text-xl md:text-3xl text-gray-200 mb-8 max-w-5xl mx-auto">
                         Transform your business with cutting-edge artificial intelligence solutions tailored to your unique challenges
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -208,19 +208,19 @@ export default function AISolutionsPage() {
                 <Container>
                     <div className="flex flex-wrap justify-center gap-8 md:gap-16">
                         <div className="text-center">
-                            <div className="text-3xl font-bold text-black">50+</div>
+                            <div className="text-7xl font-light text-black">50+</div>
                             <div className="text-gray-800">AI Solutions</div>
                         </div>
                         <div className="text-center">
-                            <div className="text-3xl font-bold text-black">95%</div>
+                            <div className="text-7xl font-light text-black">95%</div>
                             <div className="text-gray-800">Client Satisfaction</div>
                         </div>
                         <div className="text-center">
-                            <div className="text-3xl font-bold text-black">24/7</div>
+                            <div className="text-7xl font-light text-black">24/7</div>
                             <div className="text-gray-800">Support</div>
                         </div>
                         <div className="text-center">
-                            <div className="text-3xl font-bold text-black">10+</div>
+                            <div className="text-7xl font-light text-black">10+</div>
                             <div className="text-gray-800">Years Experience</div>
                         </div>
                     </div>
@@ -231,10 +231,10 @@ export default function AISolutionsPage() {
             <section className="py-24 relative overflow-hidden">
 
                 <div className="relative z-10 text-center mb-20 px-6">
-                    <h2 className="text-4xl md:text-5xl font-bold text-black mb-4">
+                    <h2 className="text-4xl md:text-7xl font-light text-black mb-4">
                         Our AI Implementation Process
                     </h2>
-                    <p className="text-xl text-gray-800 max-w-3xl mx-auto">
+                    <p className="text-xl text-gray-800 max-w-5xl mx-auto">
                         We follow a structured pipeline to ensure seamless AI delivery
                     </p>
                 </div>
@@ -263,7 +263,7 @@ export default function AISolutionsPage() {
                                         height={64}
 
                                     />
-                                    <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-red-600 rounded-full flex items-center justify-center text-white font-bold">
+                                    <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-red-600 rounded-full flex items-center justify-center text-white font-light">
                                         1
                                     </div>
                                 </div>
@@ -298,7 +298,7 @@ export default function AISolutionsPage() {
                                         width={86}
                                         height={84}
                                     />
-                                    <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-red-600 rounded-full flex items-center justify-center text-white font-bold">
+                                    <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-red-600 rounded-full flex items-center justify-center text-white font-light">
                                         2
                                     </div>
                                 </div>
@@ -333,7 +333,7 @@ export default function AISolutionsPage() {
                                         width={80}
                                         height={64}
                                     />
-                                    <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-red-600 rounded-full flex items-center justify-center text-white font-bold">
+                                    <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-red-600 rounded-full flex items-center justify-center text-white font-light">
                                         3
                                     </div>
                                 </div>
@@ -356,7 +356,7 @@ export default function AISolutionsPage() {
                                         width={84}
                                         height={64}
                                     />
-                                    <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-red-600 rounded-full flex items-center justify-center text-white font-bold">
+                                    <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-red-600 rounded-full flex items-center justify-center text-white font-light">
                                         4
                                     </div>
                                 </div>
@@ -413,16 +413,16 @@ export default function AISolutionsPage() {
             <section className="py-24 bg-white relative overflow-hidden">
                 {/* Header */}
                 <div className="text-center mb-20 px-6">
-                    <h2 className="text-4xl md:text-5xl font-bold text-black mb-4">
+                    <h2 className="text-4xl md:text-7xl font-light text-black mb-4">
                         Our AI Implementation Process
                     </h2>
-                    <p className="text-xl text-gray-800 max-w-3xl mx-auto">
+                    <p className="text-xl text-gray-800 max-w-5xl mx-auto">
                         We follow a structured pipeline to ensure seamless AI delivery
                     </p>
                 </div>
 
                 {/* Process Grid */}
-                <div className="max-w-7xl mx-auto px-6">
+                <div className=" mx-auto px-6">
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-16 relative">
                         {[
                             {
@@ -486,7 +486,7 @@ export default function AISolutionsPage() {
                                 <div className="w-32 h-32 rounded-full border-4 border-red-500 flex items-center justify-center mb-6 transition-all duration-300 group-hover:border-red-400 group-hover:shadow-xl group-hover:shadow-red-500/30 relative z-10 bg-white">
                                     <div className="relative">
                                         <Image src={item.img} alt={item.title} width={item.w} height={item.h} />
-                                        <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-red-600 rounded-full flex items-center justify-center text-white font-bold">
+                                        <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-red-600 rounded-full flex items-center justify-center text-white font-light">
                                             {item.step}
                                         </div>
                                     </div>
@@ -541,10 +541,10 @@ export default function AISolutionsPage() {
                 <Container>
                     {/* Heading */}
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl md:text-5xl font-bold text-black dark:text-white mb-4">
+                        <h2 className="text-4xl md:text-7xl font-light text-black dark:text-white mb-4">
                             Our AI Solutions
                         </h2>
-                        <p className="text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto">
+                        <p className="text-xl text-slate-600 dark:text-slate-300 max-w-5xl mx-auto">
                             Discover how our comprehensive AI solutions can transform your business operations
                         </p>
                     </div>
@@ -557,11 +557,11 @@ export default function AISolutionsPage() {
                             >
                                 {/* Text Content */}
                                 <div className={index % 2 === 1 ? "lg:order-2" : ""}>
-                                    <span className="inline-block text-sm font-semibold text-slate-500 mb-4">
+                                    <span className="inline-block text-sm font-light text-slate-500 mb-4">
                                         Solution {index + 1}
                                     </span>
 
-                                    <h3 className="text-3xl md:text-4xl font-bold text-black dark:text-white mb-6">
+                                    <h3 className="text-7xl md:text-4xl font-light text-black dark:text-white mb-6">
                                         {solution.title}
                                     </h3>
 
@@ -621,16 +621,16 @@ export default function AISolutionsPage() {
                 <div className="absolute inset-0 bg-[url('/transformbusiness.png')] bg-cover bg-center"></div>
 
                 {/* Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-black/50 to-purple-900/60"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-black/50 to-red-900/60"></div>
 
                 {/* Content */}
-                <div className="relative z-10 max-w-7xl mx-auto px-6">
+                <div className="relative z-10  mx-auto px-6">
                     <div className="max-w-4xl mx-auto text-center">
-                        <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+                        <h2 className="text-4xl md:text-7xl font-light text-white mb-6">
                             Ready to Transform Your Business with AI?
                         </h2>
 
-                        <p className="text-xl text-purple-100 mb-10 max-w-2xl mx-auto">
+                        <p className="text-xl text-red-100 mb-10 max-w-3xl mx-auto">
                             Our team of AI experts is ready to help you identify the right solutions
                             for your unique challenges and drive measurable results.
                         </p>
@@ -639,7 +639,7 @@ export default function AISolutionsPage() {
                             <Link href="/contact">
                                 <Button
                                     size="lg"
-                                    className="bg-red-500 text-purple-700 hover:bg-gray-100 border-0 px-8 py-4 text-lg font-semibold shadow-xl transform transition-all duration-300 hover:scale-105"
+                                    className="bg-red-500 text-red-700 hover:bg-gray-100 border-0 px-8 py-4 text-lg font-light shadow-xl transform transition-all duration-300 hover:scale-105"
                                 >
                                     Schedule a Consultation
                                 </Button>
@@ -649,7 +649,7 @@ export default function AISolutionsPage() {
                                 <Button
                                     variant="outline"
                                     size="lg"
-                                    className="bg-transparent text-white border-white hover:bg-white/10 px-8 py-4 text-lg font-semibold shadow-xl transform transition-all duration-300 hover:scale-105"
+                                    className="bg-transparent text-white border-white hover:bg-white/10 px-8 py-4 text-lg font-light shadow-xl transform transition-all duration-300 hover:scale-105"
                                 >
                                     View Case Studies
                                 </Button>

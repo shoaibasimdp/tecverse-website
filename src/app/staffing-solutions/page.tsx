@@ -19,18 +19,18 @@ export default function StaffingSolutionsPage() {
 
                 <Container>
                     <div className="relative max-w-4xl">
-                        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white mb-6 tracking-tight">
+                        <h1 className="text-4xl sm:text-7xl lg:text-6xl font-light text-white mb-6 tracking-tight">
                             Staffing Solutions
                         </h1>
 
-                        <p className="text-lg sm:text-xl text-slate-200 leading-relaxed max-w-2xl">
+                        <p className="text-lg sm:text-xl text-slate-200 leading-relaxed max-w-3xl">
                             Building exceptional teams through strategic recruitment, workforce planning,
                             and long-term talent management.
                         </p>
 
                         {/* Optional CTA */}
                         <div className="mt-10 flex gap-4">
-                            <button className="px-6 py-3 rounded-xl bg-white text-slate-900 font-semibold hover:bg-slate-100 transition">
+                            <button className="px-6 py-3 rounded-xl bg-white text-slate-900 font-light hover:bg-slate-100 transition">
                                 Get Started
                             </button>
                             <button className="px-6 py-3 rounded-xl border border-white/30 text-white hover:bg-white/10 transition">
@@ -46,18 +46,18 @@ export default function StaffingSolutionsPage() {
             <section className="py-20 bg-white dark:bg-slate-900">
                 <Container>
                     <div className="max-w-4xl mx-auto">
-                        <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-6">
+                        <h2 className="text-7xl font-light text-slate-900 dark:text-white mb-6">
                             The Hiring Dilemma
                         </h2>
                         <p className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed mb-12">
                             The current hiring landscape is riddled with complexities, from talent shortages to skill mismatches. Many businesses struggle to find quality candidates who not only possess the necessary skills but also align with their company culture and values. In this environment, traditional hiring methods often fall short, leading to prolonged vacancies and increased recruitment costs.
                         </p>
 
-                        <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-6">
+                        <h2 className="text-7xl font-light text-slate-900 dark:text-white mb-6">
                             Our Approach
                         </h2>
                         <p className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
-                            At Tecverse, we take a strategic approach to staffing that goes beyond traditional recruitment methods. We understand that finding the right talent requires more than just matching skills to job requirements – it requires a deep understanding of your business objectives, culture, and values. Our team of staffing experts works closely with you to identify your hiring needs and develop customized solutions that address your unique challenges.
+                            At tecverse, we take a strategic approach to staffing that goes beyond traditional recruitment methods. We understand that finding the right talent requires more than just matching skills to job requirements – it requires a deep understanding of your business objectives, culture, and values. Our team of staffing experts works closely with you to identify your hiring needs and develop customized solutions that address your unique challenges.
                         </p>
                     </div>
                 </Container>
@@ -66,8 +66,8 @@ export default function StaffingSolutionsPage() {
             {/* Key Features */}
             <section className="py-20 dark:bg-slate-800">
                 <Container>
-                    <div className="max-w-3xl mx-auto text-center mb-16">
-                        <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-white mb-4">
+                    <div className="max-w-5xl mx-auto text-center mb-16">
+                        <h2 className="text-7xl sm:text-5xl font-light text-slate-900 dark:text-white mb-4">
                             Key Features of Our Staffing Solutions
                         </h2>
                     </div>
@@ -75,7 +75,7 @@ export default function StaffingSolutionsPage() {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <Card className="h-full">
                             <div className="p-6">
-                                <h3 className="text-xl font-semibold text-white dark:text-white mb-3">
+                                <h3 className="text-xl font-light text-white dark:text-white mb-3">
                                     Tailored Recruitment Strategies
                                 </h3>
                                 <p className="text-slate-50 dark:text-slate-300 leading-relaxed">
@@ -86,7 +86,7 @@ export default function StaffingSolutionsPage() {
 
                         <Card className="h-full">
                             <div className="p-6">
-                                <h3 className="text-xl font-semibold text-white dark:text-white mb-3">
+                                <h3 className="text-xl font-light text-white dark:text-white mb-3">
                                     Proactive Talent Sourcing
                                 </h3>
                                 <p className="text-slate-50 dark:text-slate-300 leading-relaxed">
@@ -97,7 +97,7 @@ export default function StaffingSolutionsPage() {
 
                         <Card className="h-full">
                             <div className="p-6">
-                                <h3 className="text-xl font-semibold text-white dark:text-white mb-3">
+                                <h3 className="text-xl font-light text-white dark:text-white mb-3">
                                     Candidate Assessment and Screening
                                 </h3>
                                 <p className="text-slate-50 dark:text-slate-300 leading-relaxed">
@@ -108,7 +108,7 @@ export default function StaffingSolutionsPage() {
 
                         <Card className="h-full">
                             <div className="p-6">
-                                <h3 className="text-xl font-semibold text-white dark:text-white mb-3">
+                                <h3 className="text-xl font-light text-white dark:text-white mb-3">
                                     Dedicated Account Management
                                 </h3>
                                 <p className="text-slate-50 dark:text-slate-300 leading-relaxed">
@@ -127,22 +127,22 @@ export default function StaffingSolutionsPage() {
                         {/* Contractor Management */}
                         <div>
 
-                            <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">
+                            <h2 className="text-3xl font-sans text-slate-900 dark:text-white mb-4">
                                 Contractor Management
                             </h2>
                             <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
-                                Managing contractors can be a complex and time-consuming process for businesses. Tecverse offers comprehensive contractor management services to streamline this process and ensure smooth operations. From payroll management to administrative tasks, we handle all aspects of contractor management, allowing you to focus on your core business activities.
+                                Managing contractors can be a complex and time-consuming process for businesses. tecverse offers comprehensive contractor management services to streamline this process and ensure smooth operations. From payroll management to administrative tasks, we handle all aspects of contractor management, allowing you to focus on your core business activities.
                             </p>
                         </div>
 
                         {/* Job Seeker Assistance */}
                         <div>
 
-                            <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">
+                            <h2 className="text-3xl font-sans text-slate-900 dark:text-white mb-4">
                                 Job Seeker Assistance
                             </h2>
                             <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
-                                Job seekers in the IT industry face unique challenges when navigating the job market. Tecverse provides job seeker assistance services to support individuals in their career journey. From resume building to interview preparation, our team offers personalized guidance and support to help job seekers stand out in a competitive landscape and secure their desired roles.
+                                Job seekers in the IT industry face unique challenges when navigating the job market. tecverse provides job seeker assistance services to support individuals in their career journey. From resume building to interview preparation, our team offers personalized guidance and support to help job seekers stand out in a competitive landscape and secure their desired roles.
                             </p>
                         </div>
                     </div>
@@ -152,8 +152,8 @@ export default function StaffingSolutionsPage() {
             {/* Benefits */}
             <section className="py-20">
                 <Container>
-                    <div className="max-w-3xl mx-auto text-center mb-16">
-                        <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-white mb-4">
+                    <div className="max-w-5xl mx-auto text-center mb-16">
+                        <h2 className="text-7xl sm:text-5xl font-light text-slate-900 dark:text-white mb-4">
                             Why Choose Our Staffing Services?
                         </h2>
                     </div>
@@ -196,18 +196,18 @@ export default function StaffingSolutionsPage() {
                 }}
             >
                 <Container>
-                    <div className="max-w-3xl mx-auto text-center">
-                        <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+                    <div className="max-w-5xl mx-auto text-center">
+                        <h2 className="text-7xl sm:text-4xl font-light text-white mb-4">
                             Ready to Redefine Excellence Together?
                         </h2>
-                        <p className="text-lg text-blue-100 mb-8">
+                        <p className="text-lg text-red-100 mb-8">
                             Let us help you build exceptional teams that drive your business forward.
                         </p>
                         <Link href="/contact">
                             <Button
                                 variant="outline"
                                 size="lg"
-                                className="bg-white text-blue-600 border-white hover:bg-blue-50"
+                                className="bg-white text-red-600 border-white hover:bg-red-50"
                             >
                                 Get Started
                             </Button>

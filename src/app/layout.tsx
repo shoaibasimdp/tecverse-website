@@ -13,18 +13,23 @@ const lato = Lato({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Tecverse',
-    template: '%s | Tecverse',
+    default: 'tecverse',
+    template: '%s | tecverse',
   },
-  description: 'TecVerse specializes in AI-driven technology solutions including AI automation, machine learning, predictive analytics, and intelligent dashboards for modern enterprises.',
+  description: 'tecverse specializes in AI-driven technology solutions including AI automation, machine learning, predictive analytics, and intelligent dashboards for modern enterprises.',
   keywords: ['AI Solutions', 'Machine Learning', 'Artificial Intelligence', 'Software Development', 'Data Analytics', 'AI Automation', 'SaaS'],
-  authors: [{ name: 'TecVerse' }],
-  creator: 'TecVerse',
+  authors: [{ name: 'tecverse' }],
+  creator: 'tecverse',
   openGraph: {
     type: 'website',
-    title: 'Tecverse',
+    title: 'tecverse',
     description: 'AI-driven technology solutions for modern enterprises',
-    siteName: 'TecVerse',
+    siteName: 'tecverse',
+  },
+  icons: {
+    icon: '/tec.png',
+    shortcut: '/tec.png',
+    apple: '/tec.png',
   },
 };
 

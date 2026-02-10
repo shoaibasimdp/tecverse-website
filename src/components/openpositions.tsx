@@ -64,8 +64,8 @@ export default function OpenPositions({ jobListings = [] }: { jobListings: Job[]
         >
             <Container>
                 {/* Header */}
-                <div className="text-center mb-16 max-w-3xl mx-auto">
-                    <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-slate-900 dark:text-white mb-6">
+                <div className="text-center mb-16 max-w-5xl mx-auto">
+                    <h2 className="text-4xl md:text-7xl font-light tracking-tight text-slate-900 dark:text-white mb-6">
                         Join Our Team
                     </h2>
                     <p className="text-lg md:text-xl text-slate-600 dark:text-slate-400 leading-relaxed">
@@ -75,12 +75,12 @@ export default function OpenPositions({ jobListings = [] }: { jobListings: Job[]
                 </div>
 
                 {/* Search & Filters */}
-                <div className="flex flex-col lg:flex-row gap-4 mb-12 p-2 bg-white dark:bg-slate-900 rounded-2xl shadow-xl shadow-slate-200/50 dark:shadow-none border border-slate-100 dark:border-slate-800">
+                <div className="flex flex-col lg:flex-row gap-4 mb-12 p-2 bg-white dark:bg-slate-900 rounded-3xl shadow-xl shadow-slate-200/50 dark:shadow-none border border-slate-100 dark:border-slate-800">
 
                     {/* Search Input */}
                     <div className="flex-1 relative group">
                         <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
-                            <Search className="h-5 w-5 text-slate-400 group-focus-within:text-blue-500 transition-colors" />
+                            <Search className="h-5 w-5 text-slate-400 group-focus-within:text-red-500 transition-colors" />
                         </div>
                         <input
                             type="text"
@@ -103,7 +103,7 @@ export default function OpenPositions({ jobListings = [] }: { jobListings: Job[]
                             <select
                                 value={selectedDepartment}
                                 onChange={(e) => { setSelectedDepartment(e.target.value); setCurrentPage(1); }}
-                                className="w-full sm:w-48 appearance-none bg-slate-50 dark:bg-slate-800 border-none rounded-xl px-4 py-3.5 pr-8 text-sm font-medium text-slate-700 dark:text-slate-200 cursor-pointer focus:ring-2 focus:ring-blue-500/20 hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors"
+                                className="w-full sm:w-48 appearance-none bg-slate-50 dark:bg-slate-800 border-none rounded-xl px-4 py-3.5 pr-8 text-sm font-medium text-slate-700 dark:text-slate-200 cursor-pointer focus:ring-2 focus:ring-red-500/20 hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors"
                             >
                                 {departments.map(dept => <option key={dept} value={dept}>{dept === "All" ? "All Departments" : dept}</option>)}
                             </select>
@@ -115,7 +115,7 @@ export default function OpenPositions({ jobListings = [] }: { jobListings: Job[]
                             <select
                                 value={selectedLocation}
                                 onChange={(e) => { setSelectedLocation(e.target.value); setCurrentPage(1); }}
-                                className="w-full sm:w-48 appearance-none bg-slate-50 dark:bg-slate-800 border-none rounded-xl px-4 py-3.5 pr-8 text-sm font-medium text-slate-700 dark:text-slate-200 cursor-pointer focus:ring-2 focus:ring-blue-500/20 hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors"
+                                className="w-full sm:w-48 appearance-none bg-slate-50 dark:bg-slate-800 border-none rounded-xl px-4 py-3.5 pr-8 text-sm font-medium text-slate-700 dark:text-slate-200 cursor-pointer focus:ring-2 focus:ring-red-500/20 hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors"
                             >
                                 {locations.map(loc => <option key={loc} value={loc}>{loc === "All" ? "All Locations" : loc}</option>)}
                             </select>
@@ -127,7 +127,7 @@ export default function OpenPositions({ jobListings = [] }: { jobListings: Job[]
                             <select
                                 value={selectedType}
                                 onChange={(e) => { setSelectedType(e.target.value); setCurrentPage(1); }}
-                                className="w-full sm:w-48 appearance-none bg-slate-50 dark:bg-slate-800 border-none rounded-xl px-4 py-3.5 pr-8 text-sm font-medium text-slate-700 dark:text-slate-200 cursor-pointer focus:ring-2 focus:ring-blue-500/20 hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors"
+                                className="w-full sm:w-48 appearance-none bg-slate-50 dark:bg-slate-800 border-none rounded-xl px-4 py-3.5 pr-8 text-sm font-medium text-slate-700 dark:text-slate-200 cursor-pointer focus:ring-2 focus:ring-red-500/20 hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors"
                             >
                                 {types.map(t => <option key={t} value={t}>{t === "All" ? "All Types" : t}</option>)}
                             </select>
@@ -157,23 +157,23 @@ export default function OpenPositions({ jobListings = [] }: { jobListings: Job[]
                         paginatedJobs.map((job) => (
                             <div
                                 key={job.id}
-                                className="group relative p-6 md:p-8 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-blue-500/30 dark:hover:border-blue-500/30 shadow-sm hover:shadow-xl hover:shadow-blue-500/5 transition-all duration-300"
+                                className="group relative p-6 md:p-8 rounded-sm bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-red-500/30 dark:hover:border-red-500/30 shadow-sm hover:shadow-xl hover:shadow-red-500/5 transition-all duration-300"
                             >
                                 <div className="flex flex-col md:flex-row gap-6 md:items-start justify-between">
                                     <div className="flex-1">
                                         <div className="flex flex-wrap gap-2 mb-4">
-                                            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-blue-50 text-blue-700 dark:bg-blue-500/10 dark:text-blue-400 border border-blue-100 dark:border-blue-500/20">
+                                            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-sans bg-red-50 text-red-700 dark:bg-red-500/10 dark:text-red-400 border border-red-100 dark:border-red-500/20">
                                                 <Briefcase className="h-3 w-3" /> {job.department}
                                             </span>
-                                            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-purple-50 text-purple-700 dark:bg-purple-500/10 dark:text-purple-400 border border-purple-100 dark:border-purple-500/20">
+                                            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-sans bg-red-50 text-red-700 dark:bg-red-500/10 dark:text-red-400 border border-red-100 dark:border-red-500/20">
                                                 <MapPin className="h-3 w-3" /> {job.location}
                                             </span>
-                                            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-700 dark:bg-emerald-500/10 dark:text-emerald-400 border border-emerald-100 dark:border-emerald-500/20">
+                                            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-sans bg-emerald-50 text-emerald-700 dark:bg-emerald-500/10 dark:text-emerald-400 border border-emerald-100 dark:border-emerald-500/20">
                                                 <Clock className="h-3 w-3" /> {job.type}
                                             </span>
                                         </div>
 
-                                        <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-3 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                                        <h3 className="text-3xl font-sans text-slate-900 dark:text-white mb-3 group-hover:text-red-600 dark:group-hover:text-red-400 transition-colors">
                                             {job.title}
                                         </h3>
 
@@ -183,7 +183,7 @@ export default function OpenPositions({ jobListings = [] }: { jobListings: Job[]
                                     </div>
 
                                     <Link href={`/careers/${job.id}`} className="mt-2 md:mt-0 shrink-0">
-                                        <button className="w-full md:w-auto px-6 py-3 bg-slate-900 dark:bg-white text-white dark:text-slate-900 rounded-xl font-semibold shadow-lg shadow-slate-900/10 hover:shadow-xl hover:-translate-y-0.5 transition-all active:scale-95">
+                                        <button className="w-full md:w-auto px-6 py-3 bg-red-500 dark:bg-white text-white dark:text-slate-900 rounded-xl font-sans  hover:shadow-xl hover:-translate-y-0.5 transition-all active:scale-95">
                                             Apply Now
                                         </button>
                                     </Link>
@@ -191,13 +191,13 @@ export default function OpenPositions({ jobListings = [] }: { jobListings: Job[]
                             </div>
                         ))
                     ) : (
-                        <div className="text-center py-20 bg-slate-50 dark:bg-slate-900/50 rounded-3xl border border-dashed border-slate-300 dark:border-slate-800">
+                        <div className="text-center py-20 bg-slate-50 dark:bg-slate-900/50 rounded-5xl border border-dashed border-slate-300 dark:border-slate-800">
                             <Briefcase className="h-12 w-12 mx-auto text-slate-300 dark:text-slate-600 mb-4" />
-                            <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-2">No positions found</h3>
+                            <h3 className="text-lg font-light text-slate-900 dark:text-white mb-2">No positions found</h3>
                             <p className="text-slate-500 dark:text-slate-400 max-w-sm mx-auto mb-6">
                                 We couldn't find any roles matching your criteria. Try clearing filters or searching for something else.
                             </p>
-                            <button onClick={clearFilters} className="text-blue-600 dark:text-blue-400 font-medium hover:underline">Clear all filters</button>
+                            <button onClick={clearFilters} className="text-red-600 dark:text-red-400 font-medium hover:underline">Clear all filters</button>
                         </div>
                     )}
                 </div>
@@ -217,9 +217,9 @@ export default function OpenPositions({ jobListings = [] }: { jobListings: Job[]
                                 <button
                                     key={i}
                                     onClick={() => setCurrentPage(i + 1)}
-                                    className={`w-10 h-10 rounded-xl text-sm font-semibold transition-all ${currentPage === i + 1
-                                            ? "bg-blue-600 text-white shadow-lg shadow-blue-600/30 scale-105"
-                                            : "bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-400 border border-slate-200 dark:border-slate-700 hover:border-blue-500 dark:hover:border-blue-500 hover:text-blue-600 dark:hover:text-blue-400"
+                                    className={`w-10 h-10 rounded-xl text-sm font-light transition-all ${currentPage === i + 1
+                                        ? "bg-red-600 text-white shadow-lg shadow-red-600/30 scale-105"
+                                        : "bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-400 border border-slate-200 dark:border-slate-700 hover:border-red-500 dark:hover:border-red-500 hover:text-red-600 dark:hover:text-red-400"
                                         }`}
                                 >
                                     {i + 1}

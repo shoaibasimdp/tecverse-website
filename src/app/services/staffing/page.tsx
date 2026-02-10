@@ -1,7 +1,7 @@
 import StaffingSolutionsPage from '@/app/staffing-solutions/page';
 
 export const metadata = {
-    title: 'Staffing Solutions | Tecverse',
+    title: 'Staffing Solutions | tecverse',
     description: 'Expert staffing solutions for your business needs.',
 };
 
