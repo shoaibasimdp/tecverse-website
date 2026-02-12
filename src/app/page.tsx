@@ -43,255 +43,532 @@ export default function Home() {
     <>
 
 
-      <section className="relative w-full overflow-hidden h-[60vh] sm:h-[70vh] md:h-[80vh] lg:h-[100vh]">
-        <video
-          className="absolute inset-0 h-full w-full object-cover"
-          autoPlay
-          muted
-          loop
-          playsInline
-        >
-          <source src="/AI-Home.mp4" type="video/mp4" />
-        </video>
+      <section
+        className="relative w-full h-screen bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: "url('/hh.png')" }}
+      >
+        <div className="absolute inset-0 bg-black/50" />
 
-      </section>
+        <div className="relative z-10 flex items-center h-full px-6 sm:px-12 lg:px-20">
 
+          <div className="max-w-5xl">
 
+            <h1 className="text-4xl  sm:text-6xl md:text-4xl lg:text-8xl font-light text-gray-100 leading-tight">
+              Transforming Ideas <br />
+              into Intelligent Systems
+            </h1>
 
-
-
-
-
-
-
-      <section className="py-20 lg:py-32 text-white relative overflow-hidden">
-        {/* Background pattern */}
-        <div className="absolute inset-0 opacity-5">
-          <div className="absolute inset-0 bg-[url('/data-pattern.svg')] bg-repeat"></div>
-        </div>
-
-        <div className="mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center relative z-10">
-          {/* Text */}
-          <div>
-
-            <h2 className="text-7xl text-black font-light mb-12">
-              Why 87% of AI Projects Fail to Deliver Business Value
-            </h2>
-            <p className="text-gray-600 mb-12 text-lg">
-              Organizations are drowning in data but starving for intelligence. Despite investing billions
-              in AI initiatives, most companies struggle to translate raw data into actionable insights
-              that drive measurable business outcomes.
+            <p className="mt-8 text-lg sm:text-xl text-slate-200 max-w-2xl">
+              We help organizations automate operations, unlock insights from data,
+              and deploy scalable AI solutions that deliver measurable ROI.
             </p>
 
-            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 mb-12 border border-white/10">
-              <h3 className="text-xl font-light mb-4 text-red-600">The Hidden Costs of Ineffective AI</h3>
-              <div className="space-y-3">
-                <div className="flex items-start">
-                  <span className="text-red-400 mr-3">•</span>
-                  <p className="text-gray-600">Wasted resources on models that fail in production environments</p>
-                </div>
-                <div className="flex items-start">
-                  <span className="text-red-400 mr-3">•</span>
-                  <p className="text-gray-600">Missed opportunities as competitors leverage data-driven decisions</p>
-                </div>
-                <div className="flex items-start">
-                  <span className="text-red-400 mr-3">•</span>
-                  <p className="text-gray-600">Data silos preventing a unified view of business operations</p>
-                </div>
-                <div className="flex items-start">
-                  <span className="text-red-400 mr-3">•</span>
-                  <p className="text-gray-600">Compliance risks from poorly managed data and AI systems</p>
-                </div>
-              </div>
+            <div className="mt-10 flex flex-col sm:flex-row gap-4">
+
+              <button className="px-8 py-4 bg-red-600 hover:bg-red-700 text-white font-semibold rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl">
+                <Link href={"/contact"}> Talk to an AI Expert</Link>
+              </button>
+
+              <button className="px-8 py-4 border border-white text-white font-semibold rounded-xl hover:bg-white hover:text-black transition-all duration-300">
+                <Link href={"/services"}>Explore Our AI Services</Link>
+              </button>
+
             </div>
 
-            <div className="flex items-center space-x-4">
-              <div className="text-7xl font-light text-red-400">73%</div>
-              <p className="text-gray-600">of enterprise data goes unused for decision-making</p>
-            </div>
-          </div>
-
-          {/* Image */}
-          <div className="relative">
-            <img
-              src="/ai-intelligence-dashboard.png"
-              alt="AI Analytics Dashboard showing real-time data insights, predictive models, and business impact metrics"
-              className="relative"
-            />
-            <div className="absolute bottom-4 right-4 bg-black/50 backdrop-blur-sm rounded-lg px-3 py-2">
-              <p className="text-xs text-gray-300">Real-time AI Intelligence Dashboard</p>
-            </div>
           </div>
         </div>
       </section>
 
-      <section className="py-20 lg:py-32 bg-white">
+
+
+      <section className="py-20 lg:py-12 bg-white relative overflow-hidden">
+
+        <div className=" mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+
+          {/* LEFT CONTENT */}
+
+          <div className="max-w-5xl">
+
+            <h2 className="text-4xl sm:text-5xl lg:text-7xl font-light text-slate-900 mb-6 leading-tight">
+              The Business Challenge
+            </h2>
+
+            <p className="text-xl text-slate-600 mb-10">
+              AI is no longer optional. Execution is everything.
+            </p>
+
+            {/* Challenge Card */}
+            <div className="bg-slate-50 rounded-2xl p-8 mb-10 border border-slate-200 shadow-sm">
+
+              <h3 className="text-xl font-semibold mb-6 text-red-600">
+                Today’s organizations face:
+              </h3>
+
+              <div className="space-y-4">
+                {[
+                  "Rising operational costs",
+                  "Manual and repetitive workflows",
+                  "Underutilized data assets",
+                  "Slow decision-making cycles",
+                  "Increasing customer expectations"
+                ].map((item, index) => (
+                  <div key={index} className="flex items-start">
+                    <span className="text-red-500 mr-3 mt-1">•</span>
+                    <p className="text-slate-600">{item}</p>
+                  </div>
+                ))}
+              </div>
+
+            </div>
+
+            <p className="text-slate-600 mb-6">
+              Most companies recognize the importance of AI — but struggle with
+              where to begin, how to implement effectively, and how to scale.
+            </p>
+
+            <div className="flex flex-wrap items-center gap-2">
+              <h3 className=" font-semibold text-red-600">
+                That’s where Tecverse comes in.
+              </h3>
+
+              <p className="text-slate-600">
+                We turn AI ambition into measurable business outcomes.
+              </p>
+            </div>
+          </div>
+
+
+
+
+          {/* RIGHT IMAGE */}
+          <div className="flex justify-center lg:justify-end">
+
+            <div className="bg-white p-12">
+              <img
+                src="/challenges.png"
+                alt="AI Analytics Dashboard showing real-time data insights"
+                className="w-full h-full"
+              />
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+      <section className="py-20 lg:py-12 bg-white">
         <div className=" mx-auto px-6">
           <div className="text-center mb-16">
 
-            <h1 className="text-7xl font-light mb-12">From Data Chaos to Competitive Advantage</h1>
+            <h1 className="text-7xl font-light mb-12">Our AI & Automation Services</h1>
             <p className="text-xl text-gray-600 max-w-5xl mx-auto">
-              We transform disconnected data into intelligent systems that drive growth, efficiency,
-              and innovation across your entire organization.
+              End-to-End AI Solutions — From Strategy to Scale
             </p>
           </div>
 
           <div className="space-y-24">
-            {/* Block 1 */}
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <div className="relative">
                 <img
-                  src="/DataChaos.png"
+                  src="/strategy.png"
                   className="relative"
                   alt="Transformation from scattered data systems to unified intelligence platform"
                 />
-
               </div>
-
               <div>
-                <div className="inline-flex items-center px-3 py-5 mb-4 text-sm font-sans text-red-500 rounded-full">
-                  <span className="w-4 h-4 bg-red-500 rounded-full mr-2"></span>
-                  STEP 1
-                </div>
-                <h3 className="text-7xl font-light mb-4">
-                  From Data Chaos to Structured Intelligence
+                <h3 className="text-5xl font-light mb-4">
+                  AI Strategy & Roadmap Development
                 </h3>
                 <p className="text-gray-600 mb-12">
-                  We design scalable data pipelines that clean, organize, and prepare your data for
-                  advanced analytics and AI modeling. Our approach eliminates silos and creates a
-                  single source of truth for your entire organization.
+                  We help you identify high-impact AI opportunities and create a clear, ROI-driven implementation roadmap.
                 </p>
 
                 <div className="space-y-4">
                   <div className="flex items-start">
+                    <span className="text-red-400 mr-1">• </span>
 
                     <div>
-                      <h4 className="font-sans text-lg  text-gray-900">Unified Data Architecture</h4>
-                      <p className="text-gray-600 text-sm">Connect disparate systems into a cohesive data ecosystem</p>
+                      <h4 className="font-sans text-lg  text-gray-900">AI Readiness Assessment</h4>
                     </div>
                   </div>
                   <div className="flex items-start">
+                    <span className="text-red-400 mr-1">• </span>
 
                     <div>
-                      <h4 className="font-sans text-lg text-gray-900">Automated Data Quality</h4>
-                      <p className="text-gray-600 text-sm">Real-time validation and cleansing of incoming data streams</p>
+                      <h4 className="font-sans text-lg text-gray-900">Use Case Identification & Prioritization</h4>
                     </div>
                   </div>
                   <div className="flex items-start">
+                    <span className="text-red-400 mr-1">• </span>
 
                     <div>
-                      <h4 className="font-sans text-lg text-gray-900">Scalable Processing</h4>
-                      <p className="text-gray-600 text-sm">Handle growing data volumes without performance degradation</p>
+                      <h4 className="font-sans text-lg text-gray-900">Business Case & ROI Forecasting</h4>
+                    </div>
+                  </div>
+                  <div className='flex items-start'>
+                    <span className="text-red-400 mr-1">• </span>
+                    <div>
+                      <h4 className='font-sans text-lg text-gray-900'>Responsible AI Framework Design</h4>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* Block 2 (Reverse) */}
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <div className="order-2 lg:order-1">
-                <div className="inline-flex items-center px-3 py-1 mb-4 text-sm font-sans  text-red-500 rounded-full">
-                  <span className="w-4 h-4 bg-red-600 rounded-full mr-2"></span>
-                  Step 2
-                </div>
-                <h3 className="text-7xl font-light mb-4">
-                  From Manual Work to Intelligent Automation
+                <h3 className="text-5xl font-light mb-4">
+                  Intelligent Process Automation
                 </h3>
                 <p className="text-gray-600 mb-12">
-                  Our AI systems automate decision-making using predictive models, NLP, and real-time
-                  intelligence. We transform time-consuming manual processes into automated workflows
-                  that adapt and improve over time.
+                  Eliminate repetitive tasks and increase operational efficiency with AI-powered automation.
                 </p>
+                <div className="space-y-4">
+                  <div className="flex items-start">
+                    <span className="text-red-400 mr-1">• </span>
 
-                <div className="bg-green-50 rounded-xl p-6 mb-12">
-                  <h4 className="font-sans text-black mb-3">Real-World Impact</h4>
-                  <div className="grid grid-cols-2 gap-4">
                     <div>
-                      <div className="text-3xl font-sans text-green-600">67%</div>
-                      <p className="text-sm text-gray-600">Reduction in manual processing time</p>
-                    </div>
-                    <div>
-                      <div className="text-3xl font-sans text-green-600">3.5x</div>
-                      <p className="text-sm text-gray-600">Faster decision-making cycles</p>
+                      <h4 className="font-sans text-lg  text-gray-900">AI + RPA Integrationt</h4>
+
                     </div>
                   </div>
+                  <div className="flex items-start">
+                    <span className="text-red-400 mr-1">• </span>
+
+                    <div>
+                      <h4 className="font-sans text-lg text-gray-900">Document & Invoice Processing</h4>
+
+                    </div>
+                  </div>
+                  <div className="flex items-start">
+                    <span className="text-red-400 mr-1">• </span>
+
+                    <div>
+                      <h4 className="font-sans text-lg text-gray-900">HR & Finance Automation</h4>
+
+                    </div>
+                  </div>
+                  <div className='flex items-start'>
+                    <span className="text-red-400 mr-1">• </span>
+                    <div>
+                      <h4 className='font-sans text-lg text-gray-900'>Workflow Optimization</h4>
+                    </div>
+                  </div>
+                  <p className='text-gray-600 text-lg'><span className='font-bold text-red-500'>Result : </span>Reduced manual effort, lower costs, faster execution.</p>
                 </div>
 
-
               </div>
-
               <div className="relative order-1 lg:order-2">
                 <img
-                  src="/automationflow.png"
+                  src="/rpa.png"
                   className="relative"
                   alt="AI automation workflow showing data input, processing, decision points, and automated actions"
                 />
 
               </div>
             </div>
+
+            {/* Block 3 */}
+            <div className="grid lg:grid-cols-2 gap-16 items-center">
+              <div className="relative">
+                <img
+                  src="/ml.png"
+                  className="relative h-full w-full"
+                />
+
+              </div>
+
+              <div>
+
+                <h3 className="text-5xl font-light mb-4">
+                  Custom Machine Learning Solutions           </h3>
+                <p className="text-gray-600 mb-12">
+                  We build intelligent models tailored to your business goals.                </p>
+
+                <div className="space-y-4">
+                  <div className="flex items-start">
+                    <span className="text-red-400 mr-1">• </span>
+
+                    <div>
+                      <h4 className="font-sans text-lg  text-gray-900">Predictive Analytics</h4>
+
+                    </div>
+                  </div>
+                  <div className="flex items-start">
+                    <span className="text-red-400 mr-1">• </span>
+
+                    <div>
+                      <h4 className="font-sans text-lg text-gray-900">Demand Forecasting</h4>
+
+                    </div>
+                  </div>
+                  <div className="flex items-start">
+                    <span className="text-red-400 mr-1">• </span>
+
+                    <div>
+                      <h4 className="font-sans text-lg text-gray-900">Fraud Detection Systems</h4>
+
+                    </div>
+                  </div>
+                  <div className='flex items-start'>
+                    <span className="text-red-400 mr-1">• </span>
+                    <div>
+                      <h4 className='font-sans text-lg text-gray-900'>Customer Behavior Modeling</h4>
+                    </div>
+                  </div>
+                  <div className='flex items-start'>
+                    <span className="text-red-400 mr-1">• </span>
+                    <div>
+                      <h4 className='font-sans text-lg text-gray-900'>Recommendation Engines</h4>
+                    </div>
+                  </div>
+                  <p className='text-gray-600 text-lg'><span className='font-bold text-red-500'>Result : </span>Data-driven decisions with measurable impact.</p>
+
+                </div>
+              </div>
+            </div>
+
+
+            <div className="grid lg:grid-cols-2 gap-16 items-center">
+              <div className="order-2 lg:order-1">
+
+                <h3 className="text-5xl font-light mb-4">
+                  Generative AI & Conversational Systems
+                </h3>
+                <p className="text-gray-600 mb-12">
+                  Harness the power of LLMs to enhance productivity and customer engagement.                </p>
+                <div className="space-y-4">
+                  <div className="flex px-5 items-start">
+                    <span className="text-red-400 mr-1">• </span>
+
+                    <div>
+                      <h4 className="font-sans text-lg  text-gray-900">AI Chatbots & Virtual Assistants</h4>
+
+                    </div>
+                  </div>
+                  <div className="flex px-5 items-start">
+                    <span className="text-red-400 mr-1">• </span>
+
+                    <div>
+                      <h4 className="font-sans text-lg text-gray-900">Enterprise Knowledge Assistants</h4>
+
+                    </div>
+                  </div>
+                  <div className="flex px-5 items-start">
+                    <span className="text-red-400 mr-1">• </span>
+
+                    <div>
+                      <h4 className="font-sans text-lg text-gray-900">AI Copilots for Internal Teams</h4>
+
+                    </div>
+                  </div>
+                  <div className='flex px-5 items-start'>
+                    <span className="text-red-400 mr-1">• </span>
+                    <div>
+                      <h4 className='font-sans text-lg text-gray-900'>GPT Integrations for Business Applications</h4>
+                    </div>
+                  </div>
+                  <p className='text-gray-600 text-lg'><span className='font-bold text-red-500'>Result : </span>Faster support, improved user experience, increased efficiency.</p>
+
+                </div>
+
+              </div>
+
+              <div className="relative order-1 lg:order-2">
+                <img
+                  src="/x.png"
+                  className="relative"
+                />
+
+              </div>
+            </div>
+
+
+            <div className="grid lg:grid-cols-2 gap-16 items-center">
+              <div className="relative">
+                <img
+                  src="/clouddep.png"
+                  className="relative"
+                />
+
+              </div>
+
+              <div>
+
+                <h3 className="text-5xl font-light mb-4">
+                  AI Deployment, Integration & MLOps         </h3>
+                <p className="text-gray-600 mb-12">
+                  We ensure your AI systems run securely and reliably at scale.              </p>
+
+                <div className="space-y-4">
+                  <div className="flex items-start">
+                    <span className="text-red-400 mr-1">• </span>
+
+                    <div>
+                      <h4 className="font-sans text-lg  text-gray-900">Cloud AI Infrastructure (AWS, Azure, GCP)</h4>
+
+                    </div>
+                  </div>
+                  <div className="flex items-start">
+                    <span className="text-red-400 mr-1">• </span>
+
+                    <div>
+                      <h4 className="font-sans text-lg text-gray-900">CI/CD for ML Models</h4>
+
+                    </div>
+                  </div>
+                  <div className="flex items-start">
+                    <span className="text-red-400 mr-1">• </span>
+
+                    <div>
+                      <h4 className="font-sans text-lg text-gray-900">Monitoring & Performance Optimization</h4>
+
+                    </div>
+                  </div>
+                  <div className='flex items-start'>
+                    <span className="text-red-400 mr-1">• </span>
+                    <div>
+                      <h4 className='font-sans text-lg text-gray-900'>Scalable Production Deployment</h4>
+                    </div>
+                  </div>
+                  <p className='text-gray-600 text-lg'><span className='font-bold text-red-500'>Result : </span>AI that works in the real world — not just in prototypes.</p>
+
+
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
 
-      <section className="py-20 lg:py-32">
+
+
+      <section className="relative py-20 lg:py-32 overflow-hidden
+  bg-[url('/dd.png')] bg-cover bg-center bg-no-repeat">
+
+
+        <div className="relative z-10 mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+
+          <div>
+            <h2 className="text-7xl text-center md:text-6xl font-light text-white tracking-tight mb-12">
+              Real Business Impact
+            </h2>
+
+            <p className="text-white font-light mb-8 text-lg">
+              We turn intelligent AI strategies into measurable business outcomes by delivering scalable, data-driven solutions that enhance efficiency, accelerate growth, and create long-term value.
+            </p>
+
+            <div className="space-y-6 mb-8">
+
+              <div className=" backdrop-blur-sm p-6">
+                <h3 className="text-3xl font-sans mb-2 text-green-500">
+                  Retail Enterprise
+                </h3>
+                <p className="text-white font-light">
+                  Improved demand forecasting accuracy by 32% and reduced stock-outs by 20%.
+                </p>
+              </div>
+
+              <div className=" backdrop-blur-sm p-6">
+                <h3 className="text-3xl font-sans mb-2 text-green-500">
+                  Financial Services Firm
+                </h3>
+                <p className="text-white font-light">
+                  Automated invoice processing, reducing manual effort by 65%.
+                </p>
+              </div>
+
+              <div className=" backdrop-blur-sm p-6">
+                <h3 className="text-3xl font-sans mb-2 text-green-500">
+                  Customer Support Platform
+                </h3>
+                <p className="text-white font-light">
+                  Implemented AI chatbot reducing response time to under 3 seconds.
+                  We focus on outcomes — not experiments.
+                </p>
+              </div>
+
+              <div className=" backdrop-blur-sm p-6">
+                <h3 className="text-3xl font-sans mb-2 text-green-500">
+                  Enterprise Sales Organization
+                </h3>
+                <p className="text-white font-light">
+                  Built an AI-driven application to automate workflows, reducing manual effort by 50% and significantly accelerating turnaround time while improving overall bid participation.
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+      <section className="py-20 lg:py-12">
         <div className=" mx-auto px-6">
           <div className="text-center mb-16">
 
-            <h2 className="text-7xl font-light tracking-tight mb-12">A Proven Framework for AI Success</h2>
+            <h2 className="text-7xl font-light tracking-tight mb-12">Our AI Implementation Framework</h2>
             <p className="text-xl text-gray-600 max-w-5xl mx-auto">
-              Our systematic approach ensures your AI initiatives deliver measurable business value
-              from day one and continue to improve over time.
+              A disciplined, end-to-end framework designed to transform AI initiatives into scalable, secure, and measurable business outcomes.
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Process */}
             <div className="space-y-6">
               {[
                 {
-                  title: "Business Discovery & Goal Alignment",
-                  description: "We work with your stakeholders to identify high-impact opportunities and define clear success metrics.",
+                  title: "Discovery & Business Understanding",
+                  description: "We analyze your goals and processes to identify high-impact AI opportunities with measurable outcomes.",
                   icon: "/BusinessDiscovery.png"
                 },
                 {
                   title: "Data Assessment & Architecture Design",
-                  description: "Our engineers evaluate your data landscape and design a scalable foundation for AI initiatives.",
+                  description: "We assess data readiness and design a secure, scalable architecture for sustainable AI growth.",
                   icon: "/dataarch.png"
                 },
                 {
                   title: "Model Development & Validation",
-                  description: "We build and rigorously test AI models using your data to ensure accuracy and reliability.",
+                  description: "We build and validate accurate, explainable models optimized for real-world performance.",
                   icon: "/br.png"
                 },
                 {
-                  title: "Production Deployment & Integration",
-                  description: "Our MLOps specialists deploy models to production with monitoring, versioning, and failover systems.",
+                  title: "Deployment & Integration",
+                  description: "We seamlessly integrate AI into your systems to ensure smooth adoption and operational efficiency.",
                   icon: "/productiondep.png"
                 },
                 {
-                  title: "Continuous Improvement & Optimization",
-                  description: "We monitor performance, gather feedback, and continuously enhance your AI systems for maximum impact.",
+                  title: "Continuous Monitoring & Optimization",
+                  description: "We monitor, refine, and optimize models to deliver sustained performance and long-term value.",
                   icon: "/f.png"
                 }
               ].map((step, i) => (
                 <div
                   key={i}
-                  className="bg-white p-6"
+                  className="bg-white p-2"
                 >
                   <div className="flex items-start">
                     <div className="flex-shrink-0  rounded-lg flex items-center justify-center mr-4">
-                      <Image
+                      {/* <Image
                         src={step.icon}
                         alt={step.title}
                         width={100}
                         height={100}
                         className="object-contain"
-                      />
+                      /> */}
                     </div>
                     <div className="flex-grow">
                       <div className="flex items-center justify-between mb-2">
-                        <h1 className="font-sans text-3xl text-gray-900">{step.title}</h1>
+                        <h1 className="font-sans text-2xl text-red-500">{step.title}</h1>
                       </div>
                       <p className="text-gray-600 text-sm">{step.description}</p>
                     </div>
@@ -303,7 +580,7 @@ export default function Home() {
             {/* Image */}
             <div className="relative">
               <img
-                src="/aidev.png"
+                src="/ourai.png"
                 alt="AI implementation lifecycle showing iterative process from discovery to optimization"
                 className="relative
                 
@@ -316,192 +593,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="relative py-20 lg:py-32 overflow-hidden
-  bg-[url('/dd.png')] bg-cover bg-center bg-no-repeat">
-
-        {/* <div className="absolute inset-0 bg-white/80"></div> */}
-
-        <div className="relative z-10 mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
-
-          <div>
-            <h2 className="text-7xl text-center md:text-6xl font-light text-white tracking-tight mb-12">
-              Built for Enterprise-Grade Reliability at Scale
-            </h2>
-
-            <p className="text-white font-light mb-8 text-lg">
-              Unlike generic AI solutions that fail in production, our systems are engineered
-              for the demanding requirements of enterprise environments.
-            </p>
-
-            <div className="space-y-6 mb-8">
-
-              <div className=" backdrop-blur-sm p-6">
-                <h3 className="text-3xl font-light mb-2 text-white">
-                  Production-Ready AI Systems
-                </h3>
-                <p className="text-white font-light">
-                  Our models are built with robust testing, monitoring, and failover mechanisms to ensure
-                  99.9% uptime in critical business applications.
-                </p>
-              </div>
-
-              <div className=" backdrop-blur-sm p-6">
-                <h3 className="text-3xl font-light mb-2 text-white">
-                  Continuous Monitoring & Retraining
-                </h3>
-                <p className="text-white font-light">
-                  Our automated MLOps pipeline detects model drift and triggers retraining to maintain
-                  accuracy as your business environment evolves.
-                </p>
-              </div>
-
-              <div className=" backdrop-blur-sm p-6">
-                <h3 className="text-3xl font-light mb-2 text-white">
-                  Secure & Scalable Cloud Architecture
-                </h3>
-                <p className="text-white font-light">
-                  Built on enterprise-grade cloud infrastructure with end-to-end encryption,
-                  role-based access control, and compliance with SOC 2, GDPR, and HIPAA.
-                </p>
-              </div>
-
-              <div className=" backdrop-blur-sm p-6">
-                <h3 className="text-3xl font-light mb-2 text-white">
-                  Explainable and Transparent Models
-                </h3>
-                <p className="text-white font-light">
-                  Our AI systems provide clear explanations for decisions, ensuring regulatory
-                  compliance and building trust with stakeholders.
-                </p>
-              </div>
-
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-
-      <section className="py-20 lg:py-32 bg-white">
-        <div className="mx-auto px-6 lg:px-8">
-
-          {/* Section Header */}
-          <div className="mb-24">
-            <h2 className="text-7xl md:text-6xl font-light text-gray-900 tracking-tight mb-12">
-              Enterprise AI & Data Platform
-            </h2>
-            <p className="text-lg text-gray-600 leading-relaxed">
-              Production-grade infrastructure designed for Fortune 500 companies.
-              Our technology stack delivers security, scalability, and performance at enterprise scale —
-              supporting billions of API calls and processing petabytes of data daily.
-            </p>
-          </div>
-
-          {/* Platform Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-24">
-            {[
-              {
-                title: "Machine Learning Infrastructure",
-                description:
-                  "Deploy production-ready ML systems with automated training pipelines, real-time inference, and continuous model optimization. Our platform supports enterprise-scale workloads with sub-100ms latency and 99.99% uptime.",
-                stack:
-                  "Python • TensorFlow • PyTorch • Scikit-learn • Apache Spark • MLflow • Kubeflow • Ray",
-                image:
-                  "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&q=80",
-              },
-              {
-                title: "Generative AI & Language Models",
-                description:
-                  "Integrate state-of-the-art LLMs into your workflows with custom fine-tuning, retrieval-augmented generation, and enterprise guardrails. Build intelligent assistants that understand context and deliver accurate, compliant responses.",
-                stack:
-                  "GPT-4 • Claude • LangChain • LlamaIndex • Pinecone • Weaviate • Chroma • OpenAI API",
-                image:
-                  "https://cdn.analyticsvidhya.com/wp-content/uploads/2024/10/Popular_Tools_for_RAG_Applications.jpg",
-              },
-              {
-                title: "Data Platform Engineering",
-                description:
-                  "Build resilient data ecosystems with automated ETL/ELT pipelines, real-time streaming, and unified analytics layers. Process petabytes of data with enterprise-grade security, governance, and compliance built in.",
-                stack:
-                  "Apache Airflow • Kafka • dbt • Snowflake • Databricks • BigQuery • Redshift • Delta Lake",
-                image:
-                  "https://www.spec-india.com/wp-content/uploads/2025/03/ETL-Guide.jpg",
-              },
-              {
-                title: "MLOps & Model Lifecycle Management",
-                description:
-                  "Accelerate AI deployment with automated versioning, A/B testing, and continuous monitoring. Ensure model performance, fairness, and compliance through comprehensive observability and drift detection.",
-                stack:
-                  "MLflow • Weights & Biases • Kubeflow • GitHub Actions • Argo Workflows • Prometheus • Evidently AI",
-                image:
-                  "https://media.licdn.com/dms/image/v2/D4D12AQHA41VWX-JCzA/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1732112269172?e=2147483647&v=beta&t=2DhCoPvV7Ei5GadAHOyZRniUj83Qkq1UaLmzvkJjaMk"
-              },
-              {
-                title: "Cloud Infrastructure & DevOps",
-                description:
-                  "Provision secure, scalable infrastructure across AWS, Azure, and GCP with infrastructure-as-code. Implement zero-trust architecture, automated scaling, and disaster recovery for mission-critical AI workloads.",
-                stack:
-                  "AWS • Azure • GCP • Kubernetes • Terraform • ArgoCD • Istio • Vault • Datadog",
-                image:
-                  "https://www.softwebsolutions.com/wp-content/uploads/2024/07/Multi-cloud-strategy.webp",
-              },
-              {
-                title: "Intelligent Process Automation",
-                description:
-                  "Transform business operations with AI-powered workflow orchestration, intelligent document processing, and predictive analytics. Reduce manual effort by 80% while maintaining full audit trails and compliance.",
-                stack:
-                  "UiPath • Temporal • Apache Camel • RabbitMQ • Redis • PostgreSQL • Event-Driven Architecture",
-                image:
-                  "https://marradata.ai/wp-content/uploads/2025/04/64be86eaa29fa71f24b00fb6_609d17bfefdd687436b8221e_Intelligent20Automation20Image.jpeg",
-              },
-            ].map((item, index) => (
-              <div key={index} className="flex flex-col h-full">
-
-                {/* Image */}
-                <div className="relative w-full aspect-[4/3] mb-8 overflow-hidden">
-                  <img
-                    src={item.image}
-                    alt={item.title}
-                    className="w-full h-full object-cover"
-                    loading="lazy"
-                  />
-                </div>
-
-                {/* Content */}
-                <div className="flex flex-col flex-grow">
-                  <h3 className="text-5xl font-light text-gray-900 tracking-tight mb-8">
-                    {item.title}
-                  </h3>
-
-                  <p className="text-[15px] text-gray-600 leading-relaxed mb-12">
-                    {item.description}
-                  </p>
-
-                  <div className="mt-auto pt-6 border-t border-gray-200">
-                    <p className="text-xs text-gray-500 font-medium tracking-widest uppercase mb-3">
-                      Technologies
-                    </p>
-                    <p className="text-sm text-gray-700 leading-relaxed">
-                      {item.stack}
-                    </p>
-                  </div>
-                </div>
-
-              </div>
-            ))}
-          </div>
-
-        </div>
-      </section>
 
 
 
-
-
-
-
-
-      <section className="relative overflow-hidden py-20 lg:py-32 dark:bg-slate-900">
+      <section className="relative overflow-hidden py-20 lg:py-12 dark:bg-slate-900">
 
 
 
@@ -522,49 +617,65 @@ export default function Home() {
           mb-12
         "
             >
-              Expansive in Reach, <br className="hidden sm:block" />
-              Personalized in Service
+              Industries We Serve <br className="hidden sm:block" />
             </h2>
 
             <p className="mx-auto max-w-3xl text-lg sm:text-xl text-slate-600 dark:text-slate-300 leading-relaxed">
-              We work with businesses of all sizes — from early-stage startups
-              to global enterprises. With a strong international presence,
-              tecverse delivers reliable solutions, seamless collaboration,
-              and access to world-class talent.
+              Our AI solutions are tailored to your industry’s unique challenges, ensuring practical, scalable outcomes that align with your operational and strategic goals
             </p>
           </div>
 
           {/* Feature Cards */}
-          <div className="space-y-12">
+          <div className="space-y-5">
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-start">
-              <h3 className="text-3xl font-light text-red-500">
-                Execution Excellence
+              <h3 className="text-xl font-sans text-red-500">
+                Retail & E-Commerce
               </h3>
               <p className="md:col-span-2 text-gray-600 leading-relaxed">
-                A skilled team of engineers, consultants, and strategists focused on delivering measurable results.
+                Enhancing forecasting, personalization, and inventory to increase revenue and improve customer experience.              </p>
+            </div>
+
+            <div className="border-t border-gray-200" />
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-start">
+              <h3 className="text-xl font-sans text-red-500">
+                Healthcare
+              </h3>
+              <p className="md:col-span-2 text-gray-600 leading-relaxed">
+                Improving patient outcomes and operational efficiency through predictive analytics and automation.
               </p>
             </div>
 
             <div className="border-t border-gray-200" />
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-start">
-              <h3 className="text-3xl font-light text-red-500">
-                Global Presence
+              <h3 className="text-xl font-sans text-red-500">
+                SaaS & Technology
               </h3>
               <p className="md:col-span-2 text-gray-600 leading-relaxed">
-                Strategically positioned teams across regions to provide continuous support and faster delivery.
+                Embedding AI into products and workflows to enhance performance and user engagement.
+              </p>
+            </div>
+            <div className="border-t border-gray-200" />
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-start">
+              <h3 className="text-xl font-sans text-red-500">
+                Logistics & Supply Chain
+              </h3>
+              <p className="md:col-span-2 text-gray-600 leading-relaxed">
+                Optimizing planning and operations to reduce costs and improve delivery efficiency.
               </p>
             </div>
 
             <div className="border-t border-gray-200" />
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-start">
-              <h3 className="text-3xl font-light text-red-500">
-                Innovation Driven
+              <h3 className="text-xl font-sans text-red-500">
+                Enterprise Operations
               </h3>
               <p className="md:col-span-2 text-gray-600 leading-relaxed">
-                We embrace modern technologies and best practices to build future-ready digital solutions.
+                Automating internal processes to increase productivity and scale business operations.
               </p>
             </div>
 
@@ -573,134 +684,10 @@ export default function Home() {
         </Container>
       </section>
 
-
-
-      <section className="py-24 sm:py-32 bg-gradient-to-b from-[#141414] to-[#2a2a2a] dark:from-slate-900 dark:to-slate-800">
-        <Container>
-          {/* Heading */}
-          <div className="max-w-3xl mx-auto text-center mb-12 sm:mb-16 px-4">
-            <h2 className="font-sans font-light tracking-tight text-7xl sm:text-4xl md:text-7xl lg:text-6xl text-white mb-12">
-              Reliable solutions for mission-critical growth.
-            </h2>
-            <p className="text-base sm:text-lg text-white/90 dark:text-slate-300">
-              End-to-end technology and talent solutions designed to help
-              businesses scale with confidence.
-            </p>
-          </div>
-
-          {/* Cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 sm:gap-8 px-4">
-            {services.map((service) => (
-              <div
-                key={service.id}
-                className="group relative overflow-hidden shadow-xl hover:shadow-3xl transition-all duration-300"
-              >
-                {/* Image */}
-                <img
-                  src={service.image}
-                  alt={service.title}
-                  className="absolute inset-0 w-full h-full object-cover"
-                />
-
-                {/* Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/30 to-black/90" />
-
-                {/* Content */}
-                <div className="relative flex flex-col justify-end p-6 sm:p-8 text-white min-h-[420px]">
-                  <h3 className="text-xl sm:text-3xl font-light mb-3">
-                    {service.title}
-                  </h3>
-
-                  <p className="text-sm sm:text-base text-white/90 mb-12 line-clamp-3">
-                    {service.description}
-                  </p>
-
-                  <span className="text-xs sm:text-sm text-white/60 font-light">
-                    {String(service.id).padStart(2, '0')}
-                  </span>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {/* CTA */}
-          <div className="text-center mt-12 sm:mt-16">
-            <Link href="/services">
-              <Button variant="secondary" size="lg" className="px-8 py-4 text-lg">
-                View All Services →
-              </Button>
-            </Link>
-          </div>
-        </Container>
-      </section>
 
       <TrustedByPage />
 
 
-      <section className="relative py-20 lg:py-32 bg-gradient-to-b from-white to-slate-50 dark:from-slate-900 dark:to-slate-950 overflow-hidden">
-        <Container>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-
-            <div className="space-y-8">
-
-              <div className="relative">
-                <img
-                  src="/whychooseourcomp.png"
-                  alt="Why choose tecverse"
-                  className="w-full h-[720px] object-cover bg-black"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
-              </div>
-            </div>
-
-            <div className="space-y-6">
-              {[
-                {
-                  title: 'Software Excellence',
-                  desc: 'From ideation to deployment, we build reliable, scalable, and future-ready software solutions.',
-                },
-                {
-                  title: 'Seamless Migration',
-                  desc: 'Modernize legacy systems with minimal downtime and zero disruption to business operations.',
-                },
-                {
-                  title: 'Global Talent Access',
-                  desc: 'Scale faster with access to skilled professionals from global talent markets.',
-                },
-                {
-                  title: 'Recruitment Expertise',
-                  desc: 'Industry-focused hiring strategies that help you build high-performing teams faster.',
-                },
-                {
-                  title: 'Operational Simplicity',
-                  desc: 'We handle compliance, payroll, and operations so you can focus on growth.',
-                },
-                {
-                  title: 'Career Enablement',
-                  desc: 'Empowering professionals with guidance, growth opportunities, and long-term success.',
-                },
-              ].map((item, idx) => (
-                <div
-                  key={idx}
-                  className="group flex gap-2 "
-                >
-
-                  {/* Content */}
-                  <div>
-                    <h3 className="text-lg font-sans italic text-slate-900 dark:text-white mb-2 group-hover:text-red-600 transition-colors">
-                      {item.title}
-                    </h3>
-                    <p className="text-slate-600 text-sm dark:text-slate-300 leading-relaxed">
-                      {item.desc}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-          </div>
-        </Container>
-      </section>
 
 
       <div className="relative min-h-screen bg-gradient-to-br from-red-600 via-red-500 to-red-600 overflow-hidden">
@@ -713,13 +700,12 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <div className="text-white space-y-8 lg:pr-8">
               <div className="space-y-4">
-                <h1 className="text-7xl lg:text-7xl font-light leading-tight">
-                  Ready to Build
-                  <span className="block mt-2">Something Great?</span>
+                <h1 className="text-5xl lg:text-6xl font-light leading-tight">
+                  Ready to transform your business<span className="block mt-2">with intelligent AI solutions?</span>
                 </h1>
-                <p className="text-xl lg:text-3xl text-red-100 max-w-xl">
-                  Transform your ideas into reality with our expert team. Let's create something extraordinary together.
-                </p>
+                <p className="text-xl lg:text-lg text-red-100 max-w-xl">
+                  Let’s design and
+                  deploy AI solutions tailored to your business goals.         </p>
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
@@ -747,7 +733,7 @@ export default function Home() {
 
                 <div className="relative">
                   <img
-                    src="/TB.png"
+                    src="/TB1.png"
                     alt="Professional team member"
                     className="w-full h-auto max-w-md mx-auto drop-shadow-3xl"
                   />

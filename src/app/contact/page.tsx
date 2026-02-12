@@ -78,12 +78,12 @@ export default function ContactPage() {
                                         </svg>
                                     </div>
                                     <div className="flex-1">
-                                        <h3 className="font-thin-100 text-slate-900 dark:text-white mb-2 text-lg">
+                                        <h3 className="font-bold text-slate-900 dark:text-white mb-2 text-lg">
                                             Email
                                         </h3>
                                         <div className="space-y-1">
-                                            <a href="mailto:info@tecverse.ai" className="text-slate-600 dark:text-slate-400 hover:text-red-600 dark:hover:text-red-400 transition-colors block">
-                                                info@tecverse.ai
+                                            <a href="mailto:info@tecverse.io" className="text-slate-600 dark:text-slate-400 hover:text-red-600 dark:hover:text-red-400 transition-colors block">
+                                                info@tecverse.io
                                             </a>
                                             <a href="mailto:sales@tecverse.ai" className="text-slate-600 dark:text-slate-400 hover:text-red-600 dark:hover:text-red-400 transition-colors block">
                                                 sales@tecverse.ai
@@ -100,7 +100,7 @@ export default function ContactPage() {
                                         </svg>
                                     </div>
                                     <div className="flex-1">
-                                        <h3 className="font-thin-100 text-slate-900 dark:text-white mb-2 text-lg">
+                                        <h3 className="font-bold text-slate-900 dark:text-white mb-2 text-lg">
                                             Phone
                                         </h3>
                                         <div className="space-y-1">
@@ -114,40 +114,118 @@ export default function ContactPage() {
                                     </div>
                                 </div>
 
-                                {/* Office */}
-                                <div className="group flex items-start space-x-4 p-4">
-                                    <div className="w-12 h-12 dark:bg-red-950 rounded-xl flex items-center justify-center text-red-600 ">
-                                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                                            <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                                            <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                                        </svg>
-                                    </div>
-                                    <div className="flex-1">
-                                        <h3 className="font-thin-100 text-slate-900 dark:text-white mb-2 text-lg">
-                                            Office
-                                        </h3>
-                                        <div className="text-slate-600 dark:text-slate-400 leading-relaxed">
-                                            <p>123 AI Innovation Drive</p>
-                                            <p>San Francisco, CA 94107</p>
-                                            <p>United States</p>
-                                            <a
-                                                href="https://maps.google.com/?q=123+AI+Innovation+Drive+San+Francisco+CA+94107"
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                className="inline-flex items-center mt-2 text-red-600 dark:text-red-400 hover:text-red-700 dark:hover:text-red-300 transition-colors"
-                                            >
-                                                <span className="mr-1">View on map</span>
-                                                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                                                    <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                                                </svg>
-                                            </a>
+                                {/* Offices Section */}
+                                <div className="space-y-8">
+
+                                    {/* India Office */}
+                                    <div className="group flex items-start space-x-4 p-6 rounded-2xl bg-white dark:bg-slate-900 shadow-sm hover:shadow-md transition-all duration-300">
+
+                                        <div className="w-12 h-12 bg-red-50 dark:bg-red-950 rounded-xl flex items-center justify-center text-red-600 dark:text-red-400">
+                                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                                                <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                                <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                            </svg>
+                                        </div>
+
+                                        <div>
+                                            <h3 className="font-bold text-slate-900 dark:text-white mb-2 text-lg">
+                                                Tecverse India Office
+                                            </h3>
+
+                                            <div className="text-slate-600 dark:text-slate-400 leading-relaxed">
+                                                <p>B 202, Delta Seacon</p>
+                                                <p>Road No. 11, Banjara Hills</p>
+                                                <p>Hyderabad, Telangana 500034, India</p>
+
+                                                <a
+                                                    href="https://www.google.com/maps/search/B+202,+Delta+Seacon,+Banjara+Hills+Road+11+Hyderabad+500034"
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="inline-flex items-center mt-3 text-red-600 dark:text-red-400 hover:text-red-700 dark:hover:text-red-300 transition-colors"
+                                                >
+                                                    <span className="mr-1">View on map</span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                                                        <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                                    </svg>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
+                                    {/* US Office */}
+                                    <div className="group flex items-start space-x-4 p-6 rounded-2xl bg-white dark:bg-slate-900 shadow-sm hover:shadow-md transition-all duration-300">
+
+                                        <div className="w-12 h-12 bg-red-50 dark:bg-red-950 rounded-xl flex items-center justify-center text-red-600 dark:text-red-400">
+                                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                                                <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                                <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                            </svg>
+                                        </div>
+
+                                        <div>
+                                            <h3 className="font-bold text-slate-900 dark:text-white mb-2 text-lg">
+                                                Tecverse USA Office
+                                            </h3>
+
+                                            <div className="text-slate-600 dark:text-slate-400 leading-relaxed">
+                                                <p>North Nordica, Ave, Niles-IL</p>
+                                                <p>United States 60714</p>
+                                                <p>+1 708 328 8306</p>
+
+                                                <a
+                                                    href="https://www.google.com/maps?ll=42.017081,-87.798488&z=15&t=m&hl=en&gl=IN&mapclient=embed&q=N+Nordica+Ave+Niles,+IL+60714+USA"
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="inline-flex items-center mt-3 text-red-600 dark:text-red-400 hover:text-red-700 dark:hover:text-red-300 transition-colors"
+                                                >
+                                                    <span className="mr-1">View on map</span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                                                        <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {/* US Office */}
+                                    <div className="group flex items-start space-x-4 p-6 rounded-2xl bg-white dark:bg-slate-900 shadow-sm hover:shadow-md transition-all duration-300">
+
+                                        <div className="w-12 h-12 bg-red-50 dark:bg-red-950 rounded-xl flex items-center justify-center text-red-600 dark:text-red-400">
+                                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                                                <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                                <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                            </svg>
+                                        </div>
+
+                                        <div>
+                                            <h3 className="font-bold text-slate-900 dark:text-white mb-2 text-lg">
+                                                Tecverse Australia Headquarters                                            </h3>
+
+                                            <div className="text-slate-600 dark:text-slate-400 leading-relaxed">
+                                                <p>Melbourne, 3000 (Remote)</p>
+                                                <p>0468887864</p>
+                                                <p>Australia</p>
+
+                                                <a
+                                                    href="https://www.google.com/maps?ll=-37.816029,144.957251&z=12&t=m&hl=en-US&gl=US&mapclient=embed&q=Bourke+St+Melbourne+VIC+Australia"
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="inline-flex items-center mt-3 text-red-600 dark:text-red-400 hover:text-red-700 dark:hover:text-red-300 transition-colors"
+                                                >
+                                                    <span className="mr-1">View on map</span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                                                        <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
                                 </div>
+
                             </div>
 
                             {/* Social Media Links */}
-                            <div className="pt-6 border-t border-slate-200 dark:border-slate-800">
+                            {/* <div className="pt-6 border-t border-slate-200 dark:border-slate-800">
                                 <h3 className="font-thin-100 text-slate-900 dark:text-white mb-4 text-lg">
                                     Follow us
                                 </h3>
@@ -162,7 +240,7 @@ export default function ContactPage() {
                                             <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
                                         </svg>
                                     </a>
-                                    <a href="#" className="w-10 h-10 bg-slate-100 dark:bg-slate-800 rounded-lg flex items-center justify-center text-slate-600 dark:text-slate-400 hover:bg-red-100 dark:hover:bg-red-900/30 hover:text-red-600 dark:hover:text-red-400 transition-all duration-300">
+                                    <a href="https://www.linkedin.com/company/tecverseio/?originalSubdomain=au" className="w-10 h-10 bg-slate-100 dark:bg-slate-800 rounded-lg flex items-center justify-center text-slate-600 dark:text-slate-400 hover:bg-red-100 dark:hover:bg-red-900/30 hover:text-red-600 dark:hover:text-red-400 transition-all duration-300">
                                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
                                             <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
                                         </svg>
@@ -173,7 +251,37 @@ export default function ContactPage() {
                                         </svg>
                                     </a>
                                 </div>
+                            </div> */}
+                            <div className="pt-6 border-t border-slate-200 dark:border-slate-800">
+
+                                <h3 className="text-slate-900 dark:text-white mb-4 text-lg font-semibold">
+                                    Follow us
+                                </h3>
+
+                                <div className="flex">
+                                    <a
+                                        href="https://www.linkedin.com/company/tecverseio/?originalSubdomain=au"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="group inline-flex items-center gap-3 px-4 py-2 rounded-xl dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover: hover:text-[#0077B5] transition-all duration-300"
+                                    >
+
+                                        {/* LinkedIn SVG */}
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            className="h-5 w-5 transition-transform duration-300 group-hover:scale-110"
+                                            fill="currentColor"
+                                            viewBox="0 0 24 24"
+                                        >
+                                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                                        </svg>
+
+                                        <span className="font-medium">LinkedIn</span>
+                                    </a>
+                                </div>
+
                             </div>
+
                         </div>
 
                     </div>
