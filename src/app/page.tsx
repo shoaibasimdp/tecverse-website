@@ -522,8 +522,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Process */}
+          {/* <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               {[
                 {
@@ -558,13 +557,13 @@ export default function Home() {
                 >
                   <div className="flex items-start">
                     <div className="flex-shrink-0  rounded-lg flex items-center justify-center mr-4">
-                      {/* <Image
+                      <Image
                         src={step.icon}
                         alt={step.title}
                         width={100}
                         height={100}
                         className="object-contain"
-                      /> */}
+                      /> 
                     </div>
                     <div className="flex-grow">
                       <div className="flex items-center justify-between mb-2">
@@ -577,19 +576,16 @@ export default function Home() {
               ))}
             </div>
 
-            {/* Image */}
             <div className="relative">
               <img
                 src="/ourai.png"
                 alt="AI implementation lifecycle showing iterative process from discovery to optimization"
-                className="relative
-                
-                
-                "
+                className="relative"
               />
 
             </div>
-          </div>
+          </div> */}
+          <img src="/aif.png" className='w-full h-full object-contain' />
         </div>
       </section>
 
