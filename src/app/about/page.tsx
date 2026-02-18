@@ -26,7 +26,7 @@ export default function AboutPage() {
                 {/* Content */}
                 <Container className="relative z-10">
                     <div className="max-w-4xl mx-auto text-center px-4">
-                        <h1 className="text-7xl sm:text-6xl md:text-7xl font-light text-white mb-8 drop-shadow-xl">
+                        <h1 className="text-3xl sm:text-6xl md:text-7xl font-light text-white mb-8 drop-shadow-xl">
                             About tecverse
                         </h1>
 
@@ -47,11 +47,11 @@ export default function AboutPage() {
 
                         {/* Section Header */}
                         <div className="text-center mb-24">
-                            <h2 className="text-7xl md:text-6xl font-light text-slate-900 dark:text-white mb-6">
+                            <h2 className="text-4xl md:text-6xl font-light text-slate-900 dark:text-white mb-6">
                                 Company Overview
                             </h2>
                             <p className="max-w-5xl mx-auto text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
-                                tecverse is a dynamic and forward-thinking technology solutions company dedicated to empowering businesses through innovation and excellence. Our relentless focus on delivering tailored solutions that address the unique needs of each client sets us apart in the competitive landscape of the IT industry. With a team of highly skilled professionals and a passion for problem-solving, tecverse is committed to helping organizations harness the power of technology to achieve their goals and drive sustainable growth.
+                                tecverse is a dynamic and forward-thinking technology solutions company dedicated to empowering businesses through innovation and excellence. Our relentless focus on delivering tailoblue solutions that address the unique needs of each client sets us apart in the competitive landscape of the IT industry. With a team of highly skilled professionals and a passion for problem-solving, tecverse is committed to helping organizations harness the power of technology to achieve their goals and drive sustainable growth.
                             </p>
                         </div>
 
@@ -59,7 +59,7 @@ export default function AboutPage() {
                         <div className="relative space-y-24">
 
                             {/* Vertical Center Line */}
-                            <div className="absolute left-1/2 top-0 h-full w-0.5 bg-red-500 -translate-x-1/2"></div>
+                            <div className="hidden md:block absolute left-1/2 top-0 h-full w-0.5 bg-blue-500 -translate-x-1/2"></div>
 
                             {/* === ITEM 1 === */}
                             <div className="grid grid-cols-1 md:grid-cols-[1fr_40px_1fr] gap-12 items-center">
@@ -80,7 +80,7 @@ export default function AboutPage() {
                                 </div>
 
                                 {/* Line + Dot */}
-                                <div className="relative flex justify-center">
+                                <div className="hidden md:flex relative justify-center">
                                     <span className="absolute w-4 h-4 bg-green-500 rounded-full"></span>
                                 </div>
 
@@ -270,7 +270,7 @@ export default function AboutPage() {
                                         <h3 className="text-3xl font-sans text-slate-900 dark:text-white">
                                             Nawaz S.
                                         </h3>
-                                        <p className="text-red-600 font-medium">
+                                        <p className="text-blue-600 font-medium">
                                             Founder & CTO
                                         </p>
                                     </div>
@@ -303,7 +303,7 @@ export default function AboutPage() {
                                         <h3 className="text-3xl font-sans text-slate-900 dark:text-white">
                                             Ali
                                         </h3>
-                                        <p className="text-red-600 font-medium">
+                                        <p className="text-blue-600 font-medium">
                                             Co-Founder & COO
                                         </p>
                                     </div>
@@ -362,7 +362,7 @@ export default function AboutPage() {
                             },
                             {
                                 title: "Client-Centric Approach",
-                                desc: "Tailored solutions designed to align with your unique business objectives, culture, and values.",
+                                desc: "Tailoblue solutions designed to align with your unique business objectives, culture, and values.",
                                 img: "/clientcentric.png",
                             },
                             {
@@ -416,16 +416,16 @@ export default function AboutPage() {
 
                 <Container className="relative z-10">
                     <div className="max-w-5xl mx-auto text-center">
-                        <h2 className="text-7xl text-left sm:text-4xl font-light text-white mb-4">
+                        <h2 className="text-4xl sm:text-7xl font-light text-white mb-4">
                             Let's Build Something Amazing Together
                         </h2>
-                        <p className="text-lg text-red-100 mb-8">
+                        <p className="text-lg text-blue-100 mb-8">
                             Ready to explore how tecverse can transform your business? Get in touch with our team today.
                         </p>
                         <Link href="/contact">
                             <Button
                                 size="lg"
-                                className="bg-red-500 text-red-700 hover:bg-gray-100 border-0 px-8 py-4 text-lg font-light shadow-xl transform transition-all duration-300 hover:scale-105"
+                                className="bg-blue-500 text-blue-700 hover:bg-gray-100 border-0 px-8 py-4 text-lg font-light shadow-xl transform transition-all duration-300 hover:scale-105"
                             >
                                 Contact Us
                             </Button>

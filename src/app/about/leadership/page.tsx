@@ -13,7 +13,7 @@ export default function LeadershipPage() {
         {
             name: 'Nawaz S.',
             title: 'Founder & Chief Technical Officer',
-            bio: `Nawaz S. is a visionary entrepreneur and the driving force behind tecverse's commitment to client success. With a decade of expertise in recruitment, staffing, and talent cultivation, he leads tecverse in delivering innovative technology solutions tailored to organizational needs.
+            bio: `Nawaz S. is a visionary entrepreneur and the driving force behind tecverse's commitment to client success. With a decade of expertise in recruitment, staffing, and talent cultivation, he leads tecverse in delivering innovative technology solutions tailoblue to organizational needs.
 
 Drawing from global insights and personal engagement, Nawaz's expertise extends beyond traditional recruitment. He forges strong partnerships that enable collaborative achievements across borders, aligning teams with organizational values and long-term goals.
 
@@ -24,7 +24,7 @@ As tecverse's CTO, Nawaz transforms ideas into scalable, future-ready solutions.
             title: 'Co-founder & Chief Operations Officer',
             bio: `Ali is a seasoned IT leader with over 10 years of management and operational experience. His career has been shaped by a relentless focus on connecting talent with opportunity, playing a pivotal role in shaping tecverse's core values.
 
-With a strong grasp of hiring dynamics, talent retention, and contractor management, Ali ensures tecverse delivers top-tier recruitment and IT outsourcing services. His leadership goes beyond transactions—building long-term partnerships tailored to client objectives.
+With a strong grasp of hiring dynamics, talent retention, and contractor management, Ali ensures tecverse delivers top-tier recruitment and IT outsourcing services. His leadership goes beyond transactions—building long-term partnerships tailoblue to client objectives.
 
 Ali is also a trusted guide for job seekers, empowering candidates with strategic guidance and confidence to succeed in competitive markets.`,
         },
@@ -78,17 +78,17 @@ Dedicated to fostering a culture of excellence and innovation, Naaz empowers tea
                                 <h2 className="text-3xl font-light text-slate-900 dark:text-white mb-1">
                                     {leader.name}
                                 </h2>
-                                <p className="text-red-600 dark:text-red-400 font-medium mb-4">
+                                <p className="text-blue-600 dark:text-blue-400 font-medium mb-4">
                                     {leader.title}
                                 </p>
 
-                                <div className="h-px bg-gradient-to-r from-transparent via-red-300  to-transparent mb-4" />
+                                <div className="h-px bg-gradient-to-r from-transparent via-blue-300  to-transparent mb-4" />
 
                                 <p className="text-slate-600 dark:text-slate-400 leading-relaxed text-sm">
                                     {leader.bio.substring(0, 160)}...
                                 </p>
 
-                                <button className="mt-4 text-red-600 dark:text-red-400 font-medium text-sm hover:underline">
+                                <button className="mt-4 text-blue-600 dark:text-blue-400 font-medium text-sm hover:underline">
                                     Read More →
                                 </button>
                             </div>
@@ -103,10 +103,10 @@ Dedicated to fostering a culture of excellence and innovation, Naaz empowers tea
                             {/* Name + Icons Row */}
                             <div className="flex items-center justify-between flex-wrap gap-4">
                                 <div>
-                                    <h2 className="text-7xl font-light text-slate-900">
+                                    <h2 className="text-4xl md:text-7xl font-light text-slate-900">
                                         {leader.name}
                                     </h2>
-                                    <p className="text-red-600 font-medium text-lg">
+                                    <p className="text-blue-600 font-medium text-lg">
                                         {leader.title}
                                     </p>
                                 </div>
@@ -118,7 +118,7 @@ Dedicated to fostering a culture of excellence and innovation, Naaz empowers tea
                                         aria-label="LinkedIn"
                                         className="p-2"
                                     >
-                                        <SiLinkedin className="w-5 h-5 text-red-600" />
+                                        <SiLinkedin className="w-5 h-5 text-blue-600" />
                                     </a>
 
                                     <a
@@ -132,7 +132,7 @@ Dedicated to fostering a culture of excellence and innovation, Naaz empowers tea
                             </div>
 
                             {/* Divider */}
-                            <div className="h-px bg-gradient-to-r from-transparent via-red-500 to-transparent w-24" />
+                            <div className="h-px bg-gradient-to-r from-transparent via-blue-500 to-transparent w-24" />
 
                             {/* Bio */}
                             <p className="text-slate-600 leading-relaxed whitespace-pre-line">
@@ -159,14 +159,14 @@ Dedicated to fostering a culture of excellence and innovation, Naaz empowers tea
 
                 {/* Content */}
                 <div className="relative max-w-4xl mx-auto px-6 text-center">
-                    <h2 className="text-7xl md:text-4xl font-light mb-4">
+                    <h2 className="text-4xl md:text-7xl font-light mb-4">
                         Join Our Team
                     </h2>
-                    <p className="text-red-100 mb-8 max-w-3xl mx-auto text-lg">
+                    <p className="text-blue-100 mb-8 max-w-3xl mx-auto text-lg">
                         Discover opportunities to grow your career with tecverse&apos;s
                         innovative and collaborative team.
                     </p>
-                    <button className="px-8 py-3 bg-white text-red-600 rounded-md font-medium hover:bg-slate-100 transition-colors">
+                    <button className="px-8 py-3 bg-white text-blue-600 rounded-md font-medium hover:bg-slate-100 transition-colors">
                         View Open Positions
                     </button>
                 </div>

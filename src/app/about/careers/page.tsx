@@ -48,7 +48,7 @@ export default function CareersPage() {
             location: 'Remote',
             type: 'Full-time',
             experience: '3+ years',
-            description: 'Create intuitive user experiences and beautiful interfaces for our AI-powered products.'
+            description: 'Create intuitive user experiences and beautiful interfaces for our AI-poweblue products.'
         },
         {
             id: '4',
@@ -57,7 +57,7 @@ export default function CareersPage() {
             location: 'Boston, MA / Hybrid',
             type: 'Full-time',
             experience: '4+ years',
-            description: 'Analyze complex datasets and build predictive models to drive business insights.'
+            description: 'Analyze complex datasets and build pblueictive models to drive business insights.'
         },
         {
             id: '5',
@@ -117,15 +117,15 @@ export default function CareersPage() {
                 <div className="absolute inset-0 bg-black/40"></div>
 
                 <div className="absolute inset-0 opacity-10">
-                    <div className="absolute top-20 left-20 w-72 h-72 bg-red-500 rounded-full filter blur-5xl animate-pulse"></div>
-                    <div className="absolute bottom-20 right-20 w-96 h-96 bg-red-500 rounded-full filter blur-5xl animate-pulse" style={{ animationDelay: '2s' }}></div>
+                    <div className="absolute top-20 left-20 w-72 h-72 bg-blue-500 rounded-full filter blur-5xl animate-pulse"></div>
+                    <div className="absolute bottom-20 right-20 w-96 h-96 bg-blue-500 rounded-full filter blur-5xl animate-pulse" style={{ animationDelay: '2s' }}></div>
                 </div>
 
                 <Container className="relative z-10 h-full flex items-center">
                     <div className="max-w-4xl">
-                        <h1 className="text-7xl md:text-6xl lg:text-7xl font-light text-white mb-6 leading-tight">
+                        <h1 className="text-4xl md:text-6xl lg:text-7xl font-light text-white mb-6 leading-tight">
                             Build the Future
-                            <span className="block bg-clip-text text-transparent bg-gradient-to-r from-red-400 to-red-400">
+                            <span className="block bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-400">
                                 With Us
                             </span>
                         </h1>
@@ -136,7 +136,7 @@ export default function CareersPage() {
                             <Link href="#open-positions">
                                 <Button
                                     size="lg"
-                                    className="bg-red-500 hover:from-red-700 hover:to-red-700 text-white border-0 px-8 py-3 text-lg shadow-lg transform transition-all duration-300 hover:scale-105"
+                                    className="bg-blue-500 hover:from-blue-700 hover:to-blue-700 text-white border-0 px-8 py-3 text-lg shadow-lg transform transition-all duration-300 hover:scale-105"
                                 >
                                     View Open Positions
                                 </Button>
@@ -303,7 +303,7 @@ export default function CareersPage() {
 
                         {/* Step 1 */}
                         <div className="relative bg-white rounded-3xl p-8 text-center shadow-lg hover:shadow-xl transition">
-                            <div className="w-16 h-16 bg-red-500 rounded-full flex items-center justify-center mx-auto mb-6 relative z-10">
+                            <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-6 relative z-10">
                                 <span className="text-xl font-light text-white">1</span>
                             </div>
                             <h3 className="text-xl font-sans text-gray-900 mb-3">
@@ -316,7 +316,7 @@ export default function CareersPage() {
 
                         {/* Step 2 */}
                         <div className="relative bg-white rounded-3xl p-8 text-center shadow-lg hover:shadow-xl transition">
-                            <div className="w-16 h-16 bg-red-500 rounded-full flex items-center justify-center mx-auto mb-6 relative z-10">
+                            <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-6 relative z-10">
                                 <span className="text-xl font-light text-white">2</span>
                             </div>
                             <h3 className="text-xl font-sans text-gray-900 mb-3">
@@ -329,7 +329,7 @@ export default function CareersPage() {
 
                         {/* Step 3 */}
                         <div className="relative bg-white rounded-3xl p-8 text-center shadow-lg hover:shadow-xl transition">
-                            <div className="w-16 h-16 bg-red-500 rounded-full flex items-center justify-center mx-auto mb-6 relative z-10">
+                            <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-6 relative z-10">
                                 <span className="text-xl font-light text-white">3</span>
                             </div>
                             <h3 className="text-xl font-sans text-gray-900 mb-3">
@@ -342,7 +342,7 @@ export default function CareersPage() {
 
                         {/* Step 4 */}
                         <div className="relative bg-white rounded-3xl p-8 text-center shadow-lg hover:shadow-xl transition">
-                            <div className="w-16 h-16 bg-red-500 rounded-full flex items-center justify-center mx-auto mb-6 relative z-10">
+                            <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-6 relative z-10">
                                 <span className="text-xl font-light text-white">4</span>
                             </div>
                             <h3 className="text-xl font-sans text-gray-900 mb-3">
@@ -378,7 +378,7 @@ export default function CareersPage() {
                                 <Link href="#open-positions">
                                     <Button
                                         size="lg"
-                                        className="bg-red-500 text-red-700 hover:bg-gray-100 border-0 px-8 py-4 text-lg font-light shadow-xl transition-transform duration-300 hover:scale-105"
+                                        className="bg-blue-500 text-blue-700 hover:bg-gray-100 border-0 px-8 py-4 text-lg font-light shadow-xl transition-transform duration-300 hover:scale-105"
                                     >
                                         Browse All Positions
                                     </Button>

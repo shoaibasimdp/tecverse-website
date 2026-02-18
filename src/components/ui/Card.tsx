@@ -23,7 +23,7 @@ export const Card: React.FC<CardProps> = ({
                 } ${className}`}
         >
             {icon && (
-                <div className="mb-4 text-red-600 dark:text-red-400">
+                <div className="mb-4 text-blue-600 dark:text-blue-400">
                     {icon}
                 </div>
             )}

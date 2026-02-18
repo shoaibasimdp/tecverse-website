@@ -25,7 +25,7 @@ export function ProcessFlow({ processSteps }: ProcessFlowProps) {
                     {processSteps.map((step, index) => (
                         <div key={index} className="relative">
                             {index < processSteps.length - 1 && (
-                                <div className={`absolute top-full left-1/2 w-0.5 h-20 -translate-x-1/2 ${index % 2 === 0 ? 'origin-top' : 'origin-bottom'}`}>
+                                <div className={`hidden md:block absolute top-full left-1/2 w-0.5 h-20 -translate-x-1/2 ${index % 2 === 0 ? 'origin-top' : 'origin-bottom'}`}>
                                     <svg
                                         className="absolute top-0 left-1/2 -translate-x-1/2"
                                         width="400"
@@ -55,12 +55,12 @@ export function ProcessFlow({ processSteps }: ProcessFlowProps) {
                                 className={`group relative flex gap-6 p-8 mb-20 bg-gradient-to-br from-white to-gray-50 dark:from-gray-900 dark:to-gray-800 rounded-3xl shadow-lg hover:shadow-3xl transition-all duration-500 border border-gray-200 dark:border-gray-700 ${index % 2 === 0 ? 'mr-auto ml-0 max-w-xl' : 'ml-auto mr-0 max-w-xl'
                                     }`}
                             >
-                                <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-red-500 via-red-500 to-pink-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-xl -z-10" />
+                                <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-blue-500 via-blue-500 to-pink-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-xl -z-10" />
 
                                 <div className="flex-shrink-0">
                                     <div className="relative w-16 h-16 rounded-full bg-black flex items-center justify-center text-3xl font-light text-white shadow-lg group-hover:scale-110 group-hover:rotate-12 transition-all duration-500">
                                         {step.number}
-                                        <div className="absolute inset-0 rounded-full bg-gradient-to-br from-red-400 to-red-500 opacity-0 group-hover:opacity-50 blur-md transition-opacity duration-500" />
+                                        <div className="absolute inset-0 rounded-full bg-gradient-to-br from-blue-400 to-blue-500 opacity-0 group-hover:opacity-50 blur-md transition-opacity duration-500" />
                                     </div>
                                 </div>
 
@@ -73,7 +73,7 @@ export function ProcessFlow({ processSteps }: ProcessFlowProps) {
                                     </p>
                                 </div>
 
-                                <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-red-500/10 to-red-500/10 rounded-bl-full rounded-tr-3xl" />
+                                <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-blue-500/10 to-blue-500/10 rounded-bl-full rounded-tr-3xl" />
                             </div>
                         </div>
                     ))}

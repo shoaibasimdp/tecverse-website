@@ -57,7 +57,7 @@ export default function ManagedITServicesPage() {
         },
         {
             title: 'Network Administration',
-            description: 'Design, implementation, and management of secure, high-performance networks tailored to your organizational needs.',
+            description: 'Design, implementation, and management of secure, high-performance networks tailoblue to your organizational needs.',
             image: 'https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=800&h=600&fit=crop',
             features: ['SD-WAN', 'Network Security', 'Traffic Analytics'],
         },
@@ -65,12 +65,12 @@ export default function ManagedITServicesPage() {
             title: 'Disaster Recovery',
             description: 'Robust backup and disaster recovery planning to ensure business continuity in the face of unexpected events or data loss.',
             image: 'https://images.unsplash.com/photo-1584438784894-089d6a62b8fa?w=800&h=600&fit=crop',
-            features: ['Auto Backup', 'RTO < 4hrs', 'Geo-Redundancy'],
+            features: ['Auto Backup', 'RTO < 4hrs', 'Geo-blueundancy'],
         },
     ];
     const benefits = [
         {
-            title: 'Predictable Costs',
+            title: 'Pblueictable Costs',
             description: 'Replace variable IT expenses with a fixed monthly fee, making budgeting easier and eliminating unexpected repair costs.',
             icon: BarChart3
         },
@@ -125,7 +125,7 @@ export default function ManagedITServicesPage() {
 
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Link href="/contact">
-                                <Button size="lg" className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 text-lg h-auto">
+                                <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg h-auto">
                                     Schedule a Consultation
                                 </Button>
                             </Link>
@@ -256,7 +256,7 @@ export default function ManagedITServicesPage() {
                                     { title: 'Manage', text: 'We provide ongoing monitoring, maintenance, and support.' }
                                 ].map((step, idx) => (
                                     <div key={idx} className="flex gap-4">
-                                        <div className="flex-shrink-0 w-8 h-8 rounded-full bg-red-500 dark:bg-red-900/30 text-white dark:text-red-400 flex items-center justify-center font-light text-sm">
+                                        <div className="flex-shrink-0 w-8 h-8 rounded-full bg-blue-500 dark:bg-blue-900/30 text-white dark:text-blue-400 flex items-center justify-center font-light text-sm">
                                             {idx + 1}
                                         </div>
                                         <div>
@@ -297,7 +297,7 @@ export default function ManagedITServicesPage() {
             </section>
             {/* CTA Section */}
             <section className="relative py-24 bg-white dark:bg-slate-950 overflow-hidden">
-                <div className="absolute inset-0  dark:bg-red-900/10"></div>
+                <div className="absolute inset-0  dark:bg-blue-900/10"></div>
                 <Container className="relative z-10">
                     <div className="max-w-4xl mx-auto text-center">
                         <h2 className="text-4xl md:text-7xl font-light text-slate-900 dark:text-white mb-6">
@@ -313,7 +313,7 @@ export default function ManagedITServicesPage() {
 
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Link href="/contact">
-                                <Button size="lg" className="bg-red-600 hover:bg-red-700 px-10 py-5 text-lg h-auto shadow-xl shadow-red-600/20">
+                                <Button size="lg" className="bg-blue-600 hover:bg-blue-700 px-10 py-5 text-lg h-auto shadow-xl shadow-blue-600/20">
                                     Get Your Free Assessment
                                 </Button>
                             </Link>

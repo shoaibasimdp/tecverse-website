@@ -49,7 +49,7 @@ import {
 } from 'lucide-react';
 const techBrandColors: Record<string, string> = {
     tensorflow: 'text-orange-500',
-    pytorch: 'text-red-500',
+    pytorch: 'text-blue-500',
     scikitlearn: 'text-yellow-500',
     huggingface: 'text-yellow-400',
     openai: 'text-emerald-500',
@@ -60,20 +60,20 @@ const techBrandColors: Record<string, string> = {
     apacheairflow: 'text-sky-500',
     dbt: 'text-orange-500',
     snowflake: 'text-sky-400',
-    googlebigquery: 'text-red-500',
+    googlebigquery: 'text-blue-500',
 
-    python: 'text-red-500',
+    python: 'text-blue-500',
     django: 'text-green-700',
     nodedotjs: 'text-green-600',
     go: 'text-cyan-500',
     spring: 'text-green-500',
 
-    postgresql: 'text-red-700',
+    postgresql: 'text-blue-700',
     mongodb: 'text-green-600',
 
     react: 'text-cyan-400',
     nextdotjs: 'text-black dark:text-white',
-    typescript: 'text-red-600',
+    typescript: 'text-blue-600',
     tailwindcss: 'text-sky-400',
     vuedotjs: 'text-green-500',
     reactnative: 'text-cyan-400',
@@ -187,7 +187,7 @@ export default function DevelopmentServicesPage() {
             image: 'https://images.unsplash.com/photo-1518186285589-2f7649de83e0?auto=format&fit=crop&w=800&q=80' // Recommendation engine suggestions
         },
         {
-            title: 'AI-Powered Automation',
+            title: 'AI-Poweblue Automation',
             description: 'Automate complex workflows with intelligent decision-making. Our AI automation solutions handle repetitive tasks, process approvals, route information, and make contextual decisions, freeing your team to focus on strategic work.',
             features: ['Intelligent document processing', 'Automated decision engines', 'Smart workflow routing', 'Exception handling'],
             image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80' // AI workflow automation dashboard
@@ -216,7 +216,7 @@ export default function DevelopmentServicesPage() {
         {
             title: 'Customer Behavior Analytics',
             description: 'Understand your customers at a granular level. We build analytics platforms that track user journeys, identify patterns, segment audiences, and uncover opportunities to improve retention, engagement, and lifetime value.',
-            features: ['User journey mapping', 'Cohort analysis', 'Behavioral segmentation', 'Churn prediction'],
+            features: ['User journey mapping', 'Cohort analysis', 'Behavioral segmentation', 'Churn pblueiction'],
             image: 'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=800&q=80' // Customer behavior charts
         },
         {
@@ -250,7 +250,7 @@ export default function DevelopmentServicesPage() {
         },
         {
             name: 'Manufacturing',
-            description: 'Predictive maintenance, quality control, and supply chain optimization.',
+            description: 'Pblueictive maintenance, quality control, and supply chain optimization.',
         },
         {
             name: 'Retail',
@@ -308,7 +308,7 @@ export default function DevelopmentServicesPage() {
 
                 <Container>
                     <div className="max-w-4xl mx-auto text-center space-y-12">
-                        <h1 className="text-7xl md:text-6xl lg:text-7xl font-light tracking-tight text-slate-900 dark:text-white">
+                        <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-light tracking-tight text-slate-900 dark:text-white">
                             Development Services
                         </h1>
 
@@ -341,19 +341,19 @@ export default function DevelopmentServicesPage() {
                 <Container>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
                         <div className="text-center">
-                            <div className="text-4xl md:text-7xl font-light text-black dark:text-red-400 mb-2">500+</div>
+                            <div className="text-4xl md:text-7xl font-light text-black dark:text-blue-400 mb-2">500+</div>
                             <div className="text-sm text-gray-600 dark:text-gray-400">Projects Delivered</div>
                         </div>
                         <div className="text-center">
-                            <div className="text-4xl md:text-7xl font-light text-black dark:text-red-400 mb-2">98%</div>
+                            <div className="text-4xl md:text-7xl font-light text-black dark:text-blue-400 mb-2">98%</div>
                             <div className="text-sm text-gray-600 dark:text-gray-400">Client Satisfaction</div>
                         </div>
                         <div className="text-center">
-                            <div className="text-4xl md:text-7xl font-light text-black dark:text-red-400 mb-2">15+</div>
+                            <div className="text-4xl md:text-7xl font-light text-black dark:text-blue-400 mb-2">15+</div>
                             <div className="text-sm text-gray-600 dark:text-gray-400">Years Experience</div>
                         </div>
                         <div className="text-center">
-                            <div className="text-4xl md:text-7xl font-light text-black dark:text-red-400 mb-2">24/7</div>
+                            <div className="text-4xl md:text-7xl font-light text-black dark:text-blue-400 mb-2">24/7</div>
                             <div className="text-sm text-gray-600 dark:text-gray-400">Support Available</div>
                         </div>
                     </div>
@@ -364,7 +364,7 @@ export default function DevelopmentServicesPage() {
             <section id="ai-solutions" className="relative py-28 px-6 bg-white">
                 <Container>
                     <div className="max-w-5xl mb-20">
-                        <h2 className="text-4xl md:text-7xl font-light mb-6 text-[#1B3139]">
+                        <h2 className="text-3xl sm:text-5xl md:text-7xl font-light mb-6 text-[#1B3139]">
                             AI Solutions
                         </h2>
                         <p className="text-xl text-gray-600 leading-relaxed">
@@ -397,7 +397,7 @@ export default function DevelopmentServicesPage() {
                                 {/* Content */}
                                 <div className="space-y-8">
                                     <div className="space-y-4">
-                                        <h3 className="text-7xl font-light text-[#1B3139]">
+                                        <h3 className="text-2xl sm:text-4xl md:text-5xl lg:text-7xl font-light text-[#1B3139]">
                                             {solution.title}
                                         </h3>
                                         <p className="text-lg text-gray-600 leading-relaxed">
@@ -416,7 +416,7 @@ export default function DevelopmentServicesPage() {
                                                     className="flex items-start gap-3 text-gray-600"
                                                 >
                                                     <svg
-                                                        className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5"
+                                                        className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5"
                                                         fill="none"
                                                         viewBox="0 0 24 24"
                                                         stroke="currentColor"
@@ -443,7 +443,7 @@ export default function DevelopmentServicesPage() {
             <section className="relative py-28 px-6 bg-white">
                 <Container>
                     <div className="max-w-5xl mb-20">
-                        <h2 className="text-4xl md:text-7xl font-light mb-6 text-[#1B3139]">
+                        <h2 className="text-3xl sm:text-5xl md:text-7xl font-light mb-6 text-[#1B3139]">
                             Data Solutions
                         </h2>
                         <p className="text-xl text-gray-600 leading-relaxed">
@@ -474,7 +474,7 @@ export default function DevelopmentServicesPage() {
                                     </div>
 
                                     <div className="space-y-4">
-                                        <h3 className="text-7xl font-light text-[#1B3139]">
+                                        <h3 className="text-2xl sm:text-4xl md:text-5xl lg:text-7xl font-light text-[#1B3139]">
                                             {solution.title}
                                         </h3>
                                         <p className="text-lg text-gray-600 leading-relaxed">
@@ -493,7 +493,7 @@ export default function DevelopmentServicesPage() {
                                                     className="flex items-start gap-3 text-gray-600"
                                                 >
                                                     <svg
-                                                        className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5"
+                                                        className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5"
                                                         fill="none"
                                                         viewBox="0 0 24 24"
                                                         stroke="currentColor"
@@ -532,7 +532,7 @@ export default function DevelopmentServicesPage() {
             <section className="relative py-24 px-6 bg-white">
                 <Container>
                     <div className="max-w-5xl mb-16">
-                        <h2 className="text-4xl md:text-7xl font-light mb-6">Custom Software Development</h2>
+                        <h2 className="text-3xl sm:text-5xl md:text-7xl font-light mb-6">Custom Software Development</h2>
                         <p className="text-xl text-gray-600 dark:text-gray-400 leading-relaxed">
                             Every business is unique. We build tailored software solutions that fit your specific workflows, integrate seamlessly with your existing systems, and scale as your organization grows.
                         </p>
@@ -559,7 +559,7 @@ export default function DevelopmentServicesPage() {
                     </div>
 
 
-                    <div className="mt-16 p-8 bg-red-50">
+                    <div className="mt-16 p-8 bg-blue-50">
                         <div className="max-w-5xl">
                             <h3 className="text-3xl font-light mb-4">Enterprise-Grade Quality</h3>
                             <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-6">
@@ -591,7 +591,7 @@ export default function DevelopmentServicesPage() {
             <section className="relative py-24 px-6 bg-white dark:bg-gray-900/50">
                 <Container>
                     <div className="max-w-5xl mx-auto text-center mb-16">
-                        <h2 className="text-4xl md:text-7xl font-light mb-6">Industries We Serve</h2>
+                        <h2 className="text-3xl sm:text-5xl md:text-7xl font-light mb-6">Industries We Serve</h2>
                         <p className="text-xl text-gray-600 dark:text-gray-400">
                             Deep expertise across multiple sectors, with solutions tailored to industry-specific challenges and compliance requirements.
                         </p>
@@ -607,7 +607,7 @@ export default function DevelopmentServicesPage() {
                                     <div className="flex items-center justify-between">
                                         <h3 className="text-xl text-white font-light">{industry.name}</h3>
                                         <svg
-                                            className="w-5 h-5 text-gray-400 group-hover:text-red-600 dark:group-hover:text-red-400 transition-colors"
+                                            className="w-5 h-5 text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors"
                                             fill="none"
                                             viewBox="0 0 24 24"
                                             stroke="currentColor"
@@ -640,7 +640,7 @@ export default function DevelopmentServicesPage() {
             <section className="relative py-24 px-6 bg-white">
                 <Container>
                     <div className="max-w-5xl mx-auto text-center mb-16">
-                        <h2 className="text-4xl md:text-7xl font-light mb-6">
+                        <h2 className="text-3xl sm:text-5xl md:text-7xl font-light mb-6">
                             Technology Stack
                         </h2>
                         <p className="text-xl text-gray-600 dark:text-gray-400">
@@ -719,7 +719,7 @@ export default function DevelopmentServicesPage() {
 
                             {/* Content */}
                             <div>
-                                <h2 className="text-7xl md:text-4xl font-light mb-6">
+                                <h2 className="text-3xl sm:text-5xl md:text-7xl font-light mb-6">
                                     Application Migration Services
                                 </h2>
 
@@ -738,21 +738,21 @@ export default function DevelopmentServicesPage() {
                                     {/* Left column */}
                                     <div className="space-y-4">
                                         <div className="flex items-center space-x-3">
-                                            <svg className="w-5 h-5 text-red-600 dark:text-red-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <svg className="w-5 h-5 text-blue-600 dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                                             </svg>
                                             <span>On-premise to AWS / Azure / GCP</span>
                                         </div>
 
                                         <div className="flex items-center space-x-3">
-                                            <svg className="w-5 h-5 text-red-600 dark:text-red-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <svg className="w-5 h-5 text-blue-600 dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                                             </svg>
                                             <span>Legacy database migrations</span>
                                         </div>
 
                                         <div className="flex items-center space-x-3">
-                                            <svg className="w-5 h-5 text-red-600 dark:text-red-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <svg className="w-5 h-5 text-blue-600 dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                                             </svg>
                                             <span>Monolith to microservices</span>
@@ -762,21 +762,21 @@ export default function DevelopmentServicesPage() {
                                     {/* Right column */}
                                     <div className="space-y-4">
                                         <div className="flex items-center space-x-3">
-                                            <svg className="w-5 h-5 text-red-600 dark:text-red-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <svg className="w-5 h-5 text-blue-600 dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                                             </svg>
                                             <span>Platform modernization</span>
                                         </div>
 
                                         <div className="flex items-center space-x-3">
-                                            <svg className="w-5 h-5 text-red-600 dark:text-red-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <svg className="w-5 h-5 text-blue-600 dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                                             </svg>
                                             <span>Zero-downtime migrations</span>
                                         </div>
 
                                         <div className="flex items-center space-x-3">
-                                            <svg className="w-5 h-5 text-red-600 dark:text-red-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <svg className="w-5 h-5 text-blue-600 dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                                             </svg>
                                             <span>Data integrity assurance</span>
@@ -821,7 +821,7 @@ export default function DevelopmentServicesPage() {
                             Ready to Transform Your Business with AI?
                         </h2>
 
-                        <p className="text-xl md:text-3xl text-red-100 leading-relaxed">
+                        <p className="text-xl md:text-3xl text-blue-100 leading-relaxed">
                             Let&apos;s discuss how our AI, data, and software solutions can drive
                             measurable results for your organization.
                         </p>
@@ -835,8 +835,8 @@ export default function DevelopmentServicesPage() {
               text-lg
               px-8
               bg-white
-              text-red-600
-              hover:bg-red-50
+              text-blue-600
+              hover:bg-blue-50
               border-white
             "
                                 >

@@ -11,10 +11,10 @@ export default function OffshoringContent() {
                 /* Fonts are handled globally */
                 
                 :root {
-                    --primary-red: #1e40af;
-                    --primary-red-dark: #1e3a8a;
-                    --accent-red: #7c3aed;
-                    --accent-red: #14b8a6;
+                    --primary-blue: #1e40af;
+                    --primary-blue-dark: #1e3a8a;
+                    --accent-blue: #7c3aed;
+                    --accent-blue: #14b8a6;
                     --dark-bg: #0f172a;
                     --dark-bg-secondary: #1e293b;
                     --light-bg: #f8fafc;
@@ -161,14 +161,14 @@ export default function OffshoringContent() {
                 
                 
                 .gradient-text {
-                    background: linear-gradient(90deg, var(--primary-red), var(--accent-red));
+                    background: linear-gradient(90deg, var(--primary-blue), var(--accent-blue));
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
                     background-clip: text;
                 }
                 
                 .animated-gradient {
-                    background: linear-gradient(90deg, var(--primary-red), var(--accent-red), var(--accent-red), var(--primary-red));
+                    background: linear-gradient(90deg, var(--primary-blue), var(--accent-blue), var(--accent-blue), var(--primary-blue));
                     background-size: 300% 300%;
                     animation: gradient-shift 8s ease infinite;
                 }
@@ -195,7 +195,7 @@ export default function OffshoringContent() {
                         <div className="space-y-8 pr-0 lg:pr-20">
 
 
-                            <h1 className="text-7xl md:text-6xl lg:text-7xl font-light leading-tight font-display">
+                            <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-light leading-tight font-display">
                                 <span className="text-white">Build Your</span>
                                 <br />
                                 <span className="text-white">
@@ -206,12 +206,12 @@ export default function OffshoringContent() {
                             </h1>
 
                             <p className="text-xl text-gray-300 max-w-xl leading-relaxed font-body">
-                                Access elite professionals worldwide with our enterprise-grade offshoring platform. Scale rapidly, reduce costs, and accelerate innovation with a trusted partner.
+                                Access elite professionals worldwide with our enterprise-grade offshoring platform. Scale rapidly, blueuce costs, and accelerate innovation with a trusted partner.
                             </p>
 
                             <div className="flex flex-col sm:flex-row gap-4">
                                 <Link href="/contact">
-                                    <button className="cta-button px-8 py-4 bg-red-600 text-white font-light rounded-lg hover:bg-green-600 transition shadow-xl ">
+                                    <button className="cta-button px-8 py-4 bg-blue-600 text-white font-light rounded-lg hover:bg-green-600 transition shadow-xl ">
                                         Request a Demo
                                     </button>
                                 </Link>
@@ -223,17 +223,17 @@ export default function OffshoringContent() {
                                 </Link>
                             </div>
 
-                            <div className="flex items-center gap-8 pt-4">
+                            <div className="flex flex-wrap items-center gap-6 sm:gap-8 pt-4">
                                 <div>
-                                    <p className="text-7xl font-light text-white">98%</p>
+                                    <p className="text-3xl sm:text-5xl md:text-7xl font-light text-white">98%</p>
                                     <p className="text-sm text-gray-400">Client Satisfaction</p>
                                 </div>
                                 <div>
-                                    <p className="text-7xl font-light text-white">60%</p>
-                                    <p className="text-sm text-gray-400">Cost Reduction</p>
+                                    <p className="text-3xl sm:text-5xl md:text-7xl font-light text-white">60%</p>
+                                    <p className="text-sm text-gray-400">Cost blueuction</p>
                                 </div>
                                 <div>
-                                    <p className="text-7xl font-light text-white">2-4</p>
+                                    <p className="text-3xl sm:text-5xl md:text-7xl font-light text-white">2-4</p>
                                     <p className="text-sm text-gray-400">Weeks to Deploy</p>
                                 </div>
                             </div>
@@ -253,7 +253,7 @@ export default function OffshoringContent() {
             <section className="py-24 bg-white">
                 <Container>
                     <div className="max-w-5xl mx-auto text-center mb-16">
-                        <h2 className="text-4xl md:text-7xl font-light mb-6 font-display" style={{ color: 'var(--text-primary)' }}>
+                        <h2 className="text-3xl sm:text-5xl md:text-7xl font-light mb-6 font-display" style={{ color: 'var(--text-primary)' }}>
                             Enterprise-Grade Offshoring
                         </h2>
                         <p className="text-lg text-gray-600 font-body">
@@ -269,7 +269,7 @@ export default function OffshoringContent() {
                                 <div>
                                     <div className="flex items-center gap-4 mb-6">
 
-                                        <h3 className="text-7xl md:text-4xl font-light font-display" style={{ color: 'var(--text-primary)' }}>
+                                        <h3 className="text-3xl md:text-4xl font-light font-display" style={{ color: 'var(--text-primary)' }}>
                                             Elite Talent Pool
                                         </h3>
                                     </div>
@@ -279,9 +279,9 @@ export default function OffshoringContent() {
                                     </p>
 
                                     <div className="flex flex-wrap gap-3">
-                                        <span className="px-4 py-2 bg-red-50 text-red-600 rounded-full text-sm font-medium font-body">Expert Engineers</span>
-                                        <span className="px-4 py-2 bg-red-50 text-red-600 rounded-full text-sm font-medium font-body">Certified Pros</span>
-                                        <span className="px-4 py-2 bg-red-50 text-red-600 rounded-full text-sm font-medium font-body">Global Reach</span>
+                                        <span className="px-4 py-2 bg-blue-50 text-blue-600 rounded-full text-sm font-medium font-body">Expert Engineers</span>
+                                        <span className="px-4 py-2 bg-blue-50 text-blue-600 rounded-full text-sm font-medium font-body">Certified Pros</span>
+                                        <span className="px-4 py-2 bg-blue-50 text-blue-600 rounded-full text-sm font-medium font-body">Global Reach</span>
                                     </div>
                                 </div>
 
@@ -312,7 +312,7 @@ export default function OffshoringContent() {
                                 <div className="order-1 lg:order-2">
                                     <div className="flex items-center gap-4 mb-6">
 
-                                        <h3 className="text-7xl md:text-4xl font-light font-display" style={{ color: 'var(--text-primary)' }}>
+                                        <h3 className="text-3xl md:text-4xl font-light font-display" style={{ color: 'var(--text-primary)' }}>
                                             Cost Optimization
                                         </h3>
                                     </div>
@@ -322,9 +322,9 @@ export default function OffshoringContent() {
                                     </p>
 
                                     <div className="flex flex-wrap gap-3">
-                                        <span className="px-4 py-2 bg-red-50 text-red-600 rounded-full text-sm font-medium font-body">60% Savings</span>
-                                        <span className="px-4 py-2 bg-red-50 text-red-600 rounded-full text-sm font-medium font-body">No Hidden Fees</span>
-                                        <span className="px-4 py-2 bg-red-50 text-red-600 rounded-full text-sm font-medium font-body">Flexible Plans</span>
+                                        <span className="px-4 py-2 bg-blue-50 text-blue-600 rounded-full text-sm font-medium font-body">60% Savings</span>
+                                        <span className="px-4 py-2 bg-blue-50 text-blue-600 rounded-full text-sm font-medium font-body">No Hidden Fees</span>
+                                        <span className="px-4 py-2 bg-blue-50 text-blue-600 rounded-full text-sm font-medium font-body">Flexible Plans</span>
                                     </div>
                                 </div>
                             </div>
@@ -337,7 +337,7 @@ export default function OffshoringContent() {
                                 <div>
                                     <div className="flex items-center gap-4 mb-6">
 
-                                        <h3 className="text-7xl md:text-4xl font-light font-display" style={{ color: 'var(--text-primary)' }}>
+                                        <h3 className="text-3xl md:text-4xl font-light font-display" style={{ color: 'var(--text-primary)' }}>
                                             Infinite Scalability
                                         </h3>
                                     </div>
@@ -347,9 +347,9 @@ export default function OffshoringContent() {
                                     </p>
 
                                     <div className="flex flex-wrap gap-3">
-                                        <span className="px-4 py-2 bg-red-50 text-red-600 rounded-full text-sm font-medium font-body">Rapid Scaling</span>
-                                        <span className="px-4 py-2 bg-red-50 text-red-600 rounded-full text-sm font-medium font-body">Zero Overhead</span>
-                                        <span className="px-4 py-2 bg-red-50 text-red-600 rounded-full text-sm font-medium font-body">24/7 Operations</span>
+                                        <span className="px-4 py-2 bg-blue-50 text-blue-600 rounded-full text-sm font-medium font-body">Rapid Scaling</span>
+                                        <span className="px-4 py-2 bg-blue-50 text-blue-600 rounded-full text-sm font-medium font-body">Zero Overhead</span>
+                                        <span className="px-4 py-2 bg-blue-50 text-blue-600 rounded-full text-sm font-medium font-body">24/7 Operations</span>
                                     </div>
                                 </div>
 
@@ -380,7 +380,7 @@ export default function OffshoringContent() {
                                 <div className="order-1 lg:order-2">
                                     <div className="flex items-center gap-4 mb-6">
 
-                                        <h3 className="text-7xl md:text-4xl font-light font-display" style={{ color: 'var(--text-primary)' }}>
+                                        <h3 className="text-3xl md:text-4xl font-light font-display" style={{ color: 'var(--text-primary)' }}>
                                             Enterprise Security
                                         </h3>
                                     </div>
@@ -390,9 +390,9 @@ export default function OffshoringContent() {
                                     </p>
 
                                     <div className="flex flex-wrap gap-3">
-                                        <span className="px-4 py-2 bg-red-50 text-red-600 rounded-full text-sm font-medium font-body">ISO 27001</span>
-                                        <span className="px-4 py-2 bg-red-50 text-red-600 rounded-full text-sm font-medium font-body">GDPR Compliant</span>
-                                        <span className="px-4 py-2 bg-red-50 text-red-600 rounded-full text-sm font-medium font-body">End-to-End Encryption</span>
+                                        <span className="px-4 py-2 bg-blue-50 text-blue-600 rounded-full text-sm font-medium font-body">ISO 27001</span>
+                                        <span className="px-4 py-2 bg-blue-50 text-blue-600 rounded-full text-sm font-medium font-body">GDPR Compliant</span>
+                                        <span className="px-4 py-2 bg-blue-50 text-blue-600 rounded-full text-sm font-medium font-body">End-to-End Encryption</span>
                                     </div>
                                 </div>
                             </div>
@@ -415,7 +415,7 @@ export default function OffshoringContent() {
 
                 <Container className="relative z-10">
                     <div className="max-w-5xl mx-auto text-center mb-16">
-                        <h2 className="text-4xl md:text-7xl font-light text-white mb-6 font-display">
+                        <h2 className="text-3xl sm:text-5xl md:text-7xl font-light text-white mb-6 font-display">
                             Your Journey to Global Excellence
                         </h2>
                         <p className="text-lg text-gray-300 font-body">
@@ -428,7 +428,7 @@ export default function OffshoringContent() {
                         {/* Step 1 */}
                         <div className="process-step text-center group">
                             <div className="relative mb-6">
-                                <div className="w-24 h-24 bg-gradient-to-br from-red-500 to-red-600 rounded-3xl flex items-center justify-center mx-auto shadow-3xl shadow-red-500/30 group-hover:shadow-red-500/50 transition-all rotate-3 group-hover:rotate-6">
+                                <div className="w-24 h-24 bg-gradient-to-br from-blue-500 to-blue-600 rounded-3xl flex items-center justify-center mx-auto shadow-3xl shadow-blue-500/30 group-hover:shadow-blue-500/50 transition-all rotate-3 group-hover:rotate-6">
                                     <span className="text-white text-4xl font-light font-display">1</span>
                                 </div>
                                 <div className="absolute -top-2 -right-2 w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
@@ -441,17 +441,17 @@ export default function OffshoringContent() {
                                 Discovery & Strategy
                             </h3>
                             <p className="text-gray-300 text-sm leading-relaxed font-body">
-                                Deep-dive analysis of your needs, goals, and challenges to craft a bespoke offshoring roadmap. We identify opportunities and design a strategic plan tailored to your unique business objectives.
+                                Deep-dive analysis of your needs, goals, and challenges to craft a bespoke offshoring roadmap. We identify opportunities and design a strategic plan tailoblue to your unique business objectives.
                             </p>
                         </div>
 
                         {/* Step 2 */}
                         <div className="process-step text-center group">
                             <div className="relative mb-6">
-                                <div className="w-24 h-24 bg-gradient-to-br from-red-500 to-red-600 rounded-3xl flex items-center justify-center mx-auto shadow-3xl shadow-red-500/30 group-hover:shadow-red-500/50 transition-all -rotate-3 group-hover:-rotate-6">
+                                <div className="w-24 h-24 bg-gradient-to-br from-blue-500 to-blue-600 rounded-3xl flex items-center justify-center mx-auto shadow-3xl shadow-blue-500/30 group-hover:shadow-blue-500/50 transition-all -rotate-3 group-hover:-rotate-6">
                                     <span className="text-white text-4xl font-light font-display">2</span>
                                 </div>
-                                <div className="absolute -top-2 -right-2 w-8 h-8 bg-red-500 rounded-full flex items-center justify-center">
+                                <div className="absolute -top-2 -right-2 w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
                                     <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                                     </svg>
@@ -468,10 +468,10 @@ export default function OffshoringContent() {
                         {/* Step 3 */}
                         <div className="process-step text-center group">
                             <div className="relative mb-6">
-                                <div className="w-24 h-24 bg-gradient-to-br from-red-500 to-red-600 rounded-3xl flex items-center justify-center mx-auto shadow-3xl shadow-red-500/30 group-hover:shadow-red-500/50 transition-all rotate-3 group-hover:rotate-6">
+                                <div className="w-24 h-24 bg-gradient-to-br from-blue-500 to-blue-600 rounded-3xl flex items-center justify-center mx-auto shadow-3xl shadow-blue-500/30 group-hover:shadow-blue-500/50 transition-all rotate-3 group-hover:rotate-6">
                                     <span className="text-white text-4xl font-light font-display">3</span>
                                 </div>
-                                <div className="absolute -top-2 -right-2 w-8 h-8 bg-red-500 rounded-full flex items-center justify-center">
+                                <div className="absolute -top-2 -right-2 w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
                                     <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                                     </svg>
@@ -488,10 +488,10 @@ export default function OffshoringContent() {
                         {/* Step 4 */}
                         <div className="process-step text-center group">
                             <div className="relative mb-6">
-                                <div className="w-24 h-24 bg-gradient-to-br from-red-500 to-red-600 rounded-3xl flex items-center justify-center mx-auto shadow-3xl shadow-red-500/30 group-hover:shadow-red-500/50 transition-all -rotate-3 group-hover:-rotate-6">
+                                <div className="w-24 h-24 bg-gradient-to-br from-blue-500 to-blue-600 rounded-3xl flex items-center justify-center mx-auto shadow-3xl shadow-blue-500/30 group-hover:shadow-blue-500/50 transition-all -rotate-3 group-hover:-rotate-6">
                                     <span className="text-white text-4xl font-light font-display">4</span>
                                 </div>
-                                <div className="absolute -top-2 -right-2 w-8 h-8 bg-red-500 rounded-full flex items-center justify-center">
+                                <div className="absolute -top-2 -right-2 w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
                                     <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                                     </svg>
@@ -528,7 +528,7 @@ export default function OffshoringContent() {
             <section className="py-24">
                 <Container>
                     <div className="max-w-5xl mx-auto text-center mb-16">
-                        <h2 className="text-4xl md:text-7xl font-light mb-6 font-display text-[#222831]">
+                        <h2 className="text-3xl sm:text-5xl md:text-7xl font-light mb-6 font-display text-[#222831]">
                             Enterprise-Grade Features
                         </h2>
                         <p className="text-lg text-gray-600 font-body">
@@ -605,7 +605,7 @@ export default function OffshoringContent() {
             <section className="py-24 bg-white">
                 <Container>
                     <div className="max-w-5xl mx-auto text-center mb-16">
-                        <h2 className="text-4xl md:text-7xl font-light mb-6 font-display" style={{ color: 'var(--text-primary)' }}>
+                        <h2 className="text-3xl sm:text-5xl md:text-7xl font-light mb-6 font-display" style={{ color: 'var(--text-primary)' }}>
                             What Our Clients Say
                         </h2>
                         <p className="text-lg text-gray-600 font-body">
@@ -623,7 +623,7 @@ export default function OffshoringContent() {
                                 ))}
                             </div>
                             <p className="text-gray-700 mb-6 font-body">
-                                "The offshoring solution has transformed our development capabilities. We've reduced costs by 60% while improving quality."
+                                "The offshoring solution has transformed our development capabilities. We've blueuced costs by 60% while improving quality."
                             </p>
                             <div className="flex items-center">
                                 <div>
@@ -694,17 +694,17 @@ export default function OffshoringContent() {
                             <span className="text-white text-sm font-medium font-body">Ready to Transform Your Business?</span>
                         </div>
 
-                        <h2 className="text-4xl md:text-7xl lg:text-6xl font-light text-white mb-6 font-display leading-tight">
+                        <h2 className="text-3xl sm:text-5xl md:text-7xl lg:text-6xl font-light text-white mb-6 font-display leading-tight">
                             Build Your Dream Team Today
                         </h2>
 
                         <p className="text-xl text-gray-300 mb-10 leading-relaxed font-body max-w-3xl mx-auto">
-                            Join hundreds of enterprises leveraging global talent to drive innovation, reduce costs, and accelerate growth.
+                            Join hundblues of enterprises leveraging global talent to drive innovation, blueuce costs, and accelerate growth.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Link href="/contact">
-                                <button className="cta-button px-10 py-5 bg-red-600 text-white font-light rounded-lg hover:bg-green-600 transition-all font-body text-lg shadow-3xl shadow-red-600/30">
+                                <button className="cta-button px-10 py-5 bg-blue-600 text-white font-light rounded-lg hover:bg-green-600 transition-all font-body text-lg shadow-3xl shadow-blue-600/30">
                                     Schedule a Consultation
                                     <span className="ml-2">→</span>
                                 </button>

@@ -1,244 +1,4 @@
 
-// 'use client';
-
-// import { useState, useEffect, useCallback, useRef } from 'react';
-// import Link from 'next/link';
-// import { X, Shield, ChevronDown, Settings } from 'lucide-react';
-// import { Button } from '@/components/ui/Button';
-
-// const COOKIE_CATEGORIES = {
-//     necessary: {
-//         id: 'necessary',
-//         name: 'Essential Cookies',
-//         description: 'These cookies are required for the website to function and cannot be switched off.',
-//         required: true,
-//         cookies: ['session_id', 'csrf_token', 'auth_token'],
-//     },
-//     analytics: {
-//         id: 'analytics',
-//         name: 'Analytics Cookies',
-//         description: 'These cookies help us understand how visitors interact with the website.',
-//         required: false,
-//         cookies: ['_ga', '_gid', '_gat'],
-//     },
-//     functional: {
-//         id: 'functional',
-//         name: 'Functional Cookies',
-//         description: 'Enable enhanced functionality and personalization.',
-//         required: false,
-//         cookies: ['user_preferences', 'timezone'],
-//     },
-//     advertising: {
-//         id: 'advertising',
-//         name: 'Advertising Cookies',
-//         description: 'Used to deliver relevant advertisements.',
-//         required: false,
-//         cookies: ['ad_id', 'conversion_pixel'],
-//     },
-// };
-
-// export function CookieConsent() {
-//     const [isVisible, setIsVisible] = useState(false);
-//     const [shouldRender, setShouldRender] = useState(false);
-//     const [showDetails, setShowDetails] = useState(false);
-//     const [selectedCategories, setSelectedCategories] = useState<Record<string, boolean>>({});
-//     const [isSaving, setIsSaving] = useState(false);
-//     const consentRef = useRef<HTMLDivElement | null>(null);
-
-//     useEffect(() => {
-//         const existingConsent = localStorage.getItem('cookieConsent');
-//         const version = localStorage.getItem('cookieConsentVersion');
-
-//         if (!existingConsent || version !== process.env.NEXT_PUBLIC_COOKIE_CONSENT_VERSION) {
-//             const timer = setTimeout(() => {
-//                 setShouldRender(true);
-//                 requestAnimationFrame(() => setIsVisible(true));
-//             }, 800);
-//             return () => clearTimeout(timer);
-//         }
-//     }, []);
-
-//     const handleCategoryToggle = useCallback((id: string) => {
-//         if (COOKIE_CATEGORIES[id as keyof typeof COOKIE_CATEGORIES].required) return;
-//         setSelectedCategories(prev => ({ ...prev, [id]: !prev[id] }));
-//     }, []);
-
-//     const saveConsent = useCallback((categories: Record<string, boolean>) => {
-//         setIsSaving(true);
-
-//         localStorage.setItem(
-//             'cookieConsent',
-//             JSON.stringify({
-//                 categories,
-//                 version: process.env.NEXT_PUBLIC_COOKIE_CONSENT_VERSION || '1.0',
-//                 timestamp: new Date().toISOString(),
-//             })
-//         );
-
-//         localStorage.setItem(
-//             'cookieConsentVersion',
-//             process.env.NEXT_PUBLIC_COOKIE_CONSENT_VERSION || '1.0'
-//         );
-
-//         setIsVisible(false);
-//         setTimeout(() => {
-//             setShouldRender(false);
-//             setIsSaving(false);
-//         }, 400);
-//     }, []);
-
-//     const handleAcceptAll = () => {
-//         const all: Record<string, boolean> = {};
-//         Object.keys(COOKIE_CATEGORIES).forEach(k => (all[k] = true));
-//         saveConsent(all);
-//     };
-
-//     const handleRejectAll = () => {
-//         const essential: Record<string, boolean> = {};
-//         Object.keys(COOKIE_CATEGORIES).forEach(
-//             k => (essential[k] = COOKIE_CATEGORIES[k as keyof typeof COOKIE_CATEGORIES].required)
-//         );
-//         saveConsent(essential);
-//     };
-
-//     if (!shouldRender) return null;
-
-//     return (
-//         <div
-//             className={`fixed bottom-0 left-0 right-0 z-50 transition-all duration-500 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'
-//                 }`}
-//         >
-//             <div
-//                 ref={consentRef}
-//                 className="bg-white border border-slate-200 rounded-t-md shadow-xl overflow-hidden"
-//             >
-//                 {/* Header */}
-//                 <div className="p-4 border-b border-slate-200 flex justify-between gap-4">
-//                     <div>
-//                         <h3 className="font-light text-slate-900">
-//                             We value your privacy
-//                         </h3>
-//                         <p className="mt-1 text-sm text-slate-600">
-//                             We use cookies to enhance your experience and analyze traffic.
-//                             <Link
-//                                 href="/cookie-policy"
-//                                 className="ml-1 text-red-600 underline hover:text-red-700"
-//                             >
-//                                 Read our policy
-//                             </Link>
-//                             .
-//                         </p>
-//                     </div>
-//                     <button
-//                         onClick={() => setIsVisible(false)}
-//                         className="text-slate-400 hover:text-slate-900"
-//                         aria-label="Close"
-//                     >
-//                         <X className="w-5 h-5" />
-//                     </button>
-//                 </div>
-
-//                 {/* Details */}
-//                 {showDetails && (
-//                     <div className="p-4 bg-[#f7f7f7] border-b border-slate-200">
-//                         <h4 className="text-sm font-light text-slate-900 mb-3 flex items-center gap-2">
-//                             <Settings className="w-4 h-4" />
-//                             Cookie Preferences
-//                         </h4>
-
-//                         <div className="grid gap-3 md:grid-cols-2">
-//                             {Object.values(COOKIE_CATEGORIES).map(category => (
-//                                 <div
-//                                     key={category.id}
-//                                     className="bg-white border border-slate-200 rounded-md p-3"
-//                                 >
-//                                     <div className="flex gap-3">
-//                                         <button
-//                                             disabled={category.required}
-//                                             onClick={() => handleCategoryToggle(category.id)}
-//                                             className={`relative mt-1 h-6 w-11 rounded-full transition ${category.required
-//                                                 ? 'bg-slate-300'
-//                                                 : selectedCategories[category.id]
-//                                                     ? 'bg-green-600'
-//                                                     : 'bg-slate-300'
-//                                                 }`}
-//                                         >
-//                                             <span
-//                                                 className={`absolute top-1 h-4 w-4 bg-white rounded-full transition ${category.required || selectedCategories[category.id]
-//                                                     ? 'translate-x-6'
-//                                                     : 'translate-x-1'
-//                                                     }`}
-//                                             />
-//                                         </button>
-
-//                                         <div>
-//                                             <h5 className="text-sm font-medium text-slate-900">
-//                                                 {category.name}
-//                                             </h5>
-//                                             <p className="text-xs text-slate-600 mt-1">
-//                                                 {category.description}
-//                                             </p>
-//                                         </div>
-//                                     </div>
-//                                 </div>
-//                             ))}
-//                         </div>
-//                     </div>
-//                 )}
-
-//                 {/* Actions */}
-//                 <div className="p-4 bg-[#f7f7f7] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-//                     {/* Left */}
-//                     <p className="text-sm text-slate-600 max-w-xl">
-//                         You can accept all cookies for the best experience, or manage your
-//                         preferences by customizing which cookies are allowed.
-//                     </p>
-
-//                     {/* Right */}
-//                     <div className="flex gap-3 shrink-0">
-//                         <Button
-//                             variant="outline"
-//                             onClick={handleRejectAll}
-//                             className="border-slate-300 text-slate-700 hover:bg-slate-100"
-//                         >
-//                             Reject All
-//                         </Button>
-
-//                         <Button
-//                             onClick={handleAcceptAll}
-//                             className="bg-green-600 hover:bg-green-700 text-white px-8"
-//                         >
-//                             {isSaving ? 'Saving…' : 'Accept All'}
-//                         </Button>
-//                     </div>
-//                 </div>
-
-//                 {/* Footer */}
-//                 <div className="px-3 py-2 bg-[#f7f7f7] border-t border-slate-200 flex justify-between text-xs text-slate-500">
-//                     <span className="flex items-center gap-1">
-//                         <Shield className="w-3 h-3" />
-//                         GDPR & CCPA compliant
-//                     </span>
-//                     <span>
-//                         Version {process.env.NEXT_PUBLIC_COOKIE_CONSENT_VERSION || '1.0'}
-//                     </span>
-//                 </div>
-
-//                 {/* Customize Toggle */}
-//                 <div className="px-4 py-2 border-t border-slate-200">
-//                     <Button
-//                         variant="ghost"
-//                         onClick={() => setShowDetails(!showDetails)}
-//                         className="text-red-600 hover:bg-slate-100 text-sm"
-//                     >
-//                         <ChevronDown className="w-4 h-4 mr-1" />
-//                         {showDetails ? 'Hide Settings' : 'Customize Cookies'}
-//                     </Button>
-//                 </div>
-//             </div>
-//         </div>
-//     );
-// }
 
 
 'use client';
@@ -260,29 +20,29 @@ const COOKIE_CATEGORIES = {
     necessary: {
         id: 'necessary',
         name: 'Essential Cookies',
-        description: 'These cookies are required for the website to function and cannot be switched off.',
-        required: true,
+        description: 'These cookies are requiblue for the website to function and cannot be switched off.',
+        requiblue: true,
         cookies: ['session_id', 'csrf_token', 'auth_token'],
     },
     analytics: {
         id: 'analytics',
         name: 'Analytics Cookies',
         description: 'These cookies help us understand how visitors interact with the website.',
-        required: false,
+        requiblue: false,
         cookies: ['_ga', '_gid', '_gat'],
     },
     functional: {
         id: 'functional',
         name: 'Functional Cookies',
         description: 'Enable enhanced functionality and personalization.',
-        required: false,
+        requiblue: false,
         cookies: ['user_preferences', 'timezone'],
     },
     advertising: {
         id: 'advertising',
         name: 'Advertising Cookies',
         description: 'Used to deliver relevant advertisements.',
-        required: false,
+        requiblue: false,
         cookies: ['ad_id', 'conversion_pixel'],
     },
 };
@@ -430,7 +190,7 @@ export function CookieConsent() {
     }, []);
 
     const handleCategoryToggle = useCallback((id: string) => {
-        if (COOKIE_CATEGORIES[id as keyof typeof COOKIE_CATEGORIES].required) return;
+        if (COOKIE_CATEGORIES[id as keyof typeof COOKIE_CATEGORIES].requiblue) return;
         setSelectedCategories(prev => ({ ...prev, [id]: !prev[id] }));
     }, []);
 
@@ -480,7 +240,7 @@ export function CookieConsent() {
     const handleRejectAll = () => {
         const essential: Record<string, boolean> = {};
         Object.keys(COOKIE_CATEGORIES).forEach(
-            k => (essential[k] = COOKIE_CATEGORIES[k as keyof typeof COOKIE_CATEGORIES].required)
+            k => (essential[k] = COOKIE_CATEGORIES[k as keyof typeof COOKIE_CATEGORIES].requiblue)
         );
         saveConsent(essential);
     };
@@ -489,7 +249,7 @@ export function CookieConsent() {
         // Save with the current selected categories
         const all: Record<string, boolean> = {};
         Object.keys(COOKIE_CATEGORIES).forEach(k => {
-            all[k] = selectedCategories[k] || COOKIE_CATEGORIES[k as keyof typeof COOKIE_CATEGORIES].required;
+            all[k] = selectedCategories[k] || COOKIE_CATEGORIES[k as keyof typeof COOKIE_CATEGORIES].requiblue;
         });
         saveConsent(all);
     };
@@ -515,7 +275,7 @@ export function CookieConsent() {
                             We use cookies to enhance your experience and analyze traffic.
                             <Link
                                 href="/cookie-policy"
-                                className="ml-1 text-red-600 underline hover:text-red-700"
+                                className="ml-1 text-blue-600 underline hover:text-blue-700"
                             >
                                 Read our policy
                             </Link>
@@ -547,9 +307,9 @@ export function CookieConsent() {
                                 >
                                     <div className="flex gap-3">
                                         <button
-                                            disabled={category.required}
+                                            disabled={category.requiblue}
                                             onClick={() => handleCategoryToggle(category.id)}
-                                            className={`relative mt-1 h-6 w-11 rounded-full transition ${category.required
+                                            className={`relative mt-1 h-6 w-11 rounded-full transition ${category.requiblue
                                                 ? 'bg-slate-300'
                                                 : selectedCategories[category.id]
                                                     ? 'bg-green-600'
@@ -557,7 +317,7 @@ export function CookieConsent() {
                                                 }`}
                                         >
                                             <span
-                                                className={`absolute top-1 h-4 w-4 bg-white rounded-full transition ${category.required || selectedCategories[category.id]
+                                                className={`absolute top-1 h-4 w-4 bg-white rounded-full transition ${category.requiblue || selectedCategories[category.id]
                                                     ? 'translate-x-6'
                                                     : 'translate-x-1'
                                                     }`}
@@ -600,7 +360,7 @@ export function CookieConsent() {
                         {showDetails && (
                             <Button
                                 onClick={handleSavePreferences}
-                                className="bg-red-600 hover:bg-red-700 text-white"
+                                className="bg-blue-600 hover:bg-blue-700 text-white"
                             >
                                 {isSaving ? 'Saving…' : 'Save Preferences'}
                             </Button>
@@ -631,7 +391,7 @@ export function CookieConsent() {
                     <Button
                         variant="ghost"
                         onClick={() => setShowDetails(!showDetails)}
-                        className="text-red-600 hover:bg-slate-100 text-sm"
+                        className="text-blue-600 hover:bg-slate-100 text-sm"
                     >
                         <ChevronDown className={`w-4 h-4 mr-1 transition-transform ${showDetails ? 'rotate-180' : ''}`} />
                         {showDetails ? 'Hide Settings' : 'Customize Cookies'}

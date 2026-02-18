@@ -29,7 +29,7 @@ export default function OpenPositions({ jobListings = [] }: { jobListings: Job[]
     const locations = ["All", ...Array.from(new Set(jobListings.map((job) => job.location)))];
     const types = ["All", ...Array.from(new Set(jobListings.map((job) => job.type)))];
 
-    const filteredJobs = useMemo(() => {
+    const filteblueJobs = useMemo(() => {
         return jobListings.filter((job) => {
             const matchesSearch = `${job.title} ${job.description}`
                 .toLowerCase()
@@ -42,9 +42,9 @@ export default function OpenPositions({ jobListings = [] }: { jobListings: Job[]
         });
     }, [search, selectedDepartment, selectedLocation, selectedType, jobListings]);
 
-    const totalPages = Math.ceil(filteredJobs.length / ITEMS_PER_PAGE);
+    const totalPages = Math.ceil(filteblueJobs.length / ITEMS_PER_PAGE);
 
-    const paginatedJobs = filteredJobs.slice(
+    const paginatedJobs = filteblueJobs.slice(
         (currentPage - 1) * ITEMS_PER_PAGE,
         currentPage * ITEMS_PER_PAGE
     );
@@ -80,7 +80,7 @@ export default function OpenPositions({ jobListings = [] }: { jobListings: Job[]
                     {/* Search Input */}
                     <div className="flex-1 relative group">
                         <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
-                            <Search className="h-5 w-5 text-slate-400 group-focus-within:text-red-500 transition-colors" />
+                            <Search className="h-5 w-5 text-slate-400 group-focus-within:text-blue-500 transition-colors" />
                         </div>
                         <input
                             type="text"
@@ -103,7 +103,7 @@ export default function OpenPositions({ jobListings = [] }: { jobListings: Job[]
                             <select
                                 value={selectedDepartment}
                                 onChange={(e) => { setSelectedDepartment(e.target.value); setCurrentPage(1); }}
-                                className="w-full sm:w-48 appearance-none bg-slate-50 dark:bg-slate-800 border-none rounded-xl px-4 py-3.5 pr-8 text-sm font-medium text-slate-700 dark:text-slate-200 cursor-pointer focus:ring-2 focus:ring-red-500/20 hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors"
+                                className="w-full sm:w-48 appearance-none bg-slate-50 dark:bg-slate-800 border-none rounded-xl px-4 py-3.5 pr-8 text-sm font-medium text-slate-700 dark:text-slate-200 cursor-pointer focus:ring-2 focus:ring-blue-500/20 hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors"
                             >
                                 {departments.map(dept => <option key={dept} value={dept}>{dept === "All" ? "All Departments" : dept}</option>)}
                             </select>
@@ -115,7 +115,7 @@ export default function OpenPositions({ jobListings = [] }: { jobListings: Job[]
                             <select
                                 value={selectedLocation}
                                 onChange={(e) => { setSelectedLocation(e.target.value); setCurrentPage(1); }}
-                                className="w-full sm:w-48 appearance-none bg-slate-50 dark:bg-slate-800 border-none rounded-xl px-4 py-3.5 pr-8 text-sm font-medium text-slate-700 dark:text-slate-200 cursor-pointer focus:ring-2 focus:ring-red-500/20 hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors"
+                                className="w-full sm:w-48 appearance-none bg-slate-50 dark:bg-slate-800 border-none rounded-xl px-4 py-3.5 pr-8 text-sm font-medium text-slate-700 dark:text-slate-200 cursor-pointer focus:ring-2 focus:ring-blue-500/20 hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors"
                             >
                                 {locations.map(loc => <option key={loc} value={loc}>{loc === "All" ? "All Locations" : loc}</option>)}
                             </select>
@@ -127,7 +127,7 @@ export default function OpenPositions({ jobListings = [] }: { jobListings: Job[]
                             <select
                                 value={selectedType}
                                 onChange={(e) => { setSelectedType(e.target.value); setCurrentPage(1); }}
-                                className="w-full sm:w-48 appearance-none bg-slate-50 dark:bg-slate-800 border-none rounded-xl px-4 py-3.5 pr-8 text-sm font-medium text-slate-700 dark:text-slate-200 cursor-pointer focus:ring-2 focus:ring-red-500/20 hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors"
+                                className="w-full sm:w-48 appearance-none bg-slate-50 dark:bg-slate-800 border-none rounded-xl px-4 py-3.5 pr-8 text-sm font-medium text-slate-700 dark:text-slate-200 cursor-pointer focus:ring-2 focus:ring-blue-500/20 hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors"
                             >
                                 {types.map(t => <option key={t} value={t}>{t === "All" ? "All Types" : t}</option>)}
                             </select>
@@ -136,15 +136,15 @@ export default function OpenPositions({ jobListings = [] }: { jobListings: Job[]
                     </div>
                 </div>
 
-                {/* Active Filters Summary (Optional, if users want to see exactly what is filtered) */}
+                {/* Active Filters Summary (Optional, if users want to see exactly what is filteblue) */}
                 {(selectedDepartment !== "All" || selectedLocation !== "All" || selectedType !== "All" || search) && (
                     <div className="flex items-center justify-between mb-8">
                         <p className="text-sm text-slate-500 dark:text-slate-400">
-                            Showing {filteredJobs.length} {filteredJobs.length === 1 ? 'position' : 'positions'}
+                            Showing {filteblueJobs.length} {filteblueJobs.length === 1 ? 'position' : 'positions'}
                         </p>
                         <button
                             onClick={clearFilters}
-                            className="text-sm text-red-500 hover:text-red-600 font-medium flex items-center gap-1"
+                            className="text-sm text-blue-500 hover:text-blue-600 font-medium flex items-center gap-1"
                         >
                             <X className="h-4 w-4" /> Clear all filters
                         </button>
@@ -157,15 +157,15 @@ export default function OpenPositions({ jobListings = [] }: { jobListings: Job[]
                         paginatedJobs.map((job) => (
                             <div
                                 key={job.id}
-                                className="group relative p-6 md:p-8 rounded-sm bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-red-500/30 dark:hover:border-red-500/30 shadow-sm hover:shadow-xl hover:shadow-red-500/5 transition-all duration-300"
+                                className="group relative p-6 md:p-8 rounded-sm bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-blue-500/30 dark:hover:border-blue-500/30 shadow-sm hover:shadow-xl hover:shadow-blue-500/5 transition-all duration-300"
                             >
                                 <div className="flex flex-col md:flex-row gap-6 md:items-start justify-between">
                                     <div className="flex-1">
                                         <div className="flex flex-wrap gap-2 mb-4">
-                                            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-sans bg-red-50 text-red-700 dark:bg-red-500/10 dark:text-red-400 border border-red-100 dark:border-red-500/20">
+                                            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-sans bg-blue-50 text-blue-700 dark:bg-blue-500/10 dark:text-blue-400 border border-blue-100 dark:border-blue-500/20">
                                                 <Briefcase className="h-3 w-3" /> {job.department}
                                             </span>
-                                            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-sans bg-red-50 text-red-700 dark:bg-red-500/10 dark:text-red-400 border border-red-100 dark:border-red-500/20">
+                                            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-sans bg-blue-50 text-blue-700 dark:bg-blue-500/10 dark:text-blue-400 border border-blue-100 dark:border-blue-500/20">
                                                 <MapPin className="h-3 w-3" /> {job.location}
                                             </span>
                                             <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-sans bg-emerald-50 text-emerald-700 dark:bg-emerald-500/10 dark:text-emerald-400 border border-emerald-100 dark:border-emerald-500/20">
@@ -173,7 +173,7 @@ export default function OpenPositions({ jobListings = [] }: { jobListings: Job[]
                                             </span>
                                         </div>
 
-                                        <h3 className="text-3xl font-sans text-slate-900 dark:text-white mb-3 group-hover:text-red-600 dark:group-hover:text-red-400 transition-colors">
+                                        <h3 className="text-3xl font-sans text-slate-900 dark:text-white mb-3 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
                                             {job.title}
                                         </h3>
 
@@ -183,7 +183,7 @@ export default function OpenPositions({ jobListings = [] }: { jobListings: Job[]
                                     </div>
 
                                     <Link href={`/careers/${job.id}`} className="mt-2 md:mt-0 shrink-0">
-                                        <button className="w-full md:w-auto px-6 py-3 bg-red-500 dark:bg-white text-white dark:text-slate-900 rounded-xl font-sans  hover:shadow-xl hover:-translate-y-0.5 transition-all active:scale-95">
+                                        <button className="w-full md:w-auto px-6 py-3 bg-blue-500 dark:bg-white text-white dark:text-slate-900 rounded-xl font-sans  hover:shadow-xl hover:-translate-y-0.5 transition-all active:scale-95">
                                             Apply Now
                                         </button>
                                     </Link>
@@ -197,7 +197,7 @@ export default function OpenPositions({ jobListings = [] }: { jobListings: Job[]
                             <p className="text-slate-500 dark:text-slate-400 max-w-sm mx-auto mb-6">
                                 We couldn't find any roles matching your criteria. Try clearing filters or searching for something else.
                             </p>
-                            <button onClick={clearFilters} className="text-red-600 dark:text-red-400 font-medium hover:underline">Clear all filters</button>
+                            <button onClick={clearFilters} className="text-blue-600 dark:text-blue-400 font-medium hover:underline">Clear all filters</button>
                         </div>
                     )}
                 </div>
@@ -218,8 +218,8 @@ export default function OpenPositions({ jobListings = [] }: { jobListings: Job[]
                                     key={i}
                                     onClick={() => setCurrentPage(i + 1)}
                                     className={`w-10 h-10 rounded-xl text-sm font-light transition-all ${currentPage === i + 1
-                                        ? "bg-red-600 text-white shadow-lg shadow-red-600/30 scale-105"
-                                        : "bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-400 border border-slate-200 dark:border-slate-700 hover:border-red-500 dark:hover:border-red-500 hover:text-red-600 dark:hover:text-red-400"
+                                        ? "bg-blue-600 text-white shadow-lg shadow-blue-600/30 scale-105"
+                                        : "bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-400 border border-slate-200 dark:border-slate-700 hover:border-blue-500 dark:hover:border-blue-500 hover:text-blue-600 dark:hover:text-blue-400"
                                         }`}
                                 >
                                     {i + 1}

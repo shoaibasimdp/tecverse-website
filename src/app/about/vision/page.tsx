@@ -19,7 +19,7 @@ export default function VisionPage() {
                         <h1 className="text-4xl md:text-7xl font-light mb-6">
                             Our Vision
                         </h1>
-                        <p className="text-xl text-red-200 leading-relaxed">
+                        <p className="text-xl text-blue-200 leading-relaxed">
                             Shaping the future through technology and innovation.
                         </p>
                     </div>

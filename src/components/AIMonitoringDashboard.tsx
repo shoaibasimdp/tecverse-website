@@ -71,7 +71,7 @@ export default function CompactAnalytics() {
                         >
                             <p className="text-sm text-gray-600 mb-1">{stat.title}</p>
                             <p className="text-3xl font-light text-black mb-2">{stat.value}</p>
-                            <p className={`text-sm font-medium ${stat.positive ? 'text-green-600' : 'text-red-600'}`}>
+                            <p className={`text-sm font-medium ${stat.positive ? 'text-green-600' : 'text-blue-600'}`}>
                                 {stat.change} from last week
                             </p>
                         </motion.div>

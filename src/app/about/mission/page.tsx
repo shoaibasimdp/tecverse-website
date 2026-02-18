@@ -19,7 +19,7 @@ export default function MissionPage() {
                         <h1 className="text-4xl md:text-7xl font-light mb-6">
                             Our Mission
                         </h1>
-                        <p className="text-xl text-red-200 leading-relaxed">
+                        <p className="text-xl text-blue-200 leading-relaxed">
                             Delivering excellence in every line of code.
                         </p>
                     </div>
@@ -38,7 +38,7 @@ export default function MissionPage() {
 
                         <div className="grid md:grid-cols-3 gap-8">
                             <div className=" dark:bg-slate-900 p-8 rounded-3xl">
-                                <h3 className="text-xl font-sans text-black dark:text-red-400 mb-4">
+                                <h3 className="text-xl font-sans text-black dark:text-blue-400 mb-4">
                                     Excellence
                                 </h3>
                                 <p className="text-slate-600 dark:text-slate-400">
@@ -47,7 +47,7 @@ export default function MissionPage() {
                             </div>
 
                             <div className=" dark:bg-slate-900 p-8 rounded-3xl">
-                                <h3 className="text-xl font-sans text-black dark:text-red-400 mb-4">
+                                <h3 className="text-xl font-sans text-black dark:text-blue-400 mb-4">
                                     Integrity
                                 </h3>
                                 <p className="text-slate-600 dark:text-slate-400">
@@ -56,7 +56,7 @@ export default function MissionPage() {
                             </div>
 
                             <div className="dark:bg-slate-900 p-8 rounded-3xl">
-                                <h3 className="text-xl font-sans text-black dark:text-red-400 mb-4">
+                                <h3 className="text-xl font-sans text-black dark:text-blue-400 mb-4">
                                     Agility
                                 </h3>
                                 <p className="text-slate-600 dark:text-slate-400">

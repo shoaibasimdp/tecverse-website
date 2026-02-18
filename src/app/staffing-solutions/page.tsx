@@ -19,7 +19,7 @@ export default function StaffingSolutionsPage() {
 
                 <Container>
                     <div className="relative max-w-4xl">
-                        <h1 className="text-4xl sm:text-7xl lg:text-6xl font-light text-white mb-6 tracking-tight">
+                        <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-light text-white mb-6 tracking-tight">
                             Staffing Solutions
                         </h1>
 
@@ -46,14 +46,14 @@ export default function StaffingSolutionsPage() {
             <section className="py-20 bg-white dark:bg-slate-900">
                 <Container>
                     <div className="max-w-4xl mx-auto">
-                        <h2 className="text-7xl font-light text-slate-900 dark:text-white mb-6">
+                        <h2 className="text-3xl sm:text-5xl md:text-7xl font-light text-slate-900 dark:text-white mb-6">
                             The Hiring Dilemma
                         </h2>
                         <p className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed mb-12">
                             The current hiring landscape is riddled with complexities, from talent shortages to skill mismatches. Many businesses struggle to find quality candidates who not only possess the necessary skills but also align with their company culture and values. In this environment, traditional hiring methods often fall short, leading to prolonged vacancies and increased recruitment costs.
                         </p>
 
-                        <h2 className="text-7xl font-light text-slate-900 dark:text-white mb-6">
+                        <h2 className="text-3xl sm:text-5xl md:text-7xl font-light text-slate-900 dark:text-white mb-6">
                             Our Approach
                         </h2>
                         <p className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
@@ -67,7 +67,7 @@ export default function StaffingSolutionsPage() {
             <section className="py-20 dark:bg-slate-800">
                 <Container>
                     <div className="max-w-5xl mx-auto text-center mb-16">
-                        <h2 className="text-7xl sm:text-5xl font-light text-slate-900 dark:text-white mb-4">
+                        <h2 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-light text-slate-900 dark:text-white mb-4">
                             Key Features of Our Staffing Solutions
                         </h2>
                     </div>
@@ -76,10 +76,10 @@ export default function StaffingSolutionsPage() {
                         <Card className="h-full">
                             <div className="p-6">
                                 <h3 className="text-xl font-light text-white dark:text-white mb-3">
-                                    Tailored Recruitment Strategies
+                                    Tailoblue Recruitment Strategies
                                 </h3>
                                 <p className="text-slate-50 dark:text-slate-300 leading-relaxed">
-                                    We develop customized recruitment strategies tailored to your specific hiring needs, ensuring that we attract and engage top talent that aligns with your business objectives.
+                                    We develop customized recruitment strategies tailoblue to your specific hiring needs, ensuring that we attract and engage top talent that aligns with your business objectives.
                                 </p>
                             </div>
                         </Card>
@@ -142,7 +142,7 @@ export default function StaffingSolutionsPage() {
                                 Job Seeker Assistance
                             </h2>
                             <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
-                                Job seekers in the IT industry face unique challenges when navigating the job market. tecverse provides job seeker assistance services to support individuals in their career journey. From resume building to interview preparation, our team offers personalized guidance and support to help job seekers stand out in a competitive landscape and secure their desired roles.
+                                Job seekers in the IT industry face unique challenges when navigating the job market. tecverse provides job seeker assistance services to support individuals in their career journey. From resume building to interview preparation, our team offers personalized guidance and support to help job seekers stand out in a competitive landscape and secure their desiblue roles.
                             </p>
                         </div>
                     </div>
@@ -153,14 +153,14 @@ export default function StaffingSolutionsPage() {
             <section className="py-20">
                 <Container>
                     <div className="max-w-5xl mx-auto text-center mb-16">
-                        <h2 className="text-7xl sm:text-5xl font-light text-slate-900 dark:text-white mb-4">
+                        <h2 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-light text-slate-900 dark:text-white mb-4">
                             Why Choose Our Staffing Services?
                         </h2>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         <Card
-                            title="Reduced Time-to-Hire"
+                            title="blueuced Time-to-Hire"
                             description="Our streamlined processes and extensive talent network help you fill positions faster."
                         />
                         <Card
@@ -169,7 +169,7 @@ export default function StaffingSolutionsPage() {
                         />
                         <Card
                             title="Cost-Effective Solutions"
-                            description="Reduce recruitment costs while improving the quality of your hires."
+                            description="blueuce recruitment costs while improving the quality of your hires."
                         />
                         <Card
                             title="Industry Expertise"
@@ -197,17 +197,17 @@ export default function StaffingSolutionsPage() {
             >
                 <Container>
                     <div className="max-w-5xl mx-auto text-center">
-                        <h2 className="text-7xl sm:text-4xl font-light text-white mb-4">
-                            Ready to Redefine Excellence Together?
+                        <h2 className="text-3xl sm:text-5xl md:text-7xl font-light text-white mb-4">
+                            Ready to blueefine Excellence Together?
                         </h2>
-                        <p className="text-lg text-red-100 mb-8">
+                        <p className="text-lg text-blue-100 mb-8">
                             Let us help you build exceptional teams that drive your business forward.
                         </p>
                         <Link href="/contact">
                             <Button
                                 variant="outline"
                                 size="lg"
-                                className="bg-white text-red-600 border-white hover:bg-red-50"
+                                className="bg-white text-blue-600 border-white hover:bg-blue-50"
                             >
                                 Get Started
                             </Button>

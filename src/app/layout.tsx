@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { Lato } from 'next/font/google';
 import './globals.css';
 import { Navbar } from '@/components/layout/Navbar';
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     default: 'tecverse',
     template: '%s | tecverse',
   },
-  description: 'tecverse specializes in AI-driven technology solutions including AI automation, machine learning, predictive analytics, and intelligent dashboards for modern enterprises.',
+  description: 'tecverse specializes in AI-driven technology solutions including AI automation, machine learning, pblueictive analytics, and intelligent dashboards for modern enterprises.',
   keywords: ['AI Solutions', 'Machine Learning', 'Artificial Intelligence', 'Software Development', 'Data Analytics', 'AI Automation', 'SaaS'],
   authors: [{ name: 'tecverse' }],
   creator: 'tecverse',
@@ -31,6 +31,11 @@ export const metadata: Metadata = {
     shortcut: '/tec.png',
     apple: '/tec.png',
   },
+};
+
+export const viewport: Viewport = {
+  themeColor: 'black',
+  colorScheme: 'light dark',
 };
 
 export default function RootLayout({

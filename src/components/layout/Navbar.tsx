@@ -6,7 +6,7 @@ import { usePathname } from 'next/navigation';
 
 
 const announcements = [
-    'AI-powered solutions tailored for your business',
+    'AI-poweblue solutions tailoblue for your business',
     'Global delivery across USA, India, Australia & Middle East',
     'Hire top tech talent with our Staffing Solutions',
     'Transform your ideas with tecverse Innovation',
@@ -73,45 +73,12 @@ export const Navbar: React.FC = () => {
     return (
         <>
 
-            <div className="w-full bg-red-500 text-white text-sm shadow-lg border-b border-green-500/20">
-                <div className="max-w-screen-xl mx-auto h-8 flex items-center justify-center px-4">
-
-                    <div className="flex items-center gap-6">
-
-                        {/* Announcement Text */}
-                        <span
-                            key={announcementIndex}
-                            className="animate-fade-slide font-medium text-center transition-all duration-500"
-                        >
-                            {announcements[announcementIndex]}
-                        </span>
-
-                        {/* Indicators */}
-                        <div className="flex items-center gap-1.5">
-                            {announcements.map((_, idx) => (
-                                <button
-                                    key={idx}
-                                    onClick={() => setAnnouncementIndex(idx)}
-                                    className={`h-1.5 rounded-full transition-all duration-300 ${idx === announcementIndex
-                                        ? 'bg-green-400 w-4'
-                                        : 'bg-[#222831] hover:bg-red-500/60 w-1.5'
-                                        }`}
-                                    aria-label={`Go to announcement ${idx + 1}`}
-                                />
-                            ))}
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-
             <nav className="sticky top-0 z-50 bg-white">
                 <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex items-center justify-between h-16">
 
                         <Link href="/" className="flex items-center">
-                            <img src="/tv.png" alt="tecverse" className="w-32 h-auto" />
+                            <img src="/tvl.png" alt="tecverse" className="w-32 h-auto" />
                         </Link>
 
 
@@ -130,11 +97,11 @@ export const Navbar: React.FC = () => {
                                     }}
                                 >
                                     {link.hasDropdown ? (
-                                        <span className="group relative px-4 py-2 text-sm font-medium flex items-center cursor-pointer text-slate-900 hover:text-red-600 transition-colors">
+                                        <span className="group relative px-4 py-2 text-sm font-medium flex items-center cursor-pointer text-slate-900 hover:text-blue-600 transition-colors">
                                             {link.label}
 
                                             {/* underline */}
-                                            <span className="pointer-events-none absolute left-0 -bottom-1 h-[2px] w-full origin-left scale-x-0 bg-red-600 transition-transform duration-300 group-hover:scale-x-100" />
+                                            <span className="pointer-events-none absolute left-0 -bottom-1 h-[2px] w-full origin-left scale-x-0 bg-blue-600 transition-transform duration-300 group-hover:scale-x-100" />
 
                                             <svg
                                                 className="ml-1 w-4 h-4"
@@ -150,15 +117,15 @@ export const Navbar: React.FC = () => {
                                         <Link
                                             href={link.href}
                                             className={`group relative px-4 py-2 text-sm font-medium transition-colors ${pathname === link.href
-                                                ? 'text-red-600'
-                                                : 'text-slate-900 hover:text-red-600'
+                                                ? 'text-blue-600'
+                                                : 'text-slate-900 hover:text-blue-600'
                                                 }`}
                                         >
                                             {link.label}
 
                                             {/* underline */}
                                             <span
-                                                className={`pointer-events-none absolute left-0 -bottom-1 h-[2px] w-full origin-left bg-red-600 transition-transform duration-300 ${pathname === link.href
+                                                className={`pointer-events-none absolute left-0 -bottom-1 h-[2px] w-full origin-left bg-blue-600 transition-transform duration-300 ${pathname === link.href
                                                     ? 'scale-x-100'
                                                     : 'scale-x-0 group-hover:scale-x-100'
                                                     }`}
@@ -178,26 +145,26 @@ export const Navbar: React.FC = () => {
                                                         </div>
 
                                                         <div className="space-y-3">
-                                                            <Link href="/about" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-red-50 transition-all">
+                                                            <Link href="/about" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-blue-50 transition-all">
 
                                                                 <div className="flex-1">
-                                                                    <div className="font-thin-100 text-slate-900 group-hover:text-red-600 transition-colors">About tecverse</div>
+                                                                    <div className="font-thin-100 text-slate-900 group-hover:text-blue-600 transition-colors">About tecverse</div>
                                                                     <div className="text-xs text-slate-500">Our story</div>
                                                                 </div>
                                                             </Link>
 
-                                                            <Link href="/about/vision" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-red-50 transition-all">
+                                                            <Link href="/about/vision" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-blue-50 transition-all">
 
                                                                 <div className="flex-1">
-                                                                    <div className="font-thin-100 text-slate-900 group-hover:text-red-600 transition-colors">Vision Statement</div>
+                                                                    <div className="font-thin-100 text-slate-900 group-hover:text-blue-600 transition-colors">Vision Statement</div>
                                                                     <div className="text-xs text-slate-500">Where we're headed</div>
                                                                 </div>
                                                             </Link>
 
-                                                            <Link href="/about/mission" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-red-50 transition-all">
+                                                            <Link href="/about/mission" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-blue-50 transition-all">
 
                                                                 <div className="flex-1">
-                                                                    <div className="font-thin-100 text-slate-900 group-hover:text-red-600 transition-colors">Mission Statement</div>
+                                                                    <div className="font-thin-100 text-slate-900 group-hover:text-blue-600 transition-colors">Mission Statement</div>
                                                                     <div className="text-xs text-slate-500">Our purpose</div>
                                                                 </div>
                                                             </Link>
@@ -211,18 +178,18 @@ export const Navbar: React.FC = () => {
                                                         </div>
 
                                                         <div className="space-y-3">
-                                                            <Link href="/about/leadership" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-red-50 transition-all">
+                                                            <Link href="/about/leadership" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-blue-50 transition-all">
 
                                                                 <div className="flex-1">
-                                                                    <div className="font-thin-100 text-slate-900 group-hover:text-red-600 transition-colors">Leadership Team</div>
+                                                                    <div className="font-thin-100 text-slate-900 group-hover:text-blue-600 transition-colors">Leadership Team</div>
                                                                     <div className="text-xs text-slate-500">Meet our leaders</div>
                                                                 </div>
                                                             </Link>
 
-                                                            <Link href="/about/careers" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-red-50 transition-all">
+                                                            <Link href="/about/careers" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-blue-50 transition-all">
 
                                                                 <div className="flex-1">
-                                                                    <div className="font-thin-100 text-slate-900 group-hover:text-red-600 transition-colors">Careers</div>
+                                                                    <div className="font-thin-100 text-slate-900 group-hover:text-blue-600 transition-colors">Careers</div>
                                                                     <div className="text-xs text-slate-500">Join our team</div>
                                                                 </div>
                                                             </Link>
@@ -293,18 +260,18 @@ export const Navbar: React.FC = () => {
                                                         </div>
 
                                                         <div className="space-y-3">
-                                                            <Link href="/services/development" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-red-50 transition-all">
+                                                            <Link href="/services/development" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-blue-50 transition-all">
 
                                                                 <div className="flex-1">
-                                                                    <div className="font-thin-100 text-slate-900 group-hover:text-red-600 transition-colors">Web & App Development</div>
+                                                                    <div className="font-thin-100 text-slate-900 group-hover:text-blue-600 transition-colors">Web & App Development</div>
                                                                     <div className="text-xs text-slate-500">Build digital products</div>
                                                                 </div>
                                                             </Link>
 
-                                                            <Link href="/services/managed-it" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-red-50 transition-all">
+                                                            <Link href="/services/managed-it" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-blue-50 transition-all">
 
                                                                 <div className="flex-1">
-                                                                    <div className="font-thin-100 text-slate-900 group-hover:text-red-600 transition-colors">Managed IT Services</div>
+                                                                    <div className="font-thin-100 text-slate-900 group-hover:text-blue-600 transition-colors">Managed IT Services</div>
                                                                     <div className="text-xs text-slate-500">24/7 support</div>
                                                                 </div>
                                                             </Link>
@@ -318,18 +285,18 @@ export const Navbar: React.FC = () => {
                                                         </div>
 
                                                         <div className="space-y-3">
-                                                            <Link href="/services/offshoring" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-red-50 transition-all">
+                                                            <Link href="/services/offshoring" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-blue-50 transition-all">
 
                                                                 <div className="flex-1">
-                                                                    <div className="font-thin-100 text-slate-900 group-hover:text-red-600 transition-colors">Offshoring Solutions</div>
+                                                                    <div className="font-thin-100 text-slate-900 group-hover:text-blue-600 transition-colors">Offshoring Solutions</div>
                                                                     <div className="text-xs text-slate-500">Global talent</div>
                                                                 </div>
                                                             </Link>
 
-                                                            <Link href="/services/staffing" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-red-50 transition-all">
+                                                            <Link href="/services/staffing" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-blue-50 transition-all">
 
                                                                 <div className="flex-1">
-                                                                    <div className="font-thin-100 text-slate-900 group-hover:text-red-600 transition-colors">Staffing Solutions</div>
+                                                                    <div className="font-thin-100 text-slate-900 group-hover:text-blue-600 transition-colors">Staffing Solutions</div>
                                                                     <div className="text-xs text-slate-500">Scale your team</div>
                                                                 </div>
                                                             </Link>
@@ -343,18 +310,18 @@ export const Navbar: React.FC = () => {
                                                         </div>
 
                                                         <div className="space-y-3">
-                                                            <Link href="/ai-solutions" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-red-50 transition-all">
+                                                            <Link href="/ai-solutions" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-blue-50 transition-all">
 
                                                                 <div className="flex-1">
-                                                                    <div className="font-thin-100 text-slate-900 group-hover:text-red-600 transition-colors">AI Solutions</div>
+                                                                    <div className="font-thin-100 text-slate-900 group-hover:text-blue-600 transition-colors">AI Solutions</div>
                                                                     <div className="text-xs text-slate-500">Intelligent systems</div>
                                                                 </div>
                                                             </Link>
 
-                                                            <Link href="/development-services" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-red-50 transition-all">
+                                                            <Link href="/development-services" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-blue-50 transition-all">
 
                                                                 <div className="flex-1">
-                                                                    <div className="font-thin-100 text-slate-900 group-hover:text-red-600 transition-colors">Cloud & DevOps</div>
+                                                                    <div className="font-thin-100 text-slate-900 group-hover:text-blue-600 transition-colors">Cloud & DevOps</div>
                                                                     <div className="text-xs text-slate-500">Infrastructure</div>
                                                                 </div>
                                                             </Link>
@@ -390,7 +357,7 @@ export const Navbar: React.FC = () => {
 
                                                                 <Link
                                                                     href="/services"
-                                                                    className="inline-flex items-center gap-2 text-red-400 hover:text-red-300 font-medium text-sm transition-colors"
+                                                                    className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 font-medium text-sm transition-colors"
                                                                 >
                                                                     Discover More
                                                                 </Link>
@@ -455,17 +422,75 @@ export const Navbar: React.FC = () => {
 
                     {/* Mobile Menu */}
                     {isOpen && (
-                        <div className="md:hidden py-4 space-y-2">
+                        <div className="md:hidden py-4 space-y-2 bg-white border-t border-slate-100 max-h-[calc(100vh-4rem)] overflow-y-auto">
                             {navLinks.map((link) => (
-                                <Link
-                                    key={link.href}
-                                    href={link.href}
-                                    onClick={() => setIsOpen(false)}
-                                    className="block px-4 py-2 rounded hover:bg-slate-100"
-                                >
-                                    {link.label}
-                                </Link>
+                                <div key={link.href}>
+                                    {link.hasDropdown ? (
+                                        <>
+                                            <div className="flex items-center justify-between px-4 py-2 hover:bg-slate-50">
+                                                <Link
+                                                    href={link.href}
+                                                    onClick={() => setIsOpen(false)}
+                                                    className="font-medium text-slate-900"
+                                                >
+                                                    {link.label}
+                                                </Link>
+                                                {/* Optional: Add a small toggle button if we wanted accordion behavior solely for the sub-menu without navigating. 
+                                                    For now, clicking the main link navigates. 
+                                                    Let's add static sub-links for mobile simplicity. */}
+                                            </div>
+                                            <div className="pl-8 space-y-2 pb-2">
+                                                {link.label === 'About' && (
+                                                    <>
+                                                        <Link href="/about" onClick={() => setIsOpen(false)} className="block py-1 text-sm text-slate-600">About tecverse</Link>
+                                                        <Link href="/about/vision" onClick={() => setIsOpen(false)} className="block py-1 text-sm text-slate-600">Vision</Link>
+                                                        <Link href="/about/mission" onClick={() => setIsOpen(false)} className="block py-1 text-sm text-slate-600">Mission</Link>
+                                                        <Link href="/about/leadership" onClick={() => setIsOpen(false)} className="block py-1 text-sm text-slate-600">Leadership</Link>
+                                                        <Link href="/about/careers" onClick={() => setIsOpen(false)} className="block py-1 text-sm text-slate-600">Careers</Link>
+                                                    </>
+                                                )}
+                                                {link.label === 'Services' && (
+                                                    <>
+                                                        <Link href="/services/development" onClick={() => setIsOpen(false)} className="block py-1 text-sm text-slate-600">Web & App Development</Link>
+                                                        <Link href="/services/managed-it" onClick={() => setIsOpen(false)} className="block py-1 text-sm text-slate-600">Managed IT</Link>
+                                                        <Link href="/services/offshoring" onClick={() => setIsOpen(false)} className="block py-1 text-sm text-slate-600">Offshoring</Link>
+                                                        <Link href="/services/staffing" onClick={() => setIsOpen(false)} className="block py-1 text-sm text-slate-600">Staffing</Link>
+                                                        <Link href="/ai-solutions" onClick={() => setIsOpen(false)} className="block py-1 text-sm text-slate-600">AI Solutions</Link>
+                                                        <Link href="/development-services" onClick={() => setIsOpen(false)} className="block py-1 text-sm text-slate-600">Cloud & DevOps</Link>
+                                                    </>
+                                                )}
+                                            </div>
+                                        </>
+                                    ) : (
+                                        <Link
+                                            href={link.href}
+                                            onClick={() => setIsOpen(false)}
+                                            className="block px-4 py-2 font-medium text-slate-900 hover:bg-slate-50"
+                                        >
+                                            {link.label}
+                                        </Link>
+                                    )}
+                                </div>
                             ))}
+                            {/* Mobile Country Selector */}
+                            <div className="px-4 py-4 border-t border-slate-100">
+                                <p className="text-xs font-semibold text-slate-500 mb-2 uppercase">Region</p>
+                                <div className="grid grid-cols-2 gap-2">
+                                    {countryOptions.map((country) => (
+                                        <button
+                                            key={country.code}
+                                            onClick={() => {
+                                                setSelectedCountry(country);
+                                                setIsOpen(false);
+                                            }}
+                                            className={`flex items-center space-x-2 p-2 rounded text-sm ${selectedCountry.code === country.code ? 'bg-blue-50 text-blue-700' : 'hover:bg-slate-50'}`}
+                                        >
+                                            <img src={country.flag} alt={country.name} className="w-5 h-3 rounded-sm object-cover" />
+                                            <span>{country.name}</span>
+                                        </button>
+                                    ))}
+                                </div>
+                            </div>
                         </div>
                     )}
                 </div>
