@@ -268,23 +268,17 @@ export function CookieConsent() {
                 {/* Header */}
                 <div className="p-4 border-b border-slate-200 flex justify-between gap-4">
                     <div>
-                        <h3 className="font-light text-slate-900">
+                        <h3 className="font-Inter text-[#014f86]">
                             We value your privacy
                         </h3>
                         <p className="mt-1 text-sm text-slate-600">
                             We use cookies to enhance your experience and analyze traffic.
-                            <Link
-                                href="/cookie-policy"
-                                className="ml-1 text-blue-600 underline hover:text-blue-700"
-                            >
-                                Read our policy
-                            </Link>
-                            .
+
                         </p>
                     </div>
                     <button
                         onClick={() => setIsVisible(false)}
-                        className="text-slate-400 hover:text-slate-900"
+                        className="text-slate-400 hover:text-[#014f86]"
                         aria-label="Close"
                     >
                         <X className="w-5 h-5" />
@@ -294,7 +288,7 @@ export function CookieConsent() {
                 {/* Details */}
                 {showDetails && (
                     <div className="p-4 bg-[#f7f7f7] border-b border-slate-200">
-                        <h4 className="text-sm font-light text-slate-900 mb-3 flex items-center gap-2">
+                        <h4 className="text-sm font-Inter text-[#014f86] mb-3 flex items-center gap-2">
                             <Settings className="w-4 h-4" />
                             Cookie Preferences
                         </h4>
@@ -325,7 +319,7 @@ export function CookieConsent() {
                                         </button>
 
                                         <div>
-                                            <h5 className="text-sm font-medium text-slate-900">
+                                            <h5 className="text-sm font-medium text-[#014f86]">
                                                 {category.name}
                                             </h5>
                                             <p className="text-xs text-slate-600 mt-1">
@@ -360,7 +354,7 @@ export function CookieConsent() {
                         {showDetails && (
                             <Button
                                 onClick={handleSavePreferences}
-                                className="bg-blue-600 hover:bg-blue-700 text-white"
+                                className="bg-[#014f86] hover:bg-blue-700 text-white"
                             >
                                 {isSaving ? 'Saving…' : 'Save Preferences'}
                             </Button>
@@ -368,7 +362,7 @@ export function CookieConsent() {
 
                         <Button
                             onClick={handleAcceptAll}
-                            className="bg-green-600 hover:bg-green-700 text-white px-8"
+                            className="bg-[#014f86] hover:bg-[#014f86]/80 text-white px-8"
                         >
                             {isSaving ? 'Saving…' : 'Accept All'}
                         </Button>
@@ -391,7 +385,7 @@ export function CookieConsent() {
                     <Button
                         variant="ghost"
                         onClick={() => setShowDetails(!showDetails)}
-                        className="text-blue-600 hover:bg-slate-100 text-sm"
+                        className="text-[#014f86] hover:bg-slate-100 text-sm"
                     >
                         <ChevronDown className={`w-4 h-4 mr-1 transition-transform ${showDetails ? 'rotate-180' : ''}`} />
                         {showDetails ? 'Hide Settings' : 'Customize Cookies'}
@@ -409,7 +403,7 @@ export function CookieSettingsButton() {
             onClick={showCookieSettings}
             variant="ghost"
             size="sm"
-            className="text-slate-600 hover:text-slate-900"
+            className="text-slate-600 hover:text-[#014f86]"
         >
             <Settings className="w-4 h-4 mr-2" />
             Cookie Settings

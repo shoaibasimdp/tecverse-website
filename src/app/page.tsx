@@ -41,63 +41,6 @@ export default function Home() {
   return (
     <>
 
-
-      {/* <section
-        className="relative w-full min-h-[100svh] flex flex-col justify-center bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/hh.png')" }}
-      >
-        <div className="absolute inset-0 bg-black/50" />
-
-        <div className="relative z-10 flex items-center h-full px-6 sm:px-12 lg:px-20">
-
-          <div className="max-w-5xl">
-
-            <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-light text-gray-100 leading-tight">
-              Transforming Ideas <br className="hidden sm:block" />
-              into Intelligent Systems
-            </h1>
-
-            <p className="mt-8 text-lg sm:text-xl text-slate-200 max-w-2xl">
-              We help organizations automate operations, unlock insights from data,
-              and deploy scalable AI solutions that deliver measurable ROI.
-            </p>
-
-            <div className="mt-10 flex flex-col sm:flex-row gap-4">
-
-              <button className="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl">
-                <Link href={"/contact"}> Talk to an AI Expert</Link>
-              </button>
-
-              <button className="px-8 py-4 border border-white text-white font-semibold rounded-xl hover:bg-white hover:text-black transition-all duration-300">
-                <Link href={"/services"}>Explore Our AI Services</Link>
-              </button>
-
-            </div>
-
-          </div>
-        </div>
-      </section> */}
-
-      {/* <section className="relative w-full overflow-hidden h-[100vh] flex items-center justify-center">
-        <video
-          className="absolute inset-0 h-full w-full object-cover"
-          autoPlay
-          muted
-          loop
-          playsInline
-        >
-          <source src="/hp.mp4" type="video/mp4" />
-        </video>
-
-
-
-
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20 animate-bounce">
-          <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-          </svg>
-        </div>
-      </section> */}
       <section className="relative hidden lg:flex w-full min-h-[100svh] items-center justify-center overflow-hidden">
 
         <video
@@ -131,20 +74,16 @@ export default function Home() {
 
       </section>
 
-
-
-
-
       <section className="py-16 lg:py-24 bg-white relative overflow-hidden">
 
         <Container>
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
-            {/* LEFT CONTENT */}
+
 
             <div className="max-w-5xl">
 
-              <h2 className="text-3xl sm:text-5xl lg:text-7xl font-light text-slate-900 mb-6 leading-tight">
+              <h2 className="text-3xl sm:text-5xl lg:text-7xl font-Inter text-[#014f86] mb-6 leading-tight">
                 The Business Challenge
               </h2>
 
@@ -155,7 +94,7 @@ export default function Home() {
               {/* Challenge Card */}
               <div className="bg-slate-50 rounded-2xl p-8 mb-10 border border-slate-200 shadow-sm">
 
-                <h3 className="text-xl font-semibold mb-6 text-blue-600">
+                <h3 className="text-xl font-semibold mb-6 text-[#014f86]">
                   Today’s organizations face:
                 </h3>
 
@@ -168,7 +107,7 @@ export default function Home() {
                     "Increasing customer expectations"
                   ].map((item, index) => (
                     <div key={index} className="flex items-start">
-                      <span className="text-blue-500 mr-3 mt-1">•</span>
+                      <span className="text-[#014f86] mr-3 mt-1">•</span>
                       <p className="text-slate-600">{item}</p>
                     </div>
                   ))}
@@ -182,7 +121,7 @@ export default function Home() {
               </p>
 
               <div className="flex flex-wrap items-center gap-2">
-                <h3 className=" font-semibold text-blue-600">
+                <h3 className=" font-semibold text-[#014f86]">
                   That’s where Tecverse comes in.
                 </h3>
 
@@ -213,17 +152,17 @@ export default function Home() {
       </section>
 
 
-      <section className="py-16 lg:py-24 bg-white">
+      <section className="py-16 lg:py-24 bg-white text-[#014f86]">
         <Container>
           <div className="text-center mb-16">
 
-            <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-light mb-12">Our AI & Automation Services</h1>
-            <p className="text-xl text-gray-600 max-w-5xl mx-auto">
+            <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-Inter mb-12">Our AI & Automation Services</h1>
+            <p className="text-xl max-w-5xl mx-auto">
               End-to-End AI Solutions — From Strategy to Scale
             </p>
           </div>
 
-          <div className="space-y-24">
+          <div className="space-y-24 text-[#014f86]">
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <div className="relative">
                 <img
@@ -233,7 +172,7 @@ export default function Home() {
                 />
               </div>
               <div>
-                <h3 className="text-3xl sm:text-4xl md:text-5xl font-light mb-4">
+                <h3 className="text-3xl sm:text-4xl md:text-5xl font-Inter mb-4">
                   AI Strategy & Roadmap Development
                 </h3>
                 <p className="text-gray-600 mb-12">
@@ -242,28 +181,28 @@ export default function Home() {
 
                 <div className="space-y-4">
                   <div className="flex items-start">
-                    <span className="text-blue-400 mr-1">• </span>
+                    <span className="text-[#014f86] mr-1">• </span>
 
                     <div>
                       <h4 className="font-sans text-lg  text-gray-900">AI Readiness Assessment</h4>
                     </div>
                   </div>
                   <div className="flex items-start">
-                    <span className="text-blue-400 mr-1">• </span>
+                    <span className="text-[#014f86] mr-1">• </span>
 
                     <div>
                       <h4 className="font-sans text-lg text-gray-900">Use Case Identification & Prioritization</h4>
                     </div>
                   </div>
                   <div className="flex items-start">
-                    <span className="text-blue-400 mr-1">• </span>
+                    <span className="text-[#014f86] mr-1">• </span>
 
                     <div>
                       <h4 className="font-sans text-lg text-gray-900">Business Case & ROI Forecasting</h4>
                     </div>
                   </div>
                   <div className='flex items-start'>
-                    <span className="text-blue-400 mr-1">• </span>
+                    <span className="text-[#014f86] mr-1">• </span>
                     <div>
                       <h4 className='font-sans text-lg text-gray-900'>Responsible AI Framework Design</h4>
                     </div>
@@ -274,7 +213,7 @@ export default function Home() {
 
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <div className="order-2 lg:order-1">
-                <h3 className="text-3xl sm:text-4xl md:text-5xl font-light mb-4">
+                <h3 className="text-3xl sm:text-4xl md:text-5xl font-Inter mb-4">
                   Intelligent Process Automation
                 </h3>
                 <p className="text-gray-600 mb-12">
@@ -282,7 +221,7 @@ export default function Home() {
                 </p>
                 <div className="space-y-4">
                   <div className="flex items-start">
-                    <span className="text-blue-400 mr-1">• </span>
+                    <span className="text-[#014f86] mr-1">• </span>
 
                     <div>
                       <h4 className="font-sans text-lg  text-gray-900">AI + RPA Integrationt</h4>
@@ -290,7 +229,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="flex items-start">
-                    <span className="text-blue-400 mr-1">• </span>
+                    <span className="text-[#014f86] mr-1">• </span>
 
                     <div>
                       <h4 className="font-sans text-lg text-gray-900">Document & Invoice Processing</h4>
@@ -298,7 +237,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="flex items-start">
-                    <span className="text-blue-400 mr-1">• </span>
+                    <span className="text-[#014f86] mr-1">• </span>
 
                     <div>
                       <h4 className="font-sans text-lg text-gray-900">HR & Finance Automation</h4>
@@ -306,12 +245,12 @@ export default function Home() {
                     </div>
                   </div>
                   <div className='flex items-start'>
-                    <span className="text-blue-400 mr-1">• </span>
+                    <span className="text-[#014f86] mr-1">• </span>
                     <div>
                       <h4 className='font-sans text-lg text-gray-900'>Workflow Optimization</h4>
                     </div>
                   </div>
-                  <p className='text-gray-600 text-lg'><span className='font-bold text-blue-500'>Result : </span>blueuced manual effort, lower costs, faster execution.</p>
+                  <p className='text-gray-600 text-lg'><span className='font-bold text-[#014f86]'>Result : </span>blueuced manual effort, lower costs, faster execution.</p>
                 </div>
 
               </div>
@@ -337,14 +276,14 @@ export default function Home() {
 
               <div>
 
-                <h3 className="text-3xl sm:text-4xl md:text-5xl font-light mb-4">
+                <h3 className="text-3xl sm:text-4xl md:text-5xl font-Inter mb-4">
                   Custom Machine Learning Solutions           </h3>
                 <p className="text-gray-600 mb-12">
                   We build intelligent models tailoblue to your business goals.                </p>
 
                 <div className="space-y-4">
                   <div className="flex items-start">
-                    <span className="text-blue-400 mr-1">• </span>
+                    <span className="text-[#014f86] mr-1">• </span>
 
                     <div>
                       <h4 className="font-sans text-lg  text-gray-900">Pblueictive Analytics</h4>
@@ -352,7 +291,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="flex items-start">
-                    <span className="text-blue-400 mr-1">• </span>
+                    <span className="text-[#014f86] mr-1">• </span>
 
                     <div>
                       <h4 className="font-sans text-lg text-gray-900">Demand Forecasting</h4>
@@ -360,7 +299,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="flex items-start">
-                    <span className="text-blue-400 mr-1">• </span>
+                    <span className="text-[#014f86] mr-1">• </span>
 
                     <div>
                       <h4 className="font-sans text-lg text-gray-900">Fraud Detection Systems</h4>
@@ -368,18 +307,18 @@ export default function Home() {
                     </div>
                   </div>
                   <div className='flex items-start'>
-                    <span className="text-blue-400 mr-1">• </span>
+                    <span className="text-[#014f86] mr-1">• </span>
                     <div>
                       <h4 className='font-sans text-lg text-gray-900'>Customer Behavior Modeling</h4>
                     </div>
                   </div>
                   <div className='flex items-start'>
-                    <span className="text-blue-400 mr-1">• </span>
+                    <span className="text-[#014f86] mr-1">• </span>
                     <div>
                       <h4 className='font-sans text-lg text-gray-900'>Recommendation Engines</h4>
                     </div>
                   </div>
-                  <p className='text-gray-600 text-lg'><span className='font-bold text-blue-500'>Result : </span>Data-driven decisions with measurable impact.</p>
+                  <p className='text-gray-600 text-lg'><span className='font-bold text-[#014f86]'>Result : </span>Data-driven decisions with measurable impact.</p>
 
                 </div>
               </div>
@@ -389,14 +328,14 @@ export default function Home() {
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <div className="order-2 lg:order-1">
 
-                <h3 className="text-3xl sm:text-4xl md:text-5xl font-light mb-4">
+                <h3 className="text-3xl sm:text-4xl md:text-5xl font-Inter mb-4">
                   Generative AI & Conversational Systems
                 </h3>
                 <p className="text-gray-600 mb-12">
                   Harness the power of LLMs to enhance productivity and customer engagement.                </p>
                 <div className="space-y-4">
                   <div className="flex px-5 items-start">
-                    <span className="text-blue-400 mr-1">• </span>
+                    <span className="text-[#014f86] mr-1">• </span>
 
                     <div>
                       <h4 className="font-sans text-lg  text-gray-900">AI Chatbots & Virtual Assistants</h4>
@@ -404,7 +343,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="flex px-5 items-start">
-                    <span className="text-blue-400 mr-1">• </span>
+                    <span className="text-[#014f86] mr-1">• </span>
 
                     <div>
                       <h4 className="font-sans text-lg text-gray-900">Enterprise Knowledge Assistants</h4>
@@ -412,7 +351,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="flex px-5 items-start">
-                    <span className="text-blue-400 mr-1">• </span>
+                    <span className="text-[#014f86] mr-1">• </span>
 
                     <div>
                       <h4 className="font-sans text-lg text-gray-900">AI Copilots for Internal Teams</h4>
@@ -420,12 +359,12 @@ export default function Home() {
                     </div>
                   </div>
                   <div className='flex px-5 items-start'>
-                    <span className="text-blue-400 mr-1">• </span>
+                    <span className="text-[#014f86] mr-1">• </span>
                     <div>
                       <h4 className='font-sans text-lg text-gray-900'>GPT Integrations for Business Applications</h4>
                     </div>
                   </div>
-                  <p className='text-gray-600 text-lg'><span className='font-bold text-blue-500'>Result : </span>Faster support, improved user experience, increased efficiency.</p>
+                  <p className='text-gray-600 text-lg'><span className='font-bold text-[#014f86]'>Result : </span>Faster support, improved user experience, increased efficiency.</p>
 
                 </div>
 
@@ -452,14 +391,14 @@ export default function Home() {
 
               <div>
 
-                <h3 className="text-3xl sm:text-4xl md:text-5xl font-light mb-4">
+                <h3 className="text-3xl sm:text-4xl md:text-5xl font-Inter mb-4">
                   AI Deployment, Integration & MLOps         </h3>
                 <p className="text-gray-600 mb-12">
                   We ensure your AI systems run securely and reliably at scale.              </p>
 
                 <div className="space-y-4">
                   <div className="flex items-start">
-                    <span className="text-blue-400 mr-1">• </span>
+                    <span className="text-[#014f86] mr-1">• </span>
 
                     <div>
                       <h4 className="font-sans text-lg  text-gray-900">Cloud AI Infrastructure (AWS, Azure, GCP)</h4>
@@ -467,7 +406,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="flex items-start">
-                    <span className="text-blue-400 mr-1">• </span>
+                    <span className="text-[#014f86] mr-1">• </span>
 
                     <div>
                       <h4 className="font-sans text-lg text-gray-900">CI/CD for ML Models</h4>
@@ -475,7 +414,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="flex items-start">
-                    <span className="text-blue-400 mr-1">• </span>
+                    <span className="text-[#014f86] mr-1">• </span>
 
                     <div>
                       <h4 className="font-sans text-lg text-gray-900">Monitoring & Performance Optimization</h4>
@@ -483,12 +422,12 @@ export default function Home() {
                     </div>
                   </div>
                   <div className='flex items-start'>
-                    <span className="text-blue-400 mr-1">• </span>
+                    <span className="text-[#014f86] mr-1">• </span>
                     <div>
                       <h4 className='font-sans text-lg text-gray-900'>Scalable Production Deployment</h4>
                     </div>
                   </div>
-                  <p className='text-gray-600 text-lg'><span className='font-bold text-blue-500'>Result : </span>AI that works in the real world — not just in prototypes.</p>
+                  <p className='text-gray-600 text-lg'><span className='font-bold text-[#014f86]'>Result : </span>AI that works in the real world — not just in prototypes.</p>
 
 
                 </div>
@@ -507,49 +446,49 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
 
             <div>
-              <h2 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl text-center font-light text-white tracking-tight mb-12">
+              <h2 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl text-center font-Inter text-white tracking-tight mb-12">
                 Real Business Impact
               </h2>
 
-              <p className="text-white font-light mb-8 text-lg">
+              <p className="text-white font-Inter mb-8 text-lg">
                 We turn intelligent AI strategies into measurable business outcomes by delivering scalable, data-driven solutions that enhance efficiency, accelerate growth, and create long-term value.
               </p>
 
               <div className="space-y-6 mb-8">
 
                 <div className=" backdrop-blur-sm p-6">
-                  <h3 className="text-3xl font-sans mb-2 text-green-500">
+                  <h3 className="text-3xl font-sans mb-2 text-[#7ed957] ">
                     Retail Enterprise
                   </h3>
-                  <p className="text-white font-light">
+                  <p className="text-white font-Inter">
                     Improved demand forecasting accuracy by 32% and blueuced stock-outs by 20%.
                   </p>
                 </div>
 
                 <div className=" backdrop-blur-sm p-6">
-                  <h3 className="text-3xl font-sans mb-2 text-green-500">
+                  <h3 className="text-3xl font-sans mb-2 text-[#7ed957] ">
                     Financial Services Firm
                   </h3>
-                  <p className="text-white font-light">
+                  <p className="text-white font-Inter">
                     Automated invoice processing, blueucing manual effort by 65%.
                   </p>
                 </div>
 
                 <div className=" backdrop-blur-sm p-6">
-                  <h3 className="text-3xl font-sans mb-2 text-green-500">
+                  <h3 className="text-3xl font-sans mb-2 text-[#7ed957] ">
                     Customer Support Platform
                   </h3>
-                  <p className="text-white font-light">
+                  <p className="text-white font-Inter">
                     Implemented AI chatbot blueucing response time to under 3 seconds.
                     We focus on outcomes — not experiments.
                   </p>
                 </div>
 
                 <div className=" backdrop-blur-sm p-6">
-                  <h3 className="text-3xl font-sans mb-2 text-green-500">
+                  <h3 className="text-3xl font-sans mb-2 text-[#7ed957] ">
                     Enterprise Sales Organization
                   </h3>
-                  <p className="text-white font-light">
+                  <p className="text-white font-Inter">
                     Built an AI-driven application to automate workflows, blueucing manual effort by 50% and significantly accelerating turnaround time while improving overall bid participation.
                   </p>
                 </div>
@@ -567,79 +506,17 @@ export default function Home() {
 
 
 
-      <section className="py-16 lg:py-24">
+      <section className="py-16 lg:py-24 text-[#014f86]">
         <Container>
           <div className="text-center mb-16">
 
-            <h2 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-light tracking-tight mb-12">Our AI Implementation Framework</h2>
+            <h2 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-Inter tracking-tight mb-12">Our AI Implementation Framework</h2>
             <p className="text-xl text-gray-600 max-w-5xl mx-auto">
               A disciplined, end-to-end framework designed to transform AI initiatives into scalable, secure, and measurable business outcomes.
             </p>
           </div>
 
-          {/* <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
-              {[
-                {
-                  title: "Discovery & Business Understanding",
-                  description: "We analyze your goals and processes to identify high-impact AI opportunities with measurable outcomes.",
-                  icon: "/BusinessDiscovery.png"
-                },
-                {
-                  title: "Data Assessment & Architecture Design",
-                  description: "We assess data readiness and design a secure, scalable architecture for sustainable AI growth.",
-                  icon: "/dataarch.png"
-                },
-                {
-                  title: "Model Development & Validation",
-                  description: "We build and validate accurate, explainable models optimized for real-world performance.",
-                  icon: "/br.png"
-                },
-                {
-                  title: "Deployment & Integration",
-                  description: "We seamlessly integrate AI into your systems to ensure smooth adoption and operational efficiency.",
-                  icon: "/productiondep.png"
-                },
-                {
-                  title: "Continuous Monitoring & Optimization",
-                  description: "We monitor, refine, and optimize models to deliver sustained performance and long-term value.",
-                  icon: "/f.png"
-                }
-              ].map((step, i) => (
-                <div
-                  key={i}
-                  className="bg-white p-2"
-                >
-                  <div className="flex items-start">
-                    <div className="flex-shrink-0  rounded-lg flex items-center justify-center mr-4">
-                      <Image
-                        src={step.icon}
-                        alt={step.title}
-                        width={100}
-                        height={100}
-                        className="object-contain"
-                      /> 
-                    </div>
-                    <div className="flex-grow">
-                      <div className="flex items-center justify-between mb-2">
-                        <h1 className="font-sans text-2xl text-blue-500">{step.title}</h1>
-                      </div>
-                      <p className="text-gray-600 text-sm">{step.description}</p>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
 
-            <div className="relative">
-              <img
-                src="/ourai.png"
-                alt="AI implementation lifecycle showing iterative process from discovery to optimization"
-                className="relative"
-              />
-
-            </div>
-          </div> */}
           <img src="/aif.png" className='w-full h-auto object-contain' alt="AI Implementation Framework" />
         </Container>
       </section>
@@ -657,13 +534,13 @@ export default function Home() {
             <h2
               className="
           font-sans
-          font-light
+          font-Inter
           tracking-tight
           text-3xl
           sm:text-5xl
           md:text-6xl
           lg:text-7xl
-          text-slate-900
+          text-[#014f86]
           dark:text-white
           mb-12
         "
@@ -680,7 +557,7 @@ export default function Home() {
           <div className="space-y-5">
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-start">
-              <h3 className="text-xl font-sans text-blue-500">
+              <h3 className="text-xl font-sans text-[#014f86]">
                 Retail & E-Commerce
               </h3>
               <p className="md:col-span-2 text-gray-600 leading-relaxed">
@@ -690,7 +567,7 @@ export default function Home() {
             <div className="border-t border-gray-200" />
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-start">
-              <h3 className="text-xl font-sans text-blue-500">
+              <h3 className="text-xl font-sans text-[#014f86]">
                 Healthcare
               </h3>
               <p className="md:col-span-2 text-gray-600 leading-relaxed">
@@ -701,7 +578,7 @@ export default function Home() {
             <div className="border-t border-gray-200" />
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-start">
-              <h3 className="text-xl font-sans text-blue-500">
+              <h3 className="text-xl font-sans text-[#014f86]">
                 SaaS & Technology
               </h3>
               <p className="md:col-span-2 text-gray-600 leading-relaxed">
@@ -711,7 +588,7 @@ export default function Home() {
             <div className="border-t border-gray-200" />
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-start">
-              <h3 className="text-xl font-sans text-blue-500">
+              <h3 className="text-xl font-sans text-[#014f86]">
                 Logistics & Supply Chain
               </h3>
               <p className="md:col-span-2 text-gray-600 leading-relaxed">
@@ -722,7 +599,7 @@ export default function Home() {
             <div className="border-t border-gray-200" />
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-start">
-              <h3 className="text-xl font-sans text-blue-500">
+              <h3 className="text-xl font-sans text-[#014f86]">
                 Enterprise Operations
               </h3>
               <p className="md:col-span-2 text-gray-600 leading-relaxed">
@@ -741,7 +618,7 @@ export default function Home() {
 
 
 
-      <div className="relative min-h-screen bg-gradient-to-br from-blue-600 via-blue-500 to-blue-600 overflow-hidden flex items-center">
+      <div className="relative min-h-screen bg-gradient-to-br from-blue-600 via-[#014f86] to-blue-600 overflow-hidden flex items-center">
         <div className="absolute inset-0 opacity-20">
           <div className="absolute top-20 left-20 w-72 h-72 bg-white rounded-full mix-blend-overlay filter blur-5xl animate-pulse"></div>
           <div className="absolute bottom-20 right-20 w-96 h-96 bg-white rounded-full mix-blend-overlay filter blur-5xl animate-pulse" style={{ animationDelay: '1s' }}></div>
@@ -751,8 +628,8 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <div className="text-white space-y-8 lg:pr-8">
               <div className="space-y-4">
-                <h1 className="text-3xl sm:text-5xl lg:text-6xl font-light leading-tight">
-                  Ready to transform your business<span className="block mt-2">with intelligent AI solutions?</span>
+                <h1 className="text-3xl sm:text-5xl lg:text-6xl font-Inter leading-tight text-white">
+                  Ready to transform your business<span className="block mt-2 text-white">with intelligent AI solutions?</span>
                 </h1>
                 <p className="text-xl lg:text-lg text-blue-100 max-w-xl">
                   Let’s design and
@@ -760,8 +637,8 @@ export default function Home() {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <button className="group relative px-8 py-4 bg-white text-blue-600 rounded-full font-light text-lg shadow-3xl hover:shadow-white/50 transition-all duration-300 hover:scale-105">
-                  <span className="relative z-10">Contact Us Today</span>
+                <button className="group relative px-8 py-4 bg-white text-[#014f86] rounded-full font-sans text-lg shadow-3xl hover:shadow-white/50 transition-all duration-300">
+                  <Link href='/contact'><span className="relative z-10">Contact Us Today</span></Link>
                   <svg className="inline-block ml-2 w-5 h-5 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                   </svg>
@@ -779,8 +656,8 @@ export default function Home() {
               </div>
 
               <div className="relative bg-white/95 backdrop-blur-sm rounded-5xl shadow-3xl p-8 lg:p-12 transform hover:scale-105 transition-transform duration-300">
-                <div className="absolute top-0 left-0 w-20 h-20 border-t-4 border-l-4 border-blue-500 rounded-tl-5xl"></div>
-                <div className="absolute bottom-0 right-0 w-20 h-20 border-b-4 border-r-4 border-blue-500 rounded-br-5xl"></div>
+                <div className="absolute top-0 left-0 w-20 h-20 border-t-4 border-l-4 border-[#014f86] rounded-tl-5xl"></div>
+                <div className="absolute bottom-0 right-0 w-20 h-20 border-b-4 border-r-4 border-[#014f86] rounded-br-5xl"></div>
 
                 <div className="relative">
                   <img
@@ -789,14 +666,14 @@ export default function Home() {
                     className="w-full h-auto max-w-md mx-auto drop-shadow-3xl"
                   />
 
-                  <div className="absolute -bottom-6 -right-6 bg-gradient-to-br from-yellow-400 to-orange-500 text-white px-6 py-3 rounded-full shadow-xl font-light text-lg animate-bounce">
+                  <div className="absolute -bottom-6 -right-6 bg-gradient-to-br from-yellow-400 to-orange-500 text-white px-6 py-3 rounded-full shadow-xl font-Inter text-lg animate-bounce">
                     Let's Go!
                   </div>
                 </div>
               </div>
 
               <div className="absolute top-10 right-10 w-16 h-16 bg-yellow-400 rounded-lg rotate-12 animate-pulse opacity-80"></div>
-              <div className="absolute bottom-20 left-0 w-12 h-12 bg-blue-400 rounded-full animate-bounce opacity-80" style={{ animationDelay: '0.5s' }}></div>
+              <div className="absolute bottom-20 left-0 w-12 h-12 bg-[#014f86] rounded-full animate-bounce opacity-80" style={{ animationDelay: '0.5s' }}></div>
             </div>
           </div>
         </Container>

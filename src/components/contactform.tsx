@@ -90,13 +90,11 @@ export default function ContactForm() {
         if (validateForm()) {
             setIsSubmitting(true);
 
-            // Simulate API call
             await new Promise(resolve => setTimeout(resolve, 1500));
 
             setIsSubmitting(false);
             setSubmitted(true);
 
-            // Reset form after 3 seconds
             setTimeout(() => {
                 setSubmitted(false);
                 setFormData({
@@ -125,7 +123,6 @@ export default function ContactForm() {
             [name]: type === 'checkbox' ? checked : value
         }));
 
-        // Clear error when user starts typing
         if (errors[name]) {
             setErrors(prev => ({ ...prev, [name]: '' }));
         }
@@ -139,7 +136,7 @@ export default function ContactForm() {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                     </svg>
                 </div>
-                <h3 className="text-3xl font-thin-100 text-slate-900 dark:text-white mb-3">Thank You!</h3>
+                <h3 className="text-3xl font-thin-100 text-[#014f86] dark:text-white mb-3">Thank You!</h3>
                 <p className="text-slate-600 dark:text-slate-400 max-w-md mx-auto">
                     Your message has been successfully submitted. We'll get back to you within 24-48 hours.
                 </p>
@@ -149,78 +146,76 @@ export default function ContactForm() {
 
     return (
         <div className="bg-white dark:bg-slate-900 dark:border-slate-800">
-            {/* Form Header */}
             <div className="border-b border-slate-200 dark:border-slate-800 px-4 py-6 md:px-8">
-                <h2 className="text-3xl font-thin-100 text-slate-900 dark:text-white">Contact Us</h2>
+                <h2 className="text-3xl font-thin-100 text-[#014f86] dark:text-white">Contact Us</h2>
                 <p className="text-slate-600 dark:text-slate-400 mt-1">
                     Fill out the form below and our team will get back to you as soon as possible.
                 </p>
             </div>
 
             <form onSubmit={handleSubmit} className="p-4 md:p-8">
-                {/* Personal Information Section */}
                 <div className="mb-8">
-                    <h3 className="text-lg font-thin-100 text-slate-900 dark:text-white mb-4 pb-2 border-b border-slate-200 dark:border-slate-700">
+                    <h3 className="text-lg font-thin-100 text-[#014f86] dark:text-white mb-4 pb-2 border-b border-slate-200 dark:border-slate-700">
                         Personal Information
                     </h3>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div>
                             <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
-                                First Name <span className="text-blue-500">*</span>
+                                First Name <span className="text-[#014f86]">*</span>
                             </label>
                             <input
                                 type="text"
                                 name="firstName"
                                 value={formData.firstName}
                                 onChange={handleInputChange}
-                                className={`w-full px-4 py-2.5 border focus:ring-blue-500 focus:border-blue-500 transition-colors ${errors.firstName
-                                    ? 'border-blue-500 dark:border-blue-500'
-                                    : 'border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-white'
+                                className={`w-full px-4 py-2.5 border focus:ring-[#014f86] focus:border-[#014f86] transition-colors ${errors.firstName
+                                    ? 'border-[#014f86] dark:border-[#014f86]'
+                                    : 'border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-[#014f86] dark:text-white'
                                     }`}
                                 placeholder="Enter your first name"
                             />
                             {errors.firstName && (
-                                <p className="mt-1 text-sm text-blue-600 dark:text-blue-400">{errors.firstName}</p>
+                                <p className="mt-1 text-sm text-[#014f86] dark:text-[#014f86]">{errors.firstName}</p>
                             )}
                         </div>
 
                         <div>
                             <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
-                                Last Name <span className="text-blue-500">*</span>
+                                Last Name <span className="text-[#014f86]">*</span>
                             </label>
                             <input
                                 type="text"
                                 name="lastName"
                                 value={formData.lastName}
                                 onChange={handleInputChange}
-                                className={`w-full px-4 py-2.5 border focus:ring-blue-500 focus:border-blue-500 transition-colors ${errors.firstName
-                                    ? 'border-blue-500 dark:border-blue-500'
-                                    : 'border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-white'
+                                className={`w-full px-4 py-2.5 border focus:ring-[#014f86] focus:border-[#014f86] transition-colors ${errors.firstName
+                                    ? 'border-[#014f86] dark:border-[#014f86]'
+                                    : 'border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-[#014f86] dark:text-white'
                                     }`}
                                 placeholder="Enter your last name"
                             />
                             {errors.lastName && (
-                                <p className="mt-1 text-sm text-blue-600 dark:text-blue-400">{errors.lastName}</p>
+                                <p className="mt-1 text-sm text-[#014f86] dark:text-[#014f86]">{errors.lastName}</p>
                             )}
                         </div>
 
                         <div>
                             <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
-                                Email Address <span className="text-blue-500">*</span>
+                                Email Address <span className="text-[#014f86]">*</span>
                             </label>
                             <input
                                 type="email"
                                 name="email"
                                 value={formData.email}
                                 onChange={handleInputChange}
-                                className={`w-full px-4 py-2.5 border focus:ring-blue-500 focus:border-blue-500 transition-colors ${errors.firstName
-                                    ? 'border-blue-500 dark:border-blue-500'
-                                    : 'border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-white'
+                                className={`w-full px-4 py-2.5 border focus:ring-[#014f86] focus:border-[#014f86] transition-colors ${errors.firstName
+                                    ? 'border-[#014f86] dark:border-[#014f86]'
+                                    : 'border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-[#014f86] dark:text-white'
                                     }`}
                                 placeholder="your.email@example.com"
                             />
                             {errors.email && (
-                                <p className="mt-1 text-sm text-blue-600 dark:text-blue-400">{errors.email}</p>
+                                <p className="mt-1 text-sm text-[#014f86] dark:text-[#014f86]">{errors.email}</p>
                             )}
                         </div>
 
@@ -233,16 +228,15 @@ export default function ContactForm() {
                                 name="phone"
                                 value={formData.phone}
                                 onChange={handleInputChange}
-                                className="w-full px-4 py-2.5 border dark:border-slate-700 focus:border-blue-500 bg-white dark:bg-slate-800 text-slate-900 dark:text-white transition-colors"
+                                className="w-full px-4 py-2.5 border dark:border-slate-700 focus:border-[#014f86] bg-white dark:bg-slate-800 text-[#014f86] dark:text-white transition-colors"
                                 placeholder="+1 (555) 123-4567"
                             />
                         </div>
                     </div>
                 </div>
 
-                {/* Company Information Section */}
                 <div className="mb-8">
-                    <h3 className="text-lg font-thin-100 text-slate-900 dark:text-white mb-4 pb-2 border-b border-slate-200 dark:border-slate-700">
+                    <h3 className="text-lg font-thin-100 text-[#014f86] dark:text-white mb-4 pb-2 border-b border-slate-200 dark:border-slate-700">
                         Company Information
                     </h3>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -255,7 +249,7 @@ export default function ContactForm() {
                                 name="company"
                                 value={formData.company}
                                 onChange={handleInputChange}
-                                className="w-full px-4 py-2.5 border dark:border-slate-700 focus:ring-blue-500 focus:border-blue-500 bg-white dark:bg-slate-800 text-slate-900 dark:text-white transition-colors"
+                                className="w-full px-4 py-2.5 border dark:border-slate-700 focus:ring-[#014f86] focus:border-[#014f86] bg-white dark:bg-slate-800 text-[#014f86] dark:text-white transition-colors"
                                 placeholder="Your company name"
                             />
                         </div>
@@ -269,22 +263,22 @@ export default function ContactForm() {
                                 name="jobTitle"
                                 value={formData.jobTitle}
                                 onChange={handleInputChange}
-                                className="w-full px-4 py-2.5 border dark:border-slate-700 focus:ring-blue-500 focus:border-blue-500 bg-white dark:bg-slate-800 text-slate-900 dark:text-white transition-colors"
+                                className="w-full px-4 py-2.5 border dark:border-slate-700 focus:ring-[#014f86] focus:border-[#014f86] bg-white dark:bg-slate-800 text-[#014f86] dark:text-white transition-colors"
                                 placeholder="Your job title"
                             />
                         </div>
 
                         <div>
                             <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
-                                Country/Region <span className="text-blue-500">*</span>
+                                Country/Region <span className="text-[#014f86]">*</span>
                             </label>
                             <select
                                 name="country"
                                 value={formData.country}
                                 onChange={handleInputChange}
-                                className={`w-full px-4 py-2.5 border  focus:ring-blue-500 focus:border-blue-500 transition-colors ${errors.country
-                                    ? 'border-blue-500 dark:border-blue-500'
-                                    : 'border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-white'
+                                className={`w-full px-4 py-2.5 border  focus:ring-[#014f86] focus:border-[#014f86] transition-colors ${errors.country
+                                    ? 'border-[#014f86] dark:border-[#014f86]'
+                                    : 'border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-[#014f86] dark:text-white'
                                     }`}
                             >
                                 {countries.map(country => (
@@ -294,7 +288,7 @@ export default function ContactForm() {
                                 ))}
                             </select>
                             {errors.country && (
-                                <p className="mt-1 text-sm text-blue-600 dark:text-blue-400">{errors.country}</p>
+                                <p className="mt-1 text-sm text-[#014f86] dark:text-[#014f86]">{errors.country}</p>
                             )}
                         </div>
 
@@ -307,30 +301,29 @@ export default function ContactForm() {
                                 name="state"
                                 value={formData.state}
                                 onChange={handleInputChange}
-                                className="w-full px-4 py-2.5 border dark:border-slate-700 focus:ring-blue-500 focus:border-blue-500 bg-white dark:bg-slate-800 text-slate-900 dark:text-white transition-colors"
+                                className="w-full px-4 py-2.5 border dark:border-slate-700 focus:ring-[#014f86] focus:border-[#014f86] bg-white dark:bg-slate-800 text-[#014f86] dark:text-white transition-colors"
                                 placeholder="State or province"
                             />
                         </div>
                     </div>
                 </div>
 
-                {/* Inquiry Details Section */}
                 <div className="mb-8">
-                    <h3 className="text-lg font-thin-100 text-slate-900 dark:text-white mb-4 pb-2 border-b border-slate-200 dark:border-slate-700">
+                    <h3 className="text-lg font-thin-100 text-[#014f86] dark:text-white mb-4 pb-2 border-b border-slate-200 dark:border-slate-700">
                         Inquiry Details
                     </h3>
                     <div className="space-y-6">
                         <div>
                             <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
-                                Inquiry Type <span className="text-blue-500">*</span>
+                                Inquiry Type <span className="text-[#014f86]">*</span>
                             </label>
                             <select
                                 name="inquiryType"
                                 value={formData.inquiryType}
                                 onChange={handleInputChange}
-                                className={`w-full px-4 py-2.5 border focus:ring-blue-500 focus:border-blue-500 transition-colors ${errors.inquiryType
-                                    ? 'border-blue-500 dark:border-blue-500'
-                                    : 'border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-white'
+                                className={`w-full px-4 py-2.5 border focus:ring-[#014f86] focus:border-[#014f86] transition-colors ${errors.inquiryType
+                                    ? 'border-[#014f86] dark:border-[#014f86]'
+                                    : 'border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-[#014f86] dark:text-white'
                                     }`}
                             >
                                 {inquiryTypes.map(type => (
@@ -340,7 +333,7 @@ export default function ContactForm() {
                                 ))}
                             </select>
                             {errors.inquiryType && (
-                                <p className="mt-1 text-sm text-blue-600 dark:text-blue-400">{errors.inquiryType}</p>
+                                <p className="mt-1 text-sm text-[#014f86] dark:text-[#014f86]">{errors.inquiryType}</p>
                             )}
                         </div>
 
@@ -352,7 +345,7 @@ export default function ContactForm() {
                                 name="productInterest"
                                 value={formData.productInterest}
                                 onChange={handleInputChange}
-                                className="w-full px-4 py-2.5 border border-slate-300 dark:border-slate-700  focus:ring-blue-500 focus:border-blue-500 bg-white dark:bg-slate-800 text-slate-900 dark:text-white transition-colors"
+                                className="w-full px-4 py-2.5 border border-slate-300 dark:border-slate-700  focus:ring-[#014f86] focus:border-[#014f86] bg-white dark:bg-slate-800 text-[#014f86] dark:text-white transition-colors"
                             >
                                 {products.map(product => (
                                     <option key={product.value} value={product.value}>
@@ -364,27 +357,26 @@ export default function ContactForm() {
 
                         <div>
                             <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
-                                Message <span className="text-blue-500">*</span>
+                                Message <span className="text-[#014f86]">*</span>
                             </label>
                             <textarea
                                 name="message"
                                 rows={5}
                                 value={formData.message}
                                 onChange={handleInputChange}
-                                className={`w-full px-4 py-2.5 border  focus:ring-blue-500 focus:border-blue-500 transition-colors resize-none ${errors.message
-                                    ? 'border-blue-500 dark:border-blue-500'
-                                    : 'border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-white'
+                                className={`w-full px-4 py-2.5 border  focus:ring-[#014f86] focus:border-[#014f86] transition-colors resize-none ${errors.message
+                                    ? 'border-[#014f86] dark:border-[#014f86]'
+                                    : 'border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-[#014f86] dark:text-white'
                                     }`}
                                 placeholder="Please provide details about your inquiry..."
                             ></textarea>
                             {errors.message && (
-                                <p className="mt-1 text-sm text-blue-600 dark:text-blue-400">{errors.message}</p>
+                                <p className="mt-1 text-sm text-[#014f86] dark:text-[#014f86]">{errors.message}</p>
                             )}
                         </div>
                     </div>
                 </div>
 
-                {/* Consent Section */}
                 <div className="mb-8">
                     <label className="flex items-start">
                         <input
@@ -392,25 +384,24 @@ export default function ContactForm() {
                             name="consent"
                             checked={formData.consent}
                             onChange={handleInputChange}
-                            className="mt-0.5 w-4 h-4 text-blue-600 border-slate-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-slate-800  dark:bg-slate-700 dark:border-slate-600"
+                            className="mt-0.5 w-4 h-4 text-[#014f86] border-slate-300 rounded focus:ring-[#014f86] dark:focus:ring-blue-600 dark:ring-offset-slate-800  dark:bg-slate-700 dark:border-slate-600"
                         />
                         <span className="ml-3 text-sm text-slate-600 dark:text-slate-400">
-                            I agree to the <a href="#" className="text-blue-600 dark:text-blue-400 hover:underline">Terms of Service</a> and <a href="#" className="text-blue-600 dark:text-blue-400 hover:underline">Privacy Policy</a>. I understand that my information will be used in accordance with these policies. <span className="text-blue-500">*</span>
+                            I agree to the <a href="#" className="text-[#014f86] dark:text-[#014f86] hover:underline">Terms of Service</a> and <a href="#" className="text-[#014f86] dark:text-[#014f86] hover:underline">Privacy Policy</a>. I understand that my information will be used in accordance with these policies. <span className="text-[#014f86]">*</span>
                         </span>
                     </label>
                     {errors.consent && (
-                        <p className="mt-1 text-sm text-blue-600 dark:text-blue-400 ml-7">{errors.consent}</p>
+                        <p className="mt-1 text-sm text-[#014f86] dark:text-[#014f86] ml-7">{errors.consent}</p>
                     )}
                 </div>
 
-                {/* Submit Button */}
                 <div className="flex justify-end">
                     <button
                         type="submit"
                         disabled={isSubmitting}
                         className={`px-8 py-3 rounded-lg font-medium transition-all duration-200 ${isSubmitting
                             ? 'bg-slate-300 text-slate-500 cursor-not-allowed'
-                            : 'bg-blue-500 text-white hover:bg-slate-500 focus:outline-none  focus:ring-blue-500 focus:ring-offset-2'
+                            : 'bg-[#014f86] text-white hover:bg-[#014f86]/80 focus:outline-none  focus:ring-[#014f86] focus:ring-offset-2'
                             }`}
                     >
                         {isSubmitting ? (

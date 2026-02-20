@@ -105,14 +105,14 @@ export default function ManagedITServicesPage() {
                         priority
                         className="object-cover opacity-40"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-r from-slate-900 via-slate-900/90 to-slate-900/60" />
+                    {/* <div className="absolute inset-0 bg-gradient-to-r from-slate-900 via-slate-900/90 to-slate-900/60" /> */}
                 </div>
 
                 <Container className="relative z-10">
                     <div className="max-w-4xl mx-auto text-center">
 
 
-                        <h1 className="text-7xl md:text-6xl lg:text-7xl font-light text-white mb-8 tracking-tight leading-tight">
+                        <h1 className="text-7xl md:text-6xl lg:text-7xl font-Inter text-white mb-8 tracking-tight leading-tight">
                             Reliable IT. <br />
                             <span className="text-white">
                                 Unstoppable Business.
@@ -125,12 +125,12 @@ export default function ManagedITServicesPage() {
 
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Link href="/contact">
-                                <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg h-auto">
+                                <Button size="lg" className="bg-[#014f86] hover:bg-[#014f86]/80 text-white px-8 py-4 text-lg h-auto">
                                     Schedule a Consultation
                                 </Button>
                             </Link>
                             <Link href="#services">
-                                <Button variant="outline" size="lg" className="border-slate-600 text-white hover:bg-slate-800 px-8 py-4 text-lg h-auto">
+                                <Button variant="outline" size="lg" className="border-slate-600 text-white">
                                     Explore Services
                                 </Button>
                             </Link>
@@ -148,7 +148,7 @@ export default function ManagedITServicesPage() {
                 <Container className="relative z-10">
                     <div className="text-center max-w-5xl mx-auto mb-20">
 
-                        <h2 className="text-4xl md:text-6xl font-light text-slate-900 dark:text-white mb-6 leading-tight">
+                        <h2 className="text-4xl md:text-6xl font-Inter text-[#014f86] dark:text-white mb-6 leading-tight">
                             Comprehensive Managed Services
                         </h2>
                         <p className="text-xl text-slate-600 dark:text-slate-300">
@@ -177,7 +177,7 @@ export default function ManagedITServicesPage() {
 
                                         {/* Title on Image */}
                                         <div className="absolute bottom-6 left-6 right-6">
-                                            <h3 className="text-5xl font-light text-white mb-3">
+                                            <h3 className="text-5xl font-Inter text-white mb-3">
                                                 {service.title}
                                             </h3>
                                             {/* Features Pills */}
@@ -234,14 +234,14 @@ export default function ManagedITServicesPage() {
                                     </div>
                                     <div>
                                         <p className="text-sm text-slate-500 dark:text-slate-400">System Status</p>
-                                        <p className="font-light text-slate-900 dark:text-white">All Systems Operational</p>
+                                        <p className="font-Inter text-[#014f86] dark:text-white">All Systems Operational</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                         <div className="space-y-8">
-                            <h2 className="text-7xl md:text-4xl font-light text-slate-900 dark:text-white">
+                            <h2 className="text-7xl md:text-4xl font-Inter text-[#014f86] dark:text-white">
                                 A Proactive Approach to IT
                             </h2>
                             <p className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
@@ -256,11 +256,11 @@ export default function ManagedITServicesPage() {
                                     { title: 'Manage', text: 'We provide ongoing monitoring, maintenance, and support.' }
                                 ].map((step, idx) => (
                                     <div key={idx} className="flex gap-4">
-                                        <div className="flex-shrink-0 w-8 h-8 rounded-full bg-blue-500 dark:bg-blue-900/30 text-white dark:text-blue-400 flex items-center justify-center font-light text-sm">
+                                        <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#014f86] dark:bg-blue-900/30 text-white dark:text-[#014f86] flex items-center justify-center font-Inter text-sm">
                                             {idx + 1}
                                         </div>
                                         <div>
-                                            <h4 className="font-light text-slate-900 dark:text-white mb-1">{step.title}</h4>
+                                            <h4 className="font-Inter text-[#014f86] dark:text-white mb-1">{step.title}</h4>
                                             <p className="text-slate-600 dark:text-slate-400 text-sm">{step.text}</p>
                                         </div>
                                     </div>
@@ -271,13 +271,13 @@ export default function ManagedITServicesPage() {
                 </Container>
             </section>
             {/* Benefits Section */}
-            <section className="py-24 bg-[#222831] text-white">
+            <section className="py-24 bg-[#222831]">
                 <Container>
                     <div className="text-center max-w-5xl mx-auto mb-16">
-                        <h2 className="text-7xl md:text-4xl font-light mb-6">
+                        <h2 className="text-7xl text-white md:text-4xl font-Inter mb-6">
                             Business Benefits
                         </h2>
-                        <p className="text-lg text-slate-300">
+                        <p className="text-lg text-white">
                             Why leading organizations trust tecverse with their IT.
                         </p>
                     </div>
@@ -286,9 +286,9 @@ export default function ManagedITServicesPage() {
                         {benefits.map((benefit, index) => {
                             const Icon = benefit.icon;
                             return (
-                                <div key={index} className="bg-black-800/50 p-6 ">
-                                    <h3 className="text-xl font-light mb-3">{benefit.title}</h3>
-                                    <p className="text-slate-400 text-sm leading-relaxed">{benefit.description}</p>
+                                <div key={index} className="bg-[#014f86]-800/50 p-6 ">
+                                    <h3 className="text-xl text-white font-Inter mb-3">{benefit.title}</h3>
+                                    <p className="text-white/80 text-sm leading-relaxed">{benefit.description}</p>
                                 </div>
                             )
                         })}
@@ -300,20 +300,20 @@ export default function ManagedITServicesPage() {
                 <div className="absolute inset-0  dark:bg-blue-900/10"></div>
                 <Container className="relative z-10">
                     <div className="max-w-4xl mx-auto text-center">
-                        <h2 className="text-4xl md:text-7xl font-light text-slate-900 dark:text-white mb-6">
+                        <h2 className="text-4xl md:text-7xl font-Inter text-[#014f86] dark:text-white mb-6">
                             Stop Worrying About IT
                         </h2>
-                        <h3 className="text-3xl md:text-7xl font-light text-slate-600 dark:text-slate-300 mb-10">
+                        <h3 className="text-3xl md:text-7xl font-Inter text-[#014f86]/80 dark:text-slate-300 mb-10">
                             Start focusing on your business growth.
                         </h3>
 
-                        <p className="text-lg text-slate-600 dark:text-slate-400 mb-10 max-w-3xl mx-auto">
+                        <p className="text-lg text-[#014f86]/80 dark:text-slate-400 mb-10 max-w-3xl mx-auto">
                             Get a complimentary IT health check and discover how we can improve your efficiency and security.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Link href="/contact">
-                                <Button size="lg" className="bg-blue-600 hover:bg-blue-700 px-10 py-5 text-lg h-auto shadow-xl shadow-blue-600/20">
+                                <Button size="lg" className="bg-[#014f86] hover: px-10 py-5 text-lg h-auto shadow-xl shadow-[#014f86]/20">
                                     Get Your Free Assessment
                                 </Button>
                             </Link>

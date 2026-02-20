@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import { Mail } from 'lucide-react';
 import { SiLinkedin } from 'react-icons/si';
 
@@ -52,7 +53,7 @@ Dedicated to fostering a culture of excellence and innovation, Naaz empowers tea
                 <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/40" />
 
                 <div className="relative max-w-4xl mx-auto px-6 text-center">
-                    <h1 className="text-4xl md:text-7xl font-light mb-6 tracking-tight">
+                    <h1 className="text-4xl text-white md:text-7xl font-Inter mb-6 tracking-tight">
                         Leadership Team
                     </h1>
                     <p className="text-xl text-slate-200 leading-relaxed max-w-3xl mx-auto">
@@ -71,14 +72,14 @@ Dedicated to fostering a culture of excellence and innovation, Naaz empowers tea
                                 className="bg-white dark:bg-slate-900 rounded-xl p-8 shadow-md hover:shadow-xl transition-all duration-300"
                             >
                                 {/* Initials Avatar */}
-                                <div className="w-16 h-16 rounded-full bg-[#222831] text-white flex items-center justify-center text-xl font-light mb-6">
+                                <div className="w-16 h-16 rounded-full bg-[#222831] text-white flex items-center justify-center text-xl font-Inter mb-6">
                                     {getInitials(leader.name)}
                                 </div>
 
-                                <h2 className="text-3xl font-light text-slate-900 dark:text-white mb-1">
+                                <h2 className="text-3xl font-Inter text-[#014f86] dark:text-white mb-1">
                                     {leader.name}
                                 </h2>
-                                <p className="text-blue-600 dark:text-blue-400 font-medium mb-4">
+                                <p className="text-[#014f86] dark:text-[#014f86] font-medium mb-4">
                                     {leader.title}
                                 </p>
 
@@ -88,7 +89,7 @@ Dedicated to fostering a culture of excellence and innovation, Naaz empowers tea
                                     {leader.bio.substring(0, 160)}...
                                 </p>
 
-                                <button className="mt-4 text-blue-600 dark:text-blue-400 font-medium text-sm hover:underline">
+                                <button className="mt-4 text-[#014f86] dark:text-[#014f86] font-medium text-sm hover:underline">
                                     Read More →
                                 </button>
                             </div>
@@ -103,10 +104,10 @@ Dedicated to fostering a culture of excellence and innovation, Naaz empowers tea
                             {/* Name + Icons Row */}
                             <div className="flex items-center justify-between flex-wrap gap-4">
                                 <div>
-                                    <h2 className="text-4xl md:text-7xl font-light text-slate-900">
+                                    <h2 className="text-4xl md:text-7xl font-Inter text-[#014f86]">
                                         {leader.name}
                                     </h2>
-                                    <p className="text-blue-600 font-medium text-lg">
+                                    <p className="text-[#014f86] font-medium text-lg">
                                         {leader.title}
                                     </p>
                                 </div>
@@ -118,7 +119,7 @@ Dedicated to fostering a culture of excellence and innovation, Naaz empowers tea
                                         aria-label="LinkedIn"
                                         className="p-2"
                                     >
-                                        <SiLinkedin className="w-5 h-5 text-blue-600" />
+                                        <SiLinkedin className="w-5 h-5 text-[#014f86]" />
                                     </a>
 
                                     <a
@@ -132,7 +133,7 @@ Dedicated to fostering a culture of excellence and innovation, Naaz empowers tea
                             </div>
 
                             {/* Divider */}
-                            <div className="h-px bg-gradient-to-r from-transparent via-blue-500 to-transparent w-24" />
+                            <div className="h-px bg-gradient-to-r from-transparent via-[#014f86] to-transparent w-24" />
 
                             {/* Bio */}
                             <p className="text-slate-600 leading-relaxed whitespace-pre-line">
@@ -159,16 +160,16 @@ Dedicated to fostering a culture of excellence and innovation, Naaz empowers tea
 
                 {/* Content */}
                 <div className="relative max-w-4xl mx-auto px-6 text-center">
-                    <h2 className="text-4xl md:text-7xl font-light mb-4">
+                    <h2 className="text-4xl text-white md:text-7xl font-Inter mb-4">
                         Join Our Team
                     </h2>
                     <p className="text-blue-100 mb-8 max-w-3xl mx-auto text-lg">
                         Discover opportunities to grow your career with tecverse&apos;s
                         innovative and collaborative team.
                     </p>
-                    <button className="px-8 py-3 bg-white text-blue-600 rounded-md font-medium hover:bg-slate-100 transition-colors">
+                    <Link href="/about/careers" className="px-8 py-3 bg-[#014f86] text-white rounded-md font-Inter inline-block">
                         View Open Positions
-                    </button>
+                    </Link>
                 </div>
             </section>
 

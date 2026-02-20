@@ -25,7 +25,7 @@ export default function CompactAnalytics() {
     ];
 
     const pieData = [
-        { name: "Optimized", value: 45, color: "#000000" },
+        { name: "Optimized", value: 45, color: "#014f86" },
         { name: "Efficient", value: 30, color: "#10b981" },
         { name: "Moderate", value: 15, color: "#ef4444" },
         { name: "Critical", value: 10, color: "#6b7280" },
@@ -70,8 +70,8 @@ export default function CompactAnalytics() {
                             className="bg-gray-50 rounded-lg p-4 border border-gray-200"
                         >
                             <p className="text-sm text-gray-600 mb-1">{stat.title}</p>
-                            <p className="text-3xl font-light text-black mb-2">{stat.value}</p>
-                            <p className={`text-sm font-medium ${stat.positive ? 'text-green-600' : 'text-blue-600'}`}>
+                            <p className="text-3xl font-Inter text-[#014f86] mb-2">{stat.value}</p>
+                            <p className={`text-sm font-medium ${stat.positive ? 'text-green-600' : 'text-[#014f86]'}`}>
                                 {stat.change} from last week
                             </p>
                         </motion.div>
@@ -87,7 +87,7 @@ export default function CompactAnalytics() {
                         transition={{ delay: 0.2 }}
                         className="bg-gray-50 rounded-lg p-6 border border-gray-200"
                     >
-                        <h3 className="text-lg font-light text-black mb-4">Weekly Efficiency</h3>
+                        <h3 className="text-lg font-Inter text-[#014f86] mb-4">Weekly Efficiency</h3>
                         <ResponsiveContainer width="100%" height={200}>
                             <LineChart data={lineData}>
                                 <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
@@ -108,7 +108,7 @@ export default function CompactAnalytics() {
                         transition={{ delay: 0.3 }}
                         className="bg-gray-50 rounded-lg p-6 border border-gray-200"
                     >
-                        <h3 className="text-lg font-light text-black mb-4">Resource Efficiency</h3>
+                        <h3 className="text-lg font-Inter text-[#014f86] mb-4">Resource Efficiency</h3>
                         <ResponsiveContainer width="100%" height={200}>
                             <BarChart data={barData}>
                                 <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
@@ -117,7 +117,7 @@ export default function CompactAnalytics() {
                                 <Tooltip
                                     contentStyle={{ backgroundColor: "#fff", border: "1px solid #e5e7eb" }}
                                 />
-                                <Bar dataKey="efficiency" fill="#000000" radius={[8, 8, 0, 0]} />
+                                <Bar dataKey="efficiency" fill="#014f86" radius={[8, 8, 0, 0]} />
                             </BarChart>
                         </ResponsiveContainer>
                     </motion.div>
@@ -129,7 +129,7 @@ export default function CompactAnalytics() {
                         transition={{ delay: 0.4 }}
                         className="bg-gray-50 rounded-lg p-6 border border-gray-200"
                     >
-                        <h3 className="text-lg font-light text-black mb-1">Performance Status</h3>
+                        <h3 className="text-lg font-Inter text-[#014f86] mb-1">Performance Status</h3>
                         <ResponsiveContainer width="100%" height={200}>
                             <PieChart>
                                 <Pie
@@ -167,7 +167,7 @@ export default function CompactAnalytics() {
                         transition={{ delay: 0.5 }}
                         className="bg-gray-50 rounded-lg p-6 border border-gray-200"
                     >
-                        <h3 className="text-lg font-light text-black mb-4">Load vs Response</h3>
+                        <h3 className="text-lg font-Inter text-[#014f86] mb-4">Load vs Response</h3>
                         <ResponsiveContainer width="100%" height={200}>
                             <ScatterChart>
                                 <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />

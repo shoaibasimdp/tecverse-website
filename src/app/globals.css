@@ -9,6 +9,15 @@
     display: block;
     /* Removes bottom space for inline images */
   }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #014f86;
+  }
 }
 
 :root {
@@ -21,7 +30,7 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-lato);
-  --color-black: #000000;
+  --color-black: #014f86;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -47,6 +56,6 @@ body {
 }
 
 @utility text-black {
-  color: #000000;
-  -webkit-text-fill-color: #000000;
+  color: #014f86;
+  -webkit-text-fill-color: #014f86;
 }

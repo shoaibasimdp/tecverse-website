@@ -21,12 +21,12 @@ export default function AboutPage() {
                 />
 
                 {/* Dark Overlay */}
-                <div className="absolute inset-0 bg-black/60"></div>
+                <div className="absolute inset-0 bg-[#014f86]/60"></div>
 
                 {/* Content */}
                 <Container className="relative z-10">
                     <div className="max-w-4xl mx-auto text-center px-4">
-                        <h1 className="text-3xl sm:text-6xl md:text-7xl font-light text-white mb-8 drop-shadow-xl">
+                        <h1 className="text-3xl sm:text-6xl md:text-7xl font-Inter text-white mb-8 drop-shadow-xl">
                             About tecverse
                         </h1>
 
@@ -47,7 +47,7 @@ export default function AboutPage() {
 
                         {/* Section Header */}
                         <div className="text-center mb-24">
-                            <h2 className="text-4xl md:text-6xl font-light text-slate-900 dark:text-white mb-6">
+                            <h2 className="text-4xl md:text-6xl font-Inter text-[#014f86] dark:text-white mb-6">
                                 Company Overview
                             </h2>
                             <p className="max-w-5xl mx-auto text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
@@ -59,7 +59,7 @@ export default function AboutPage() {
                         <div className="relative space-y-24">
 
                             {/* Vertical Center Line */}
-                            <div className="hidden md:block absolute left-1/2 top-0 h-full w-0.5 bg-blue-500 -translate-x-1/2"></div>
+                            <div className="hidden md:block absolute left-1/2 top-0 h-full w-0.5 bg-[#014f86] -translate-x-1/2"></div>
 
                             {/* === ITEM 1 === */}
                             <div className="grid grid-cols-1 md:grid-cols-[1fr_40px_1fr] gap-12 items-center">
@@ -67,7 +67,7 @@ export default function AboutPage() {
                                 {/* Card - Left */}
                                 <div className="md:text-right">
                                     <div className="inline-block bg-white dark:bg-slate-800 rounded-3xl p-6 shadow-xl hover:-translate-y-1 transition-all">
-                                        <h3 className="text-3xl font-sans text-slate-900 dark:text-white mb-8">
+                                        <h3 className="text-3xl font-sans text-[#014f86] dark:text-white mb-8">
                                             Safety
                                         </h3>
                                         <p className="text-slate-600 dark:text-slate-300">
@@ -81,7 +81,7 @@ export default function AboutPage() {
 
                                 {/* Line + Dot */}
                                 <div className="hidden md:flex relative justify-center">
-                                    <span className="absolute w-4 h-4 bg-green-500 rounded-full"></span>
+                                    <span className="absolute w-4 h-4 bg-[#7ed957] rounded-full"></span>
                                 </div>
 
                                 {/* Image - Right */}
@@ -108,13 +108,13 @@ export default function AboutPage() {
 
                                 {/* Line + Dot */}
                                 <div className="relative flex justify-center">
-                                    <span className="absolute w-4 h-4 bg-green-500 rounded-full"></span>
+                                    <span className="absolute w-4 h-4 bg-[#7ed957] rounded-full"></span>
                                 </div>
 
                                 {/* Card - Right */}
                                 <div>
                                     <div className="inline-block bg-white dark:bg-slate-800 rounded-3xl p-6 shadow-xl hover:-translate-y-1 transition-all">
-                                        <h3 className="text-3xl font-sans text-slate-900 dark:text-white mb-8">
+                                        <h3 className="text-3xl font-sans text-[#014f86] dark:text-white mb-8">
                                             Communication
                                         </h3>
                                         <p className="text-slate-600 dark:text-slate-300">
@@ -133,7 +133,7 @@ export default function AboutPage() {
                                 {/* Card - Left */}
                                 <div className="md:text-right">
                                     <div className="inline-block bg-white dark:bg-slate-800 rounded-3xl p-6 shadow-xl hover:-translate-y-1 transition-all">
-                                        <h3 className="text-3xl font-sans text-slate-900 dark:text-white mb-8">
+                                        <h3 className="text-3xl font-sans text-[#014f86] dark:text-white mb-8">
                                             Transparency
                                         </h3>
                                         <p className="text-slate-600 dark:text-slate-300">
@@ -146,7 +146,7 @@ export default function AboutPage() {
 
                                 {/* Line + Dot */}
                                 <div className="relative flex justify-center">
-                                    <span className="absolute w-4 h-4 bg-green-500 rounded-full"></span>
+                                    <span className="absolute w-4 h-4 bg-[#7ed957] rounded-full"></span>
                                 </div>
 
                                 {/* Image - Right */}
@@ -173,13 +173,13 @@ export default function AboutPage() {
 
                                 {/* Line + Dot */}
                                 <div className="relative flex justify-center">
-                                    <span className="absolute w-4 h-4 bg-green-500 rounded-full"></span>
+                                    <span className="absolute w-4 h-4 bg-[#7ed957] rounded-full"></span>
                                 </div>
 
                                 {/* Card - Right */}
                                 <div>
                                     <div className="inline-block bg-white dark:bg-slate-800 rounded-3xl p-6 shadow-xl hover:-translate-y-1 transition-all">
-                                        <h3 className="text-3xl font-sans text-slate-900 dark:text-white mb-8">
+                                        <h3 className="text-3xl font-sans text-[#014f86] dark:text-white mb-8">
                                             Accountability
                                         </h3>
                                         <p className="text-slate-600 dark:text-slate-300">
@@ -203,12 +203,12 @@ export default function AboutPage() {
 
                 <Container className="relative z-10">
                     <div className="max-w-5xl mx-auto">
-                        <h2 className="text-4xl sm:text-7xl font-light text-slate-900 dark:text-white mb-16 tracking-tight">
+                        <h2 className="text-4xl sm:text-7xl font-Inter text-[#014f86] dark:text-white mb-16 tracking-tight">
                             Our Mission & Vision
                         </h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
                             <div className="bg-white/70 dark:bg-slate-800/70 backdrop-blur-xl rounded-5xl p-8 shadow-xl">
-                                <h3 className="text-xl font-sans text-slate-900 dark:text-white mb-4">
+                                <h3 className="text-xl font-sans text-[#014f86] dark:text-white mb-4">
                                     Our Vision
                                 </h3>
                                 <p className="text-slate-700 dark:text-slate-300 leading-relaxed">
@@ -222,7 +222,7 @@ export default function AboutPage() {
 
                             {/* Mission */}
                             <div className="bg-white/70 dark:bg-slate-800/70 backdrop-blur-xl rounded-5xl p-8 shadow-xl">
-                                <h3 className="text-xl font-sans text-slate-900 dark:text-white mb-4">
+                                <h3 className="text-xl font-sans text-[#014f86] dark:text-white mb-4">
                                     Our Mission
                                 </h3>
                                 <p className="text-slate-700 dark:text-slate-300 leading-relaxed">
@@ -246,7 +246,7 @@ export default function AboutPage() {
                 <Container className="relative z-10">
                     {/* Header */}
                     <div className="max-w-5xl mx-auto text-center mb-20">
-                        <h2 className="text-4xl sm:text-7xl font-light tracking-tight text-slate-900 dark:text-white mb-6">
+                        <h2 className="text-4xl sm:text-7xl font-Inter tracking-tight text-[#014f86] dark:text-white mb-6">
                             Leadership Team
                         </h2>
                         <p className="text-lg text-slate-600 dark:text-slate-400">
@@ -263,14 +263,14 @@ export default function AboutPage() {
 
                             <div className="relative flex flex-col gap-6">
                                 <div className="flex items-center gap-5">
-                                    <div className="w-20 h-20 rounded-full bg-black flex items-center justify-center text-white text-3xl font-light shadow-lg">
+                                    <div className="w-20 h-20 rounded-full bg-[#014f86] flex items-center justify-center text-white text-3xl font-Inter shadow-lg">
                                         NS
                                     </div>
                                     <div>
-                                        <h3 className="text-3xl font-sans text-slate-900 dark:text-white">
+                                        <h3 className="text-3xl font-sans text-[#014f86] dark:text-white">
                                             Nawaz S.
                                         </h3>
-                                        <p className="text-blue-600 font-medium">
+                                        <p className="text-[#014f86] font-medium">
                                             Founder & CTO
                                         </p>
                                     </div>
@@ -296,14 +296,14 @@ export default function AboutPage() {
 
                             <div className="relative flex flex-col gap-6">
                                 <div className="flex items-center gap-5">
-                                    <div className="w-20 h-20 rounded-full bg-black flex items-center justify-center text-white text-3xl font-light shadow-lg">
+                                    <div className="w-20 h-20 rounded-full bg-[#014f86] flex items-center justify-center text-white text-3xl font-Inter shadow-lg">
                                         A
                                     </div>
                                     <div>
-                                        <h3 className="text-3xl font-sans text-slate-900 dark:text-white">
+                                        <h3 className="text-3xl font-sans text-[#014f86] dark:text-white">
                                             Ali
                                         </h3>
-                                        <p className="text-blue-600 font-medium">
+                                        <p className="text-[#014f86] font-medium">
                                             Co-Founder & COO
                                         </p>
                                     </div>
@@ -333,7 +333,7 @@ export default function AboutPage() {
                 <Container>
                     {/* Header */}
                     <div className="max-w-5xl mx-auto text-center mb-20">
-                        <h2 className="text-4xl sm:text-7xl font-light text-black mb-6">
+                        <h2 className="text-4xl sm:text-7xl font-Inter text-[#014f86] mb-6">
                             Why Choose tecverse?
                         </h2>
                         <p className="text-lg text-slate-800">
@@ -396,7 +396,7 @@ export default function AboutPage() {
                                 />
 
                                 {/* Text */}
-                                <h3 className="text-xl font-sans text-black mb-3">
+                                <h3 className="text-xl font-sans text-[#014f86] mb-3">
                                     {item.title}
                                 </h3>
                                 <p className="text-slate-800 leading-relaxed max-w-sm">
@@ -412,11 +412,11 @@ export default function AboutPage() {
             {/* CTA Section */}
             <section className="relative py-20 lg:py-32 bg-[url('/letsbuild.png')] bg-cover bg-center">
                 {/* Overlay */}
-                <div className="absolute inset-0 bg-black/60" />
+                <div className="absolute inset-0 bg-[#014f86]/60" />
 
                 <Container className="relative z-10">
                     <div className="max-w-5xl mx-auto text-center">
-                        <h2 className="text-4xl sm:text-7xl font-light text-white mb-4">
+                        <h2 className="text-4xl sm:text-7xl font-Inter text-white mb-4">
                             Let's Build Something Amazing Together
                         </h2>
                         <p className="text-lg text-blue-100 mb-8">
@@ -425,7 +425,7 @@ export default function AboutPage() {
                         <Link href="/contact">
                             <Button
                                 size="lg"
-                                className="bg-blue-500 text-blue-700 hover:bg-gray-100 border-0 px-8 py-4 text-lg font-light shadow-xl transform transition-all duration-300 hover:scale-105"
+                                className=" text-blue-700 border-0 px-8 py-4 text-lg font-Inter shadow-xl transform transition-all duration-300 hover:scale-105"
                             >
                                 Contact Us
                             </Button>

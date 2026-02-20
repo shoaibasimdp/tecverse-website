@@ -19,16 +19,16 @@ export const Card: React.FC<CardProps> = ({
 }) => {
     return (
         <div
-            className={`bg-gradient-to-b from-[#141414] to-[#2a2a2a] dark:bg-slate-800  dark:border-slate-700 p-6 ${hover ? '' : ''
+            className={`bg-[#014f86] dark:bg-slate-800  dark:border-slate-700 p-6 ${hover ? '' : ''
                 } ${className}`}
         >
             {icon && (
-                <div className="mb-4 text-blue-600 dark:text-blue-400">
+                <div className="mb-4 text-[#014f86] dark:text-[#014f86]">
                     {icon}
                 </div>
             )}
             {title && (
-                <h3 className="text-3xl font-light text-white dark:text-slate-100 mb-2">
+                <h3 className="text-3xl font-Inter text-white dark:text-slate-100 mb-2">
                     {title}
                 </h3>
             )}

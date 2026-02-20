@@ -12,11 +12,11 @@ export default function MissionPage() {
             {/* Hero Section */}
             <section className="relative bg-[url('/ourmission.png')] bg-cover bg-center bg-no-repeat bg-fixed py-32 text-white">
                 {/* Dim light overlay */}
-                <div className="absolute inset-0 bg-black/50 dark:bg-black/70"></div>
+                <div className="absolute inset-0 bg-[#014f86]/50 dark:bg-[#014f86]/70"></div>
 
                 <Container>
                     <div className="relative max-w-5xl mx-auto text-center">
-                        <h1 className="text-4xl md:text-7xl font-light mb-6">
+                        <h1 className="text-4xl text-white md:text-7xl font-Inter mb-6">
                             Our Mission
                         </h1>
                         <p className="text-xl text-blue-200 leading-relaxed">
@@ -27,18 +27,18 @@ export default function MissionPage() {
             </section>
 
             {/* Content Section */}
-            <section className="py-24 bg-white dark:bg-slate-950">
+            <section className="py-24 text-[#014f86] bg-white dark:bg-slate-950">
                 <Container>
                     <div className="max-w-4xl mx-auto space-y-16">
                         <div className="text-center">
-                            <p className="text-3xl text-slate-600 dark:text-slate-300 font-light leading-relaxed">
+                            <p className="text-3xl dark:text-slate-300 font-Inter leading-relaxed">
                                 "Our mission is to partner with organizations to build robust, scalable, and future-ready digital solutions that drive tangible business growth and operational efficiency."
                             </p>
                         </div>
 
                         <div className="grid md:grid-cols-3 gap-8">
                             <div className=" dark:bg-slate-900 p-8 rounded-3xl">
-                                <h3 className="text-xl font-sans text-black dark:text-blue-400 mb-4">
+                                <h3 className="text-xl font-sans text-[#014f86] dark:text-[#014f86] mb-4">
                                     Excellence
                                 </h3>
                                 <p className="text-slate-600 dark:text-slate-400">
@@ -47,7 +47,7 @@ export default function MissionPage() {
                             </div>
 
                             <div className=" dark:bg-slate-900 p-8 rounded-3xl">
-                                <h3 className="text-xl font-sans text-black dark:text-blue-400 mb-4">
+                                <h3 className="text-xl font-sans text-[#014f86] dark:text-[#014f86] mb-4">
                                     Integrity
                                 </h3>
                                 <p className="text-slate-600 dark:text-slate-400">
@@ -56,7 +56,7 @@ export default function MissionPage() {
                             </div>
 
                             <div className="dark:bg-slate-900 p-8 rounded-3xl">
-                                <h3 className="text-xl font-sans text-black dark:text-blue-400 mb-4">
+                                <h3 className="text-xl font-sans text-[#014f86] dark:text-[#014f86] mb-4">
                                     Agility
                                 </h3>
                                 <p className="text-slate-600 dark:text-slate-400">

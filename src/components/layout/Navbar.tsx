@@ -78,7 +78,7 @@ export const Navbar: React.FC = () => {
                     <div className="flex items-center justify-between h-16">
 
                         <Link href="/" className="flex items-center">
-                            <img src="/tvl.png" alt="tecverse" className="w-32 h-auto" />
+                            <img src="/tvsimple.png" alt="tecverse" className="w-32 h-auto" />
                         </Link>
 
 
@@ -97,11 +97,11 @@ export const Navbar: React.FC = () => {
                                     }}
                                 >
                                     {link.hasDropdown ? (
-                                        <span className="group relative px-4 py-2 text-sm font-medium flex items-center cursor-pointer text-slate-900 hover:text-blue-600 transition-colors">
+                                        <span className="group relative px-4 py-2 text-sm font-medium flex items-center cursor-pointer text-[#014f86] hover:text-[#014f86] transition-colors">
                                             {link.label}
 
                                             {/* underline */}
-                                            <span className="pointer-events-none absolute left-0 -bottom-1 h-[2px] w-full origin-left scale-x-0 bg-blue-600 transition-transform duration-300 group-hover:scale-x-100" />
+                                            <span className="pointer-events-none absolute left-0 -bottom-1 h-[2px] w-full origin-left scale-x-0 bg-[#014f86] transition-transform duration-300 group-hover:scale-x-100" />
 
                                             <svg
                                                 className="ml-1 w-4 h-4"
@@ -117,15 +117,15 @@ export const Navbar: React.FC = () => {
                                         <Link
                                             href={link.href}
                                             className={`group relative px-4 py-2 text-sm font-medium transition-colors ${pathname === link.href
-                                                ? 'text-blue-600'
-                                                : 'text-slate-900 hover:text-blue-600'
+                                                ? 'text-[#014f86]'
+                                                : 'text-[#014f86] hover:text-[#014f86]'
                                                 }`}
                                         >
                                             {link.label}
 
                                             {/* underline */}
                                             <span
-                                                className={`pointer-events-none absolute left-0 -bottom-1 h-[2px] w-full origin-left bg-blue-600 transition-transform duration-300 ${pathname === link.href
+                                                className={`pointer-events-none absolute left-0 -bottom-1 h-[2px] w-full origin-left bg-[#014f86] transition-transform duration-300 ${pathname === link.href
                                                     ? 'scale-x-100'
                                                     : 'scale-x-0 group-hover:scale-x-100'
                                                     }`}
@@ -141,14 +141,14 @@ export const Navbar: React.FC = () => {
                                                 <div className="grid grid-cols-12 gap-8">
                                                     <div className="col-span-3">
                                                         <div className="flex items-center gap-2 mb-6">
-                                                            <h3 className="text-sm font-thin-100 text-slate-900 uppercase tracking-wide">Company</h3>
+                                                            <h3 className="text-sm font-thin-100 text-[#014f86] uppercase tracking-wide">Company</h3>
                                                         </div>
 
                                                         <div className="space-y-3">
                                                             <Link href="/about" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-blue-50 transition-all">
 
                                                                 <div className="flex-1">
-                                                                    <div className="font-thin-100 text-slate-900 group-hover:text-blue-600 transition-colors">About tecverse</div>
+                                                                    <div className="font-thin-100 text-[#014f86] group-hover:text-[#014f86] transition-colors">About tecverse</div>
                                                                     <div className="text-xs text-slate-500">Our story</div>
                                                                 </div>
                                                             </Link>
@@ -156,7 +156,7 @@ export const Navbar: React.FC = () => {
                                                             <Link href="/about/vision" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-blue-50 transition-all">
 
                                                                 <div className="flex-1">
-                                                                    <div className="font-thin-100 text-slate-900 group-hover:text-blue-600 transition-colors">Vision Statement</div>
+                                                                    <div className="font-thin-100 text-[#014f86] group-hover:text-[#014f86] transition-colors">Vision Statement</div>
                                                                     <div className="text-xs text-slate-500">Where we're headed</div>
                                                                 </div>
                                                             </Link>
@@ -164,7 +164,7 @@ export const Navbar: React.FC = () => {
                                                             <Link href="/about/mission" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-blue-50 transition-all">
 
                                                                 <div className="flex-1">
-                                                                    <div className="font-thin-100 text-slate-900 group-hover:text-blue-600 transition-colors">Mission Statement</div>
+                                                                    <div className="font-thin-100 text-[#014f86] group-hover:text-[#014f86] transition-colors">Mission Statement</div>
                                                                     <div className="text-xs text-slate-500">Our purpose</div>
                                                                 </div>
                                                             </Link>
@@ -174,14 +174,14 @@ export const Navbar: React.FC = () => {
                                                     {/* People Section */}
                                                     <div className="col-span-3">
                                                         <div className="flex items-center gap-2 mb-6">
-                                                            <h3 className="text-sm font-thin-100 text-slate-900 uppercase tracking-wide">People</h3>
+                                                            <h3 className="text-sm font-thin-100 text-[#014f86] uppercase tracking-wide">People</h3>
                                                         </div>
 
                                                         <div className="space-y-3">
                                                             <Link href="/about/leadership" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-blue-50 transition-all">
 
                                                                 <div className="flex-1">
-                                                                    <div className="font-thin-100 text-slate-900 group-hover:text-blue-600 transition-colors">Leadership Team</div>
+                                                                    <div className="font-thin-100 text-[#014f86] group-hover:text-[#014f86] transition-colors">Leadership Team</div>
                                                                     <div className="text-xs text-slate-500">Meet our leaders</div>
                                                                 </div>
                                                             </Link>
@@ -189,7 +189,7 @@ export const Navbar: React.FC = () => {
                                                             <Link href="/about/careers" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-blue-50 transition-all">
 
                                                                 <div className="flex-1">
-                                                                    <div className="font-thin-100 text-slate-900 group-hover:text-blue-600 transition-colors">Careers</div>
+                                                                    <div className="font-thin-100 text-[#014f86] group-hover:text-[#014f86] transition-colors">Careers</div>
                                                                     <div className="text-xs text-slate-500">Join our team</div>
                                                                 </div>
                                                             </Link>
@@ -215,12 +215,12 @@ export const Navbar: React.FC = () => {
 
                                                                 <div>
                                                                     <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur rounded-full px-4 py-2 mb-6">
-                                                                        <span className="text-sm font-light tracking-wide">
+                                                                        <span className="text-sm font-Inter tracking-wide">
                                                                             Who We Are
                                                                         </span>
                                                                     </div>
 
-                                                                    <h3 className="text-3xl md:text-4xl font-light mb-4">
+                                                                    <h3 className="text-3xl text-white md:text-4xl font-Inter mb-4">
                                                                         Global Technology Partner
                                                                     </h3>
 
@@ -256,14 +256,14 @@ export const Navbar: React.FC = () => {
                                                     {/* Development Section */}
                                                     <div className="col-span-3">
                                                         <div className="flex items-center gap-2 mb-6">
-                                                            <h3 className="text-sm font-thin-100 text-slate-900 uppercase tracking-wide">Development</h3>
+                                                            <h3 className="text-sm font-thin-100 text-[#014f86] uppercase tracking-wide">Development</h3>
                                                         </div>
 
                                                         <div className="space-y-3">
                                                             <Link href="/services/development" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-blue-50 transition-all">
 
                                                                 <div className="flex-1">
-                                                                    <div className="font-thin-100 text-slate-900 group-hover:text-blue-600 transition-colors">Web & App Development</div>
+                                                                    <div className="font-thin-100 text-[#014f86] group-hover:text-[#014f86] transition-colors">Web & App Development</div>
                                                                     <div className="text-xs text-slate-500">Build digital products</div>
                                                                 </div>
                                                             </Link>
@@ -271,7 +271,7 @@ export const Navbar: React.FC = () => {
                                                             <Link href="/services/managed-it" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-blue-50 transition-all">
 
                                                                 <div className="flex-1">
-                                                                    <div className="font-thin-100 text-slate-900 group-hover:text-blue-600 transition-colors">Managed IT Services</div>
+                                                                    <div className="font-thin-100 text-[#014f86] group-hover:text-[#014f86] transition-colors">Managed IT Services</div>
                                                                     <div className="text-xs text-slate-500">24/7 support</div>
                                                                 </div>
                                                             </Link>
@@ -281,14 +281,14 @@ export const Navbar: React.FC = () => {
                                                     {/* Solutions Section */}
                                                     <div className="col-span-3">
                                                         <div className="flex items-center gap-2 mb-6">
-                                                            <h3 className="text-sm font-thin-100 text-slate-900 uppercase tracking-wide">Solutions</h3>
+                                                            <h3 className="text-sm font-thin-100 text-[#014f86] uppercase tracking-wide">Solutions</h3>
                                                         </div>
 
                                                         <div className="space-y-3">
                                                             <Link href="/services/offshoring" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-blue-50 transition-all">
 
                                                                 <div className="flex-1">
-                                                                    <div className="font-thin-100 text-slate-900 group-hover:text-blue-600 transition-colors">Offshoring Solutions</div>
+                                                                    <div className="font-thin-100 text-[#014f86] group-hover:text-[#014f86] transition-colors">Offshoring Solutions</div>
                                                                     <div className="text-xs text-slate-500">Global talent</div>
                                                                 </div>
                                                             </Link>
@@ -296,7 +296,7 @@ export const Navbar: React.FC = () => {
                                                             <Link href="/services/staffing" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-blue-50 transition-all">
 
                                                                 <div className="flex-1">
-                                                                    <div className="font-thin-100 text-slate-900 group-hover:text-blue-600 transition-colors">Staffing Solutions</div>
+                                                                    <div className="font-thin-100 text-[#014f86] group-hover:text-[#014f86] transition-colors">Staffing Solutions</div>
                                                                     <div className="text-xs text-slate-500">Scale your team</div>
                                                                 </div>
                                                             </Link>
@@ -306,14 +306,14 @@ export const Navbar: React.FC = () => {
                                                     {/* AI & Cloud Section */}
                                                     <div className="col-span-3">
                                                         <div className="flex items-center gap-2 mb-6">
-                                                            <h3 className="text-sm font-thin-100 text-slate-900 uppercase tracking-wide">AI & Cloud</h3>
+                                                            <h3 className="text-sm font-thin-100 text-[#014f86] uppercase tracking-wide">AI & Cloud</h3>
                                                         </div>
 
                                                         <div className="space-y-3">
                                                             <Link href="/ai-solutions" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-blue-50 transition-all">
 
                                                                 <div className="flex-1">
-                                                                    <div className="font-thin-100 text-slate-900 group-hover:text-blue-600 transition-colors">AI Solutions</div>
+                                                                    <div className="font-thin-100 text-[#014f86] group-hover:text-[#014f86] transition-colors">AI Solutions</div>
                                                                     <div className="text-xs text-slate-500">Intelligent systems</div>
                                                                 </div>
                                                             </Link>
@@ -321,7 +321,7 @@ export const Navbar: React.FC = () => {
                                                             <Link href="/development-services" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-blue-50 transition-all">
 
                                                                 <div className="flex-1">
-                                                                    <div className="font-thin-100 text-slate-900 group-hover:text-blue-600 transition-colors">Cloud & DevOps</div>
+                                                                    <div className="font-thin-100 text-[#014f86] group-hover:text-[#014f86] transition-colors">Cloud & DevOps</div>
                                                                     <div className="text-xs text-slate-500">Infrastructure</div>
                                                                 </div>
                                                             </Link>
@@ -346,7 +346,7 @@ export const Navbar: React.FC = () => {
                                                             <div className="relative z-10 p-6 text-white h-full flex flex-col justify-between">
 
                                                                 <div>
-                                                                    <h3 className="text-lg font-light mb-3">
+                                                                    <h3 className="text-lg text-white font-Inter mb-3">
                                                                         Why tecverse?
                                                                     </h3>
 
@@ -357,7 +357,7 @@ export const Navbar: React.FC = () => {
 
                                                                 <Link
                                                                     href="/services"
-                                                                    className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 font-medium text-sm transition-colors"
+                                                                    className="inline-flex items-center gap-2 text-white hover:text-blue-300 font-medium text-sm transition-colors"
                                                                 >
                                                                     Discover More
                                                                 </Link>
@@ -431,7 +431,7 @@ export const Navbar: React.FC = () => {
                                                 <Link
                                                     href={link.href}
                                                     onClick={() => setIsOpen(false)}
-                                                    className="font-medium text-slate-900"
+                                                    className="font-medium text-[#014f86]"
                                                 >
                                                     {link.label}
                                                 </Link>
@@ -465,7 +465,7 @@ export const Navbar: React.FC = () => {
                                         <Link
                                             href={link.href}
                                             onClick={() => setIsOpen(false)}
-                                            className="block px-4 py-2 font-medium text-slate-900 hover:bg-slate-50"
+                                            className="block px-4 py-2 font-medium text-[#014f86] hover:bg-slate-50"
                                         >
                                             {link.label}
                                         </Link>

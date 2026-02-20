@@ -27,14 +27,14 @@ export const metadata: Metadata = {
     siteName: 'tecverse',
   },
   icons: {
-    icon: '/tec.png',
-    shortcut: '/tec.png',
-    apple: '/tec.png',
+    icon: '/ft.png',
+    shortcut: '/ft.png',
+    apple: '/ft.png',
   },
 };
 
 export const viewport: Viewport = {
-  themeColor: 'black',
+  themeColor: '#014f86',
   colorScheme: 'light dark',
 };
 

@@ -114,20 +114,19 @@ export default function CareersPage() {
                     backgroundRepeat: 'no-repeat',
                     backgroundAttachment: 'fixed' // Optional: for parallax effect
                 }}>
-                <div className="absolute inset-0 bg-black/40"></div>
+                <div className="absolute inset-0 bg-[#014f86]/40"></div>
 
                 <div className="absolute inset-0 opacity-10">
-                    <div className="absolute top-20 left-20 w-72 h-72 bg-blue-500 rounded-full filter blur-5xl animate-pulse"></div>
-                    <div className="absolute bottom-20 right-20 w-96 h-96 bg-blue-500 rounded-full filter blur-5xl animate-pulse" style={{ animationDelay: '2s' }}></div>
+                    <div className="absolute top-20 left-20 w-72 h-72 bg-[#014f86] rounded-full filter blur-5xl animate-pulse"></div>
+                    <div className="absolute bottom-20 right-20 w-96 h-96 bg-[#014f86] rounded-full filter blur-5xl animate-pulse" style={{ animationDelay: '2s' }}></div>
                 </div>
 
                 <Container className="relative z-10 h-full flex items-center">
                     <div className="max-w-4xl">
-                        <h1 className="text-4xl md:text-6xl lg:text-7xl font-light text-white mb-6 leading-tight">
+                        <h1 className="text-4xl md:text-6xl lg:text-7xl font-Inter text-white mb-6 leading-tight">
                             Build the Future
-                            <span className="block bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-400">
-                                With Us
-                            </span>
+                            With Us
+
                         </h1>
                         <p className="text-xl md:text-3xl text-gray-200 mb-8 max-w-5xl">
                             Join a team of innovators, creators, and problem-solvers transforming industries through cutting-edge technology.
@@ -136,7 +135,7 @@ export default function CareersPage() {
                             <Link href="#open-positions">
                                 <Button
                                     size="lg"
-                                    className="bg-blue-500 hover:from-blue-700 hover:to-blue-700 text-white border-0 px-8 py-3 text-lg shadow-lg transform transition-all duration-300 hover:scale-105"
+                                    className="bg-[#014f86] hover:from-blue-700 hover:to-blue-700 text-white border-0 px-8 py-3 text-lg shadow-lg transform transition-all duration-300 hover:scale-105"
                                 >
                                     View Open Positions
                                 </Button>
@@ -165,19 +164,19 @@ export default function CareersPage() {
                 <Container>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
                         <div>
-                            <div className="text-4xl font-light text-white mb-2">200+</div>
+                            <div className="text-4xl font-Inter text-white mb-2">200+</div>
                             <div className="text-gray-300">Team Members</div>
                         </div>
                         <div>
-                            <div className="text-4xl font-light text-white mb-2">15+</div>
+                            <div className="text-4xl font-Inter text-white mb-2">15+</div>
                             <div className="text-gray-300">Countries</div>
                         </div>
                         <div>
-                            <div className="text-4xl font-light text-white mb-2">4.8★</div>
+                            <div className="text-4xl font-Inter text-white mb-2">4.8★</div>
                             <div className="text-gray-300">Employee Rating</div>
                         </div>
                         <div>
-                            <div className="text-4xl font-light text-white mb-2">90%</div>
+                            <div className="text-4xl font-Inter text-white mb-2">90%</div>
                             <div className="text-gray-300">Retention Rate</div>
                         </div>
                     </div>
@@ -187,7 +186,7 @@ export default function CareersPage() {
             <section id="culture" className="py-20 bg-white dark:bg-slate-900">
                 <Container>
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl md:text-7xl font-light text-slate-900 dark:text-white mb-4">
+                        <h2 className="text-4xl md:text-7xl font-Inter text-[#014f86] dark:text-white mb-4">
                             Our Culture & Values
                         </h2>
                         <p className="text-xl text-slate-600 dark:text-slate-300 max-w-5xl mx-auto">
@@ -207,7 +206,7 @@ export default function CareersPage() {
                                     className="transition-transform duration-300 group-hover:scale-110"
                                 />
                             </div>
-                            <h3 className="text-xl font-light text-slate-900 dark:text-white mb-3">
+                            <h3 className="text-xl font-Inter text-[#014f86] dark:text-white mb-3">
                                 Innovation First
                             </h3>
                             <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
@@ -226,7 +225,7 @@ export default function CareersPage() {
                                     className="transition-transform duration-300 group-hover:scale-110"
                                 />
                             </div>
-                            <h3 className="text-xl font-light text-slate-900 dark:text-white mb-3">
+                            <h3 className="text-xl font-Inter text-[#014f86] dark:text-white mb-3">
                                 Collaboration
                             </h3>
                             <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
@@ -245,7 +244,7 @@ export default function CareersPage() {
                                     className="transition-transform duration-300 group-hover:scale-110"
                                 />
                             </div>
-                            <h3 className="text-xl font-light text-slate-900 dark:text-white mb-3">
+                            <h3 className="text-xl font-Inter text-[#014f86] dark:text-white mb-3">
                                 Growth Mindset
                             </h3>
                             <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
@@ -264,7 +263,7 @@ export default function CareersPage() {
                                     className="transition-transform duration-300 group-hover:scale-110"
                                 />
                             </div>
-                            <h3 className="text-xl font-light text-slate-900 dark:text-white mb-3">
+                            <h3 className="text-xl font-Inter text-[#014f86] dark:text-white mb-3">
                                 Work-Life Balance
                             </h3>
                             <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
@@ -288,7 +287,7 @@ export default function CareersPage() {
                 <Container>
                     {/* Header */}
                     <div className="text-center mb-20">
-                        <h2 className="text-4xl md:text-7xl font-light text-gray-900 mb-4">
+                        <h2 className="text-4xl md:text-7xl font-Inter text-[#014f86] mb-4">
                             Our Application Process
                         </h2>
                         <p className="text-lg md:text-xl text-gray-600 max-w-5xl mx-auto">
@@ -299,12 +298,12 @@ export default function CareersPage() {
                     {/* Process */}
                     <div className="relative grid grid-cols-1 md:grid-cols-4 gap-10">
                         {/* Connection Line */}
-                        <div className="hidden md:block absolute top-14 left-0 right-0 h-1 bg-green-500 rounded-full"></div>
+                        <div className="hidden md:block absolute top-14 left-0 right-0 h-1 bg-[#7ed957] rounded-full"></div>
 
                         {/* Step 1 */}
                         <div className="relative bg-white rounded-3xl p-8 text-center shadow-lg hover:shadow-xl transition">
-                            <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-6 relative z-10">
-                                <span className="text-xl font-light text-white">1</span>
+                            <div className="w-16 h-16 bg-[#014f86] rounded-full flex items-center justify-center mx-auto mb-6 relative z-10">
+                                <span className="text-xl font-Inter text-white">1</span>
                             </div>
                             <h3 className="text-xl font-sans text-gray-900 mb-3">
                                 Application
@@ -316,8 +315,8 @@ export default function CareersPage() {
 
                         {/* Step 2 */}
                         <div className="relative bg-white rounded-3xl p-8 text-center shadow-lg hover:shadow-xl transition">
-                            <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-6 relative z-10">
-                                <span className="text-xl font-light text-white">2</span>
+                            <div className="w-16 h-16 bg-[#014f86] rounded-full flex items-center justify-center mx-auto mb-6 relative z-10">
+                                <span className="text-xl font-Inter text-white">2</span>
                             </div>
                             <h3 className="text-xl font-sans text-gray-900 mb-3">
                                 Review
@@ -329,8 +328,8 @@ export default function CareersPage() {
 
                         {/* Step 3 */}
                         <div className="relative bg-white rounded-3xl p-8 text-center shadow-lg hover:shadow-xl transition">
-                            <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-6 relative z-10">
-                                <span className="text-xl font-light text-white">3</span>
+                            <div className="w-16 h-16 bg-[#014f86] rounded-full flex items-center justify-center mx-auto mb-6 relative z-10">
+                                <span className="text-xl font-Inter text-white">3</span>
                             </div>
                             <h3 className="text-xl font-sans text-gray-900 mb-3">
                                 Interviews
@@ -342,8 +341,8 @@ export default function CareersPage() {
 
                         {/* Step 4 */}
                         <div className="relative bg-white rounded-3xl p-8 text-center shadow-lg hover:shadow-xl transition">
-                            <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-6 relative z-10">
-                                <span className="text-xl font-light text-white">4</span>
+                            <div className="w-16 h-16 bg-[#014f86] rounded-full flex items-center justify-center mx-auto mb-6 relative z-10">
+                                <span className="text-xl font-Inter text-white">4</span>
                             </div>
                             <h3 className="text-xl font-sans text-gray-900 mb-3">
                                 Decision
@@ -358,15 +357,15 @@ export default function CareersPage() {
 
             {/* CTA Section */}
             <section className="relative overflow-hidden">
-                <section className="relative py-24 bg-[url('/joinourteam.png')] bg-cover bg-center bg-no-repeat">
+                <section className="relative py-24 bg-[url('/picsart.png')] bg-cover bg-center bg-no-repeat">
 
                     {/* Dim overlay */}
-                    <div className="absolute inset-0 bg-black/30"></div>
+                    {/* <div className="absolute inset-0 bg-[#014f86]/30"></div> */}
 
                     <Container className="relative z-10">
                         {/* LEFT aligned content */}
                         <div className="max-w-xl">
-                            <h2 className="text-4xl md:text-7xl font-light text-white mb-6">
+                            <h2 className="text-4xl md:text-7xl font-Inter text-white mb-6">
                                 Ready to Join Our Team?
                             </h2>
 
@@ -378,7 +377,7 @@ export default function CareersPage() {
                                 <Link href="#open-positions">
                                     <Button
                                         size="lg"
-                                        className="bg-blue-500 text-blue-700 hover:bg-gray-100 border-0 px-8 py-4 text-lg font-light shadow-xl transition-transform duration-300 hover:scale-105"
+                                        className="bg-[#014f86] text-blue-700 hover:bg-[#7ed957] border-0 px-8 py-4 text-lg font-Inter shadow-xl transition-transform duration-300"
                                     >
                                         Browse All Positions
                                     </Button>
@@ -388,7 +387,7 @@ export default function CareersPage() {
                                     <Button
                                         variant="outline"
                                         size="lg"
-                                        className="bg-transparent text-white border-white hover:bg-white/10 px-8 py-4 text-lg font-light shadow-xl transition-transform duration-300 hover:scale-105"
+                                        className="bg-transparent text-white border-white hover:bg-white/10 px-8 py-4 text-lg font-Inter shadow-xl transition-transform duration-300 hover:scale-105"
                                     >
                                         Contact Recruiting
                                     </Button>

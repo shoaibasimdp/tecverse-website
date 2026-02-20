@@ -13,13 +13,14 @@ export default function StaffingSolutionsPage() {
     return (
         <>
             {/* Header Section */}
-            <section className="relative bg-[url('/staffingsol.png')] bg-cover bg-center bg-no-repeat bg-fixed py-40 sm:py-56">
+            <section className="relative bg-[url('/staffingsol.jpg')] bg-cover bg-center bg-no-repeat bg-fixed py-40 sm:py-56">
                 {/* Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70" />
+                {/* <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70" /> */}
+                <div className="absolute inset-0 bg-[#014f86]/50 dark:bg-[#014f86]/70"></div>
 
                 <Container>
                     <div className="relative max-w-4xl">
-                        <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-light text-white mb-6 tracking-tight">
+                        <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-Inter text-white mb-6 tracking-tight">
                             Staffing Solutions
                         </h1>
 
@@ -28,15 +29,7 @@ export default function StaffingSolutionsPage() {
                             and long-term talent management.
                         </p>
 
-                        {/* Optional CTA */}
-                        <div className="mt-10 flex gap-4">
-                            <button className="px-6 py-3 rounded-xl bg-white text-slate-900 font-light hover:bg-slate-100 transition">
-                                Get Started
-                            </button>
-                            <button className="px-6 py-3 rounded-xl border border-white/30 text-white hover:bg-white/10 transition">
-                                Talk to Us
-                            </button>
-                        </div>
+
                     </div>
                 </Container>
             </section>
@@ -46,14 +39,14 @@ export default function StaffingSolutionsPage() {
             <section className="py-20 bg-white dark:bg-slate-900">
                 <Container>
                     <div className="max-w-4xl mx-auto">
-                        <h2 className="text-3xl sm:text-5xl md:text-7xl font-light text-slate-900 dark:text-white mb-6">
+                        <h2 className="text-3xl sm:text-5xl md:text-7xl font-Inter text-[#014f86] dark:text-white mb-6">
                             The Hiring Dilemma
                         </h2>
                         <p className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed mb-12">
                             The current hiring landscape is riddled with complexities, from talent shortages to skill mismatches. Many businesses struggle to find quality candidates who not only possess the necessary skills but also align with their company culture and values. In this environment, traditional hiring methods often fall short, leading to prolonged vacancies and increased recruitment costs.
                         </p>
 
-                        <h2 className="text-3xl sm:text-5xl md:text-7xl font-light text-slate-900 dark:text-white mb-6">
+                        <h2 className="text-3xl sm:text-5xl md:text-7xl font-Inter text-[#014f86] dark:text-white mb-6">
                             Our Approach
                         </h2>
                         <p className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
@@ -67,7 +60,7 @@ export default function StaffingSolutionsPage() {
             <section className="py-20 dark:bg-slate-800">
                 <Container>
                     <div className="max-w-5xl mx-auto text-center mb-16">
-                        <h2 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-light text-slate-900 dark:text-white mb-4">
+                        <h2 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-Inter text-[#014f86] dark:text-white mb-4">
                             Key Features of Our Staffing Solutions
                         </h2>
                     </div>
@@ -75,7 +68,7 @@ export default function StaffingSolutionsPage() {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <Card className="h-full">
                             <div className="p-6">
-                                <h3 className="text-xl font-light text-white dark:text-white mb-3">
+                                <h3 className="text-xl font-Inter text-white dark:text-white mb-3">
                                     Tailoblue Recruitment Strategies
                                 </h3>
                                 <p className="text-slate-50 dark:text-slate-300 leading-relaxed">
@@ -86,7 +79,7 @@ export default function StaffingSolutionsPage() {
 
                         <Card className="h-full">
                             <div className="p-6">
-                                <h3 className="text-xl font-light text-white dark:text-white mb-3">
+                                <h3 className="text-xl font-Inter text-white dark:text-white mb-3">
                                     Proactive Talent Sourcing
                                 </h3>
                                 <p className="text-slate-50 dark:text-slate-300 leading-relaxed">
@@ -97,7 +90,7 @@ export default function StaffingSolutionsPage() {
 
                         <Card className="h-full">
                             <div className="p-6">
-                                <h3 className="text-xl font-light text-white dark:text-white mb-3">
+                                <h3 className="text-xl font-Inter text-white dark:text-white mb-3">
                                     Candidate Assessment and Screening
                                 </h3>
                                 <p className="text-slate-50 dark:text-slate-300 leading-relaxed">
@@ -108,7 +101,7 @@ export default function StaffingSolutionsPage() {
 
                         <Card className="h-full">
                             <div className="p-6">
-                                <h3 className="text-xl font-light text-white dark:text-white mb-3">
+                                <h3 className="text-xl font-Inter text-white dark:text-white mb-3">
                                     Dedicated Account Management
                                 </h3>
                                 <p className="text-slate-50 dark:text-slate-300 leading-relaxed">
@@ -127,7 +120,7 @@ export default function StaffingSolutionsPage() {
                         {/* Contractor Management */}
                         <div>
 
-                            <h2 className="text-3xl font-sans text-slate-900 dark:text-white mb-4">
+                            <h2 className="text-3xl font-sans text-[#014f86] dark:text-white mb-4">
                                 Contractor Management
                             </h2>
                             <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
@@ -138,7 +131,7 @@ export default function StaffingSolutionsPage() {
                         {/* Job Seeker Assistance */}
                         <div>
 
-                            <h2 className="text-3xl font-sans text-slate-900 dark:text-white mb-4">
+                            <h2 className="text-3xl font-sans text-[#014f86] dark:text-white mb-4">
                                 Job Seeker Assistance
                             </h2>
                             <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
@@ -153,7 +146,7 @@ export default function StaffingSolutionsPage() {
             <section className="py-20">
                 <Container>
                     <div className="max-w-5xl mx-auto text-center mb-16">
-                        <h2 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-light text-slate-900 dark:text-white mb-4">
+                        <h2 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-Inter text-[#014f86] dark:text-white mb-4">
                             Why Choose Our Staffing Services?
                         </h2>
                     </div>
@@ -197,7 +190,7 @@ export default function StaffingSolutionsPage() {
             >
                 <Container>
                     <div className="max-w-5xl mx-auto text-center">
-                        <h2 className="text-3xl sm:text-5xl md:text-7xl font-light text-white mb-4">
+                        <h2 className="text-3xl sm:text-5xl md:text-7xl font-Inter text-white mb-4">
                             Ready to blueefine Excellence Together?
                         </h2>
                         <p className="text-lg text-blue-100 mb-8">
@@ -207,7 +200,7 @@ export default function StaffingSolutionsPage() {
                             <Button
                                 variant="outline"
                                 size="lg"
-                                className="bg-white text-blue-600 border-white hover:bg-blue-50"
+                                className="bg-white text-[#014f86] border-white hover:bg-blue-50"
                             >
                                 Get Started
                             </Button>

@@ -150,7 +150,7 @@ export default function AISolutionsPage() {
     return (
         <>
             <section className="relative w-full overflow-hidden h-[100vh] flex items-center justify-center">
-                <div className="absolute inset-0 bg-black opacity-60 z-10"></div>
+                <div className="absolute inset-0 bg-[#014f86] opacity-60 z-10"></div>
                 <video
                     className="absolute inset-0 h-full w-full object-cover"
                     autoPlay
@@ -166,7 +166,7 @@ export default function AISolutionsPage() {
 
                 {/* Hero Content */}
                 <div className="relative z-20 text-center px-6 max-w-5xl mx-auto">
-                    <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-light text-white mb-6 leading-tight">
+                    <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-Inter text-white mb-6 leading-tight">
                         <span className="bg-clip-text text-white">
                             AI Solutions
                         </span>
@@ -178,7 +178,7 @@ export default function AISolutionsPage() {
                         <Link href="#solutions">
                             <Button
                                 size="lg"
-                                className="bg-green-500 border-0 px-8 py-3 text-lg"
+                                className="bg-[#014f86] border-0 px-8 py-3 text-lg"
                             >
                                 Explore Solutions
                             </Button>
@@ -208,19 +208,19 @@ export default function AISolutionsPage() {
                 <Container>
                     <div className="flex flex-wrap justify-center gap-8 md:gap-16">
                         <div className="text-center">
-                            <div className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light text-black">50+</div>
+                            <div className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-Inter text-[#014f86]">50+</div>
                             <div className="text-gray-800">AI Solutions</div>
                         </div>
                         <div className="text-center">
-                            <div className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light text-black">95%</div>
+                            <div className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-Inter text-[#014f86]">95%</div>
                             <div className="text-gray-800">Client Satisfaction</div>
                         </div>
                         <div className="text-center">
-                            <div className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light text-black">24/7</div>
+                            <div className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-Inter text-[#014f86]">24/7</div>
                             <div className="text-gray-800">Support</div>
                         </div>
                         <div className="text-center">
-                            <div className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light text-black">10+</div>
+                            <div className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-Inter text-[#014f86]">10+</div>
                             <div className="text-gray-800">Years Experience</div>
                         </div>
                     </div>
@@ -231,7 +231,7 @@ export default function AISolutionsPage() {
             <section className="py-24 bg-white relative overflow-hidden">
                 {/* Header */}
                 <div className="text-center mb-20 px-6">
-                    <h2 className="text-3xl sm:text-5xl md:text-7xl font-light text-black mb-4">
+                    <h2 className="text-3xl sm:text-5xl md:text-7xl font-Inter text-[#014f86] mb-4">
                         Our AI Implementation Process
                     </h2>
                     <p className="text-xl text-gray-800 max-w-5xl mx-auto">
@@ -280,8 +280,8 @@ export default function AISolutionsPage() {
                                 {/* Horizontal connector (desktop only) */}
                                 {index !== 3 && (
                                     <div className="hidden md:flex absolute top-16 left-1/2 w-full items-center z-0">
-                                        <div className="w-full h-1 bg-gradient-to-r from-blue-600 to-blue-500"></div>
-                                        <div className="ml-2 w-10 h-10 bg-gradient-to-r from-blue-600 to-blue-500 rounded-full flex items-center justify-center shrink-0">
+                                        <div className="w-full h-1 bg-[#014f86]"></div>
+                                        <div className="ml-2 w-10 h-10 bg-[#014f86] rounded-full flex items-center justify-center shrink-0">
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"
                                                 className="h-6 w-6 text-white"
@@ -301,10 +301,10 @@ export default function AISolutionsPage() {
                                 )}
 
                                 {/* Step circle */}
-                                <div className="w-32 h-32 rounded-full border-4 border-blue-500 flex items-center justify-center mb-6 transition-all duration-300 group-hover:border-blue-400 group-hover:shadow-xl group-hover:shadow-blue-500/30 relative z-10 bg-white">
+                                <div className="w-32 h-32 rounded-full border-4 border-[#014f86] flex items-center justify-center mb-6 transition-all duration-300 group-hover:border-[#014f86] group-hover:shadow-xl group-hover:shadow-[#014f86]/30 relative z-10 bg-white">
                                     <div className="relative">
                                         <Image src={item.img} alt={item.title} width={item.w} height={item.h} />
-                                        <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white font-light">
+                                        <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-[#014f86] rounded-full flex items-center justify-center text-white font-Inter">
                                             {item.step}
                                         </div>
                                     </div>
@@ -312,7 +312,7 @@ export default function AISolutionsPage() {
 
                                 {/* Text */}
                                 <div className="text-center max-w-xs">
-                                    <h3 className="text-black text-xl font-medium mb-3">
+                                    <h3 className="text-[#014f86] text-xl font-medium mb-3">
                                         {item.title}
                                     </h3>
                                     <p className="text-gray-800 text-sm">
@@ -323,8 +323,8 @@ export default function AISolutionsPage() {
                                 {/* Mobile vertical connector */}
                                 {index !== 3 && (
                                     <div className="md:hidden flex flex-col items-center mt-6">
-                                        <div className="h-10 w-0.5 bg-gradient-to-b from-blue-600 to-blue-500"></div>
-                                        <div className="w-10 h-10 bg-gradient-to-r from-blue-600 to-blue-500 rounded-full flex items-center justify-center my-2">
+                                        <div className="h-10 w-0.5 bg-[#014f86]"></div>
+                                        <div className="w-10 h-10 bg-[#014f86] rounded-full flex items-center justify-center my-2">
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"
                                                 className="h-6 w-6 text-white"
@@ -340,7 +340,7 @@ export default function AISolutionsPage() {
                                                 />
                                             </svg>
                                         </div>
-                                        <div className="h-10 w-0.5 bg-gradient-to-b from-blue-600 to-blue-500"></div>
+                                        <div className="h-10 w-0.5 bg-gradient-to-b from-blue-600 to-[#014f86]"></div>
                                     </div>
                                 )}
                             </div>
@@ -359,7 +359,7 @@ export default function AISolutionsPage() {
                 <Container>
                     {/* Heading */}
                     <div className="text-center mb-16">
-                        <h2 className="text-3xl sm:text-5xl md:text-7xl font-light text-black dark:text-white mb-4">
+                        <h2 className="text-3xl sm:text-5xl md:text-7xl font-Inter text-[#014f86] dark:text-white mb-4">
                             Our AI Solutions
                         </h2>
                         <p className="text-xl text-slate-600 dark:text-slate-300 max-w-5xl mx-auto">
@@ -375,11 +375,11 @@ export default function AISolutionsPage() {
                             >
                                 {/* Text Content */}
                                 <div className={index % 2 === 1 ? "lg:order-2" : ""}>
-                                    <span className="inline-block text-sm font-light text-slate-500 mb-4">
+                                    <span className="inline-block text-sm font-Inter text-slate-500 mb-4">
                                         Solution {index + 1}
                                     </span>
 
-                                    <h3 className="text-3xl sm:text-4xl md:text-5xl font-light text-black dark:text-white mb-6">
+                                    <h3 className="text-3xl sm:text-4xl md:text-5xl font-Inter text-[#014f86] dark:text-white mb-6">
                                         {solution.title}
                                     </h3>
 
@@ -392,7 +392,7 @@ export default function AISolutionsPage() {
                                             <li key={idx} className="flex items-start">
                                                 <div className="w-6 h-6 flex items-center justify-center mr-4 mt-1">
                                                     <svg
-                                                        className="w-4 h-4 text-black dark:text-white"
+                                                        className="w-4 h-4 text-[#014f86] dark:text-white"
                                                         fill="none"
                                                         stroke="currentColor"
                                                         viewBox="0 0 24 24"
@@ -444,7 +444,7 @@ export default function AISolutionsPage() {
                 {/* Content */}
                 <div className="relative z-10  mx-auto px-6">
                     <div className="max-w-4xl mx-auto text-center">
-                        <h2 className="text-3xl sm:text-5xl md:text-7xl font-light text-white mb-6">
+                        <h2 className="text-3xl sm:text-5xl md:text-7xl font-Inter text-white mb-6">
                             Ready to Transform Your Business with AI?
                         </h2>
 
@@ -457,7 +457,7 @@ export default function AISolutionsPage() {
                             <Link href="/contact">
                                 <Button
                                     size="lg"
-                                    className="bg-blue-500 text-blue-700 hover:bg-gray-100 border-0 px-8 py-4 text-lg font-light shadow-xl transform transition-all duration-300 hover:scale-105"
+                                    className="bg-[#014f86] text-blue-700 hover:bg-[#014f86]/80 border-0 px-8 py-4 text-lg font-Inter shadow-xl transform transition-all duration-300 hover:scale-105"
                                 >
                                     Schedule a Consultation
                                 </Button>
@@ -467,7 +467,7 @@ export default function AISolutionsPage() {
                                 <Button
                                     variant="outline"
                                     size="lg"
-                                    className="bg-transparent text-white border-white hover:bg-white/10 px-8 py-4 text-lg font-light shadow-xl transform transition-all duration-300 hover:scale-105"
+                                    className="bg-transparent text-white border-white hover:bg-white/10 px-8 py-4 text-lg font-Inter shadow-xl transform transition-all duration-300 hover:scale-105"
                                 >
                                     View Case Studies
                                 </Button>
